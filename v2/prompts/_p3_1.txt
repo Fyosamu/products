@@ -1,0 +1,317 @@
+# Job Search, Resume & Interview Prompt Vault — 120 Prompts
+
+120 prompts covering ATS-proof resume bullets, tailoring to a job description, cover letters, LinkedIn, recruiter DMs, STAR interview answers, behavioral stories, and the negotiation/offer stage. Every prompt returns a structured draft plus the reasoning behind it, so you can edit instead of guess.
+Works in ChatGPT, Claude and Gemini; resume and letter prompts output plain text that pastes cleanly into Word or a plain-text ATS.
+
+## How to use
+- Replace every [BRACKET] with your real details; where a metric is required, use an honest estimate and label it "(est.)".
+- Never let a prompt invent employers, dates, degrees or numbers — paste your true history into [SOURCE] first.
+- Run Section 1 (bullets), then Section 2 (tailor), then Section 3 (cover letter); the order compounds.
+- Keep the output format lines. They are what produce answer-ready stories instead of essays.
+- Re-run with "Hard cap: [N] words" whenever a hiring manager would only give it ten seconds.
+- For interview prompts, feed your raw example into [STORY] and let the prompt structure it — never let it rewrite facts.
+- Finish every tailored resume with the Section 2 submission checklist before you hit send.
+
+## Fill-in variables
+- [SOURCE] — your real resume, transcript, notes or the job description, pasted verbatim
+- [TARGET_ROLE] — the job title you are applying for
+- [COMPANY] — the employer
+- [JD] — the job description text
+- [SKILL_1] [SKILL_2] [SKILL_3] — requirements you genuinely meet
+- [METRIC] — a real number: percent, dollars, time saved, users, volume
+- [YEARS] — years of relevant experience
+- [STORY] — your raw example, unstructured
+- [RECRUITER] / [HIRING_MANAGER] — the person you are writing to
+- [CURRENT_TITLE] / [LAST_ROLE] — your current or most recent title
+- [OFFER] — salary, equity and benefits on the table
+- [LEVEL] — junior, mid, senior, lead, director
+- Any other [BRACKET] inside a prompt is self-explanatory; fill it with real detail.
+
+## Section 1 — Resume Bullets That Pass ATS (XYZ Formula)
+
+### P001 — XYZ Bullet Rewrite
+```text
+You are a resume editor trained on the XYZ formula: did X, resulting in Y, measured by Z. Rewrite these five bullets from [SOURCE] into XYZ form for [TARGET_ROLE].
+Output format for each bullet:
+OLD BULLET — verbatim
+NEW BULLET — one line, starts with a strong verb, contains exactly one metric, ends with scope (team, market, volume)
+FORMULA MAP — X: / Y: / Z:
+WORD COUNT — target 24 words or fewer
+Constraints: no first person, no "responsible for", no bullet may exceed 28 words, every metric must come from [SOURCE] or be marked "(est.)".
+```
+
+### P002 — Duty-to-Achievement Conversion
+```text
+Act as a hiring manager who reads 200 resumes a week. Take these duties from [SOURCE] and convert all 10 into achievements for [TARGET_ROLE].
+Output format (table):
+DUTY | ACHIEVEMENT VERSION (verb + action + result) | THE RESULT NUMBER (or "[NEEDS METRIC]") | WHY A MANAGER CARES (max 8 words)
+Constraints: no bullet may start with "Responsible for", "Helped", or "Worked on"; no bullet over 28 words; if a duty has no measurable result, write "[NEEDS METRIC]" rather than inventing one.
+```
+
+### P003 — ATS Keyword Injection
+```text
+You optimise resumes for applicant tracking systems. Here is my resume: [SOURCE] and here is the job description: [JD].
+Inject the eight highest-value keywords from [JD] into my resume naturally, without keyword stuffing.
+Output format:
+KEYWORD TABLE — KEYWORD | FREQUENCY IN JD | WHERE IT NOW SITS IN MY RESUME (section + bullet number)
+REWRITE LIST — only the bullets you changed, OLD → NEW
+Constraints: no keyword may appear more than twice in one section, no bullet may exceed 28 words, no keyword may be bolded or capitalised, meaning of every original bullet must survive.
+```
+
+### P004 — Quantify the Unquantifiable
+```text
+You find numbers hiding in vague bullets. Here are 8 bullets from [SOURCE]: [BULLETS].
+For each, produce the strongest honest number using one of three methods: (a) a number you actually know, (b) a defensible estimate from scope, (c) a frequency or scale proxy.
+Output format:
+BULLET | METHOD (a/b/c) | THE NUMBER + LABEL ("40+ (est.)") | REWRITTEN BULLET (max 26 words)
+Constraints: never fabricate precision — estimates must be rounded and labelled, no percentage may exceed 100, if nothing is honest output "NO HONEST NUMBER — ask for data".
+```
+
+### P005 — Power-Verb Diversification
+```text
+Act as an editor who kills repeated verbs. From [SOURCE], list every verb that opens a bullet, count repetitions, then rewrite the resume so no verb opens more than one bullet.
+Output format:
+VERB COUNT TABLE — VERB | COUNT
+REWRITE — every affected bullet as OLD → NEW, starting with varied, seniority-appropriate verbs (built, cut, launched, negotiated, rebuilt, introduced, scaled)
+Constraints: verbs must stay accurate to what you did (no inflation), each bullet max 26 words, no bullet may open with "Spearheaded" more than once in the whole resume, no thesaurus words nobody uses.
+```
+
+### P006 — Seniority Calibration
+```text
+Calibrate this resume for [LEVEL] level roles in [TARGET_ROLE]. Here it is: [SOURCE].
+Output format:
+CALIBRATION VERDICT — one line: does the current copy read at [LEVEL]? yes/no + reason (max 12 words)
+REWRITE — the full experience section, bullets only
+CHANGE LOG — BULLET # | WHAT CHANGED (max 8 words) | LEVEL SIGNAL ADDED (e.g. "ownership", "trade-off", "mentorship")
+Constraints: junior copy removes task language and adds scope; senior copy must show trade-offs and ownership; every bullet max 26 words; no invented management claims.
+```
+
+### P007 — Executive Summary Rewrite
+```text
+Write a three-line professional summary for [TARGET_ROLE] at [LEVEL], based on [SOURCE].
+Output format:
+LINE 1 — identity + years: "[YEARS]-year [FUNCTION] [ROLE] who..." (max 14 words)
+LINE 2 — strongest proof: one [METRIC] and the context (max 14 words)
+LINE 3 — what you want next, tied to [COMPANY]'s kind of problem (max 14 words)
+Constraints: no adjective stacks, no "results-driven"/"dynamic"/"passionate", no first person, total 42 words or fewer, must read aloud in under 12 seconds.
+```
+
+### P008 — Skills Section Curation
+```text
+You curate skills sections so ATS and humans both approve. From [SOURCE] and [JD], build a skills section for [TARGET_ROLE].
+Output format:
+HARD SKILLS — 10 max, grouped by category, exactly as spelled in [JD]
+TOOLS — 6 max, no versions unless [JD] requires them
+DOMAIN — 4 max
+SOFT SKILLS — 4 max, only those evidenced elsewhere in the resume
+REJECTED — list of 5 skills you removed and why (max 8 words each)
+Constraints: no skill may appear that cannot be evidenced in [SOURCE], total under 30 items, no synonyms invented, no duplicate concepts under two names.
+```
+
+### P009 — Formatting and Date Sanitizer
+```text
+Act as an ATS parser. Review [SOURCE] and return a formatting fix list, not a rewrite.
+Output format:
+PARSE ERRORS — numbered list: ISSUE | WHERE | FIX (one line)
+DATE RULES — how dates must be written (one consistent format for the whole resume)
+GAP HANDLING — for each gap over 6 months: how to label it in one line (e.g. "2021-2022: freelance, caregiving") — only what is true per [SOURCE]
+CONTRACT/TEMP WORK — whether to list separately and how
+Constraints: no invented employers or dates, no resume summary column, output under 400 words, every fix must be applicable in a plain-text editor.
+```
+
+### P010 — Education and Certifications Order
+```text
+Reorder the education and certification block from [SOURCE] for [TARGET_ROLE].
+Output format:
+RULE — one line on when to put education above experience (degree-fenced roles) vs below
+EDUCATION — as it should appear: degree, school, year, relevant honors only
+CERTIFICATIONS — sorted: job-critical first, then current, then expiring (each with expiry date if in [SOURCE])
+REMOVE LIST — items to cut, with a reason of max 8 words each
+Constraints: no GPA unless under 3 years' experience and above 3.5, no coursework lists, no invented dates, output under 300 words.
+```
+
+### P011 — Bullet Length and Scan Control
+```text
+You cut bullets so they fit two lines in an ATS preview. Take these bullets from [SOURCE] and shorten all of them.
+Output format:
+BULLET | BEFORE WORD COUNT | AFTER WORD COUNT | WHAT WAS CUT (max 6 words)
+Constraints: every bullet 24 words or fewer, one metric maximum per bullet, no bullet may lose its result or its scope, no bullet may start with a clause set off by a comma, cut adjectives first.
+```
+
+### P012 — Numbers Bank From a Messy Paragraph
+```text
+Act as a fact extractor. Here is a messy paragraph about my work: [SOURCE].
+Output format:
+TABLE — CLAIM | HIDDEN NUMBER (if any) | CONFIDENCE (high/med/low) | HOW TO STATE IT (e.g. "reduced from ~6 hrs to 45 min (est.)")
+Constraints: extract at least 6 numbers, never raise precision beyond [SOURCE], mark every inference with "(est.)", and end with the 3 strongest bullets rewritten to use them (max 26 words each).
+```
+
+### P013 — Industry Translation
+```text
+Translate this resume from [ORIGIN_INDUSTRY] (military, agency, academic, nonprofit, retail) into corporate language for [TARGET_ROLE], using [SOURCE] only.
+Output format:
+TRANSLATION TABLE — SOURCE PHRASE | CORPORATE EQUIVALENT | WHY IT TRANSLATES (max 8 words)
+REWRITTEN EXPERIENCE — full section, bullets only
+JARGON TO KILL — list of terms an ATS or hiring manager will not understand (max 8 items)
+Constraints: no inflation of rank or title, every translation must be truthful, bullets max 26 words, output under 700 words.
+```
+
+### P014 — Bullet Audit Scorecard
+```text
+Score every bullet in [SOURCE] like an ATS plus a distracted hiring manager.
+Output format (table):
+# | BULLET (truncated to 12 words) | SCORE /10 | WHY (max 10 words) | REWRITE (max 26 words)
+Scoring criteria: verb strength, metric present, relevance to [TARGET_ROLE], specificity, length, no banned openers.
+Constraints: every bullet scores — no blank rows; anything below 6 must be rewritten, not just critiqued; final line gives the average score before and after; no invented metrics.
+```
+
+### P015 — Banned-Phrase Scrubber
+```text
+Act as a scrubber. Search [SOURCE] for these banned phrases and rewrite every hit: "team player", "hard worker", "think outside the box", "go-getter", "detail-oriented", "results-driven", "synergy", "responsible for", "duties included".
+Output format:
+HITS — PHRASE | COUNT | LINE
+REPLACE — each hit replaced with an observable behaviour or a result from [SOURCE]
+CLEAN VERSION — the full rewritten section
+Constraints: no replacement may contain any banned phrase, replacements must be provable from [SOURCE], every bullet max 26 words, output the clean section in final form with no commentary inside it.
+```
+
+## Section 2 — Tailoring a Resume to a Specific Job Description
+
+### P016 — JD Requirement Matrix
+```text
+Act as a recruiter screening this job description: [JD] for [COMPANY], role [TARGET_ROLE].
+Output format (table):
+REQUIREMENT | TYPE (must-have / nice-to-have / implied) | HOW THEY WILL TEST IT | EXACT PHRASE FROM JD (quote it)
+Constraints: at least 12 rows, no paraphrase in the "exact phrase" column, implied requirements must be marked, output under 500 words, no advice yet — analysis only.
+```
+
+### P017 — Match and Gap Analysis
+```text
+Compare my background [SOURCE] against this job description [JD].
+Output format:
+STRONG MATCHES — REQUIREMENT | MY EVIDENCE (from [SOURCE], bullet or line number) | HOW TO PHRASE IT (max 14 words)
+PARTIAL MATCHES — same columns + THE GAP (max 8 words)
+GAPS — REQUIREMENT | WHAT I LACK | HONEST FRAMING (one line, no lying) | SHOW-STOPPER? (yes/no)
+Constraints: no claim may appear without evidence in [SOURCE], never suggest wording that implies a skill you do not have, output under 600 words.
+```
+
+### P018 — Bullet Reorder for the JD
+```text
+Reorder my resume for [JD] so the first thing a reader sees proves fit. Here is [SOURCE].
+Output format:
+NEW ORDER — numbered list of bullet numbers with a one-line reason each (max 10 words)
+MOVE-TO-BOTTOM — bullets to demote and why (max 10 words)
+CUTS — bullets to remove entirely, with reason (max 8 words)
+Constraints: experience section must open with a bullet that proves [SKILL_1]; no bullet may be rewritten, only moved or cut; output under 350 words; keep at least 3 bullets per recent role.
+```
+
+### P019 — Synonym Keyword Map
+```text
+Build a keyword map between my language [SOURCE] and their language [JD] for [TARGET_ROLE].
+Output format (table):
+WHAT I CALL IT | WHAT THEY CALL IT | WHERE TO SWAP IT IN (resume line/section) | ATS-SAFE? (yes/no)
+Constraints: include at least 10 mappings, never swap in a tool or certification you have not used, mark terms that are genuinely different in meaning rather than synonyms (do not force them), output under 400 words.
+```
+
+### P020 — Tailored Summary, Three Variants
+```text
+Write three professional summaries (3 lines each, max 14 words per line) tailored to [JD] at [COMPANY], using [SOURCE].
+Output format:
+VARIANT A — PROOF-LED (opens with [METRIC])
+VARIANT B — DOMAIN-LED (opens with industry/Domain expertise)
+VARIANT C — PROBLEM-LED (opens with the problem this JD exists to fix)
+Constraints: each variant max 42 words, no variant may mention a requirement absent from [SOURCE], no banned adjectives (results-driven, dynamic, passionate), and end with a one-line note on which variant fits an ATS-heavy application vs a human referral.
+```
+
+### P021 — Relevance Trimmer
+```text
+Cut this resume to fit [JD] without losing seniority signal. Source: [SOURCE]. Target: one page of plain text, 450 words max.
+Output format:
+CUT LIST — SECTION/BULLET | WHY IT GOES (max 8 words)
+KEEP LIST — the 8 bullets that stay, ranked by relevance to [SKILL_1]
+FINAL RESUME — full clean text, one page, 450 words or fewer
+Constraints: no achievement may be lost if it contains a number, no dates may be changed, cut whole clauses rather than shaving words, output final version last so it can be copied alone.
+```
+
+### P022 — Mirror Their Verbs
+```text
+Rewrite 6 bullets from [SOURCE] so they use the exact verbs and phrasing from [JD]'s responsibilities section, while staying truthful.
+Output format:
+JD PHRASE (verbatim, max 10 words) | MY EVIDENCE (from [SOURCE]) | REWRITTEN BULLET (max 26 words)
+Constraints: no bullet may use a JD verb you cannot evidence, no verb substitution may change meaning, at most one quoted JD phrase per bullet, each bullet keeps one metric.
+```
+
+### P023 — Title Translation
+```text
+My actual title was [CURRENT_TITLE]; this job calls it [TARGET_ROLE]. Reconcile the two honestly.
+Output format:
+TITLE LINE — how to present my title (e.g. "[CURRENT_TITLE] (equivalent to [TARGET_ROLE])" or a truthful alternative, one line)
+RATIONALE — max 12 words
+EXPERIENCE SECTION HEADINGS — how each role should be titled
+Constraints: no title inflation, no invented promotions, every suggestion must be defensible in a background check, output under 250 words.
+```
+
+### P024 — Nice-to-Have Coverage Without Lying
+```text
+Here is my resume [SOURCE] and the nice-to-haves in [JD]. Phrase the ones I partially have, and drop the rest.
+Output format (table):
+NICE-TO-HAVE | MY ACTUAL LEVEL (none / adjacent / solid) | HOW TO PHRASE IT (max 14 words) | WHERE (resume or letter) | DO NOT SAY (the overclaim to avoid)
+Constraints: nothing may be phrased at a level higher than [SOURCE] supports, adjacent skills must be labelled as adjacent in the phrasing, no bullet may exceed 26 words, output under 450 words.
+```
+
+### P025 — ATS Screening-Question Prefill
+```text
+Act as a candidate filling an ATS form for [COMPANY], [TARGET_ROLE]. Here is the posting [JD] and my history [SOURCE].
+Output format:
+Q: [each common screening question you identify, 8 total] / A: my honest answer in one line, in the resume's language
+Constraints: every answer must be supported by [SOURCE]; questions requiring yes/no on certifications, location, work authorization, and salary must be answered directly; no answer may exceed 25 words; include a "MISSING INFO" list of anything I must go look up.
+```
+
+### P026 — Top-Three Evidence Rank
+```text
+For this JD, rank my evidence. Source: [SOURCE], target: [JD] at [COMPANY].
+Output format:
+1. REQUIREMENT (the #1 thing they need) | MY PROOF (bullet/line) | WHY IT IS PROOF (max 10 words) | WHERE IT SITS NOW (line #)
+2. same columns
+3. same columns
+REPOSITION — if the proof is buried, say where it must move (max 12 words)
+Constraints: three items only, proof must be from [SOURCE], no invented examples, output under 300 words.
+```
+
+### P027 — Voice and Tone Alignment
+```text
+Read this careers page / values page excerpt: [SOURCE] and adjust my resume's voice for [COMPANY] without changing facts.
+Output format:
+THEIR VOICE — 4 traits, each with one quoted phrase from [SOURCE]
+MY CURRENT VOICE — 4 traits
+ADJUSTMENTS — 5 specific wording changes, OLD → NEW
+Constraints: no fact may change, no adjective stacks, no mirroring that turns into flattery, bullets stay under 26 words, output under 400 words.
+```
+
+### P028 — 100-Word "Why This Fits" Note
+```text
+Write a 100-word note for the top of my tailored resume (or the application's "why us" box) for [COMPANY], [TARGET_ROLE].
+Output format:
+DRAFT A — first person, proof-led
+DRAFT B — company-problem-led
+WHY B OR A WINS — one line, max 12 words
+Constraints: exactly 100 words each (or as close as possible, stated), no sentence over 20 words, must reference one specific thing about [COMPANY] from [SOURCE], no "I am passionate about".
+```
+
+### P029 — Missing-Keyword Triage
+```text
+My resume [SOURCE] is missing keywords that appear in [JD]. Find the five that matter most and place them.
+Output format (table):
+KEYWORD | WHY IT MATTERS (max 10 words) | PLACEMENT (section + bullet #) | EXACT WORDING TO ADD (max 10 words) | RISK OF LOOKING STUFFED (low/med/high)
+Constraints: five keywords only, each added phrase must be true per [SOURCE], none may appear more than twice in the whole resume, output under 350 words.
+```
+
+### P030 — Pre-Submission Verification Checklist
+```text
+Act as the last reviewer before I submit to [COMPANY], [TARGET_ROLE]. Use my resume [SOURCE] and the JD [JD].
+Output format:
+CHECKLIST — numbered, each line: PASS/FAIL + one-line evidence (max 12 words)
+Cover: top third match to [SKILL_1], keywords present, dates consistent, word count, no banned phrases, contact block, file naming, one metric per recent role, no claim absent from [SOURCE].
+HARD STOP ITEMS — anything that must be fixed before sending
+Constraints: at least 12 checks, no check may pass without quoted evidence, output under 500 words, end with a single line: "READY TO SEND: yes/no".
+```

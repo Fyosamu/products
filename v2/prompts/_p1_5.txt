@@ -1,0 +1,313 @@
+## Section 9 — CTA & Engagement Loops
+
+### P121 — Value-First Mid-Roll CTA
+```text
+Write a mid-roll CTA for a [LENGTH] video on [TOPIC] that asks for [CTA] without breaking momentum.
+Output format:
+SETUP — one line linking what they just learned to what comes next (max 16 words)
+THE ASK — one sentence, one action only (max 16 words)
+REASON — why it helps them, tied to [AUDIENCE] (max 14 words)
+RETURN — the line that puts them back into content (max 12 words)
+Constraints: total 60 words or fewer, no "before we continue", no mention of liking/subscribing, no exclamation marks, must be placeable at [TIMESTAMP] without re-recording the whole take.
+```
+
+### P122 — End-of-Video Hard CTA
+```text
+You write endings that convert. Craft a hard CTA for [TOPIC] asking for [CTA].
+Output format:
+PAYOFF LINE — confirms the promise was kept (max 16 words)
+PROOF OF VALUE — one specific thing they can now do (max 16 words)
+THE ASK — one action, stated plainly (max 14 words)
+FRICTION KILLER — removes the reason not to (max 12 words)
+FINAL WORD — last 5 words must be memorable, no "thanks for watching"
+Constraints: total under 70 words, no more than one ask, no exclamation marks, banned: like, comment, subscribe may appear together at most once.
+```
+
+### P123 — Comment-Trigger Question
+```text
+Write 6 comment-trigger questions for a video on [TOPIC] for [AUDIENCE] that a viewer can answer in under 15 words.
+Output format:
+QUESTION | WHY THEY ANSWER (max 10 words) | WHERE TO PLACE IT (timestamp or line)
+Constraints: no question may be answered by the video itself, no yes/no questions, no question requiring specialist knowledge, banned: "what do you think?", total under 280 words, at least 2 questions must invite disagreement.
+```
+
+### P124 — Pinned Comment That Generates Replies
+```text
+Write 5 options for a pinned comment on this video about [TOPIC], each designed to start a thread rather than collect one-word replies.
+Output format:
+PINNED COMMENT (max 30 words) | THE SECOND COMMENT IT INVITES (what a viewer would say back, max 14 words) | ENGAGEMENT TYPE (debate / confession / recommendation / correction)
+Constraints: no comment may repeat the video's CTA, no "thoughts?" alone, no exclamation marks, total under 300 words, and each must be honest (never claim something the video did not cover).
+```
+
+### P125 — Save-and-Share CTA
+```text
+Write a CTA for a reference or tutorial video on [TOPIC] that asks viewers to save and share it, with a reason that makes sense.
+Output format:
+LINE 1 — what the video is worth coming back to (max 16 words)
+LINE 2 — the save ask + when they will need it (max 18 words)
+LINE 3 — the share ask naming a specific person (max 16 words)
+BACK TO CONTENT — max 12 words
+Constraints: total under 65 words, no guilt, no exclamation marks, the save reason must reference a real moment ("the next time you [TASK]").
+```
+
+### P126 — Non-Salesy Lead-Magnet CTA
+```text
+You offer lead magnets without sounding like a funnel. Write a CTA offering [LEAD_MAGNET] for [AUDIENCE] watching [TOPIC].
+Format:
+WHAT IT IS — one line, concrete (max 16 words)
+WHO IT IS FOR — one line (max 12 words)
+WHAT IS NOT IN IT — one honest exclusion (max 12 words)
+HOW TO GET IT — exact instruction (comment [KEYWORD] / link in description), max 14 words
+Constraints: total under 60 words, no email-hype language (free gift, don't miss), no adjectives, no exclamation marks, no claim the magnet solves [PAIN] entirely.
+```
+
+### P127 — Next-Video Bridge
+```text
+Write 5 bridges that end one video on [TOPIC] and route to the next one about [NEXT_TOPIC].
+Output format:
+BRIDGE | THE OPEN LOOP IT CREATES (max 12 words) | VIDEO IT POINTS TO | END-SCREEN TEXT (max 6 words)
+Constraints: no bridge may say "in my next video" as the opening words, no bridge may fully answer the new question, total under 300 words, no exclamation marks, at least 2 bridges must tie back to what the viewer just learned.
+```
+
+### P128 — Community Poll Teaser
+```text
+Write a community post that teases next week's video on [TOPIC] and collects a decision from [AUDIENCE].
+Format:
+POST TEXT — max 40 words, sets up the question without giving the answer
+POLL OPTION A — max 12 words
+POLL OPTION B — max 12 words
+POLL OPTION C — max 12 words
+COMMENT YOU WILL PIN — max 25 words, hints at [PROOF]
+Constraints: options must be mutually exclusive, no option may be a joke that wins the poll, no hashtags, no exclamation marks, total under 250 words.
+```
+
+### P129 — Giveaway or Contest CTA
+```text
+Write a giveaway CTA for a video on [TOPIC] with prize [PRIZE], deadline [DATE], and rules [RULES].
+Format:
+ANNOUNCEMENT LINE — what it is + who it is for (max 18 words)
+ENTRY STEPS — 3 numbered steps, each max 10 words
+RULES LINE — eligibility + deadline in one sentence
+CLOSE — returns to content (max 12 words)
+Constraints: total under 70 words, no engagement bait the platform bans (no "tag 3 friends" unless [RULES] permits), no exclamation marks, every rule from [RULES] — none invented.
+```
+
+### P130 — Comment-to-DM Engagement Loop
+```text
+Design a comment-to-DM loop for [TOPIC]: viewer comments, gets something useful back.
+Output format:
+THE TRIGGER — what they comment (one word, max 10 chars) + where you say it (timestamp line)
+YOUR PINNED REPLY — max 25 words, instructs the DM
+THE DM — max 35 words, delivers [LEAD_MAGNET] or an answer, no pitch
+THE FOLLOW-UP — max 25 words, the soft ask, only after value lands
+Constraints: total under 130 words, no auto-dm hype, no exclamation marks, the loop must work even if 90% never reply, and the comment instruction must appear on screen as text.
+```
+
+### P131 — Three-CTA Placement Map
+```text
+Map CTA placement for a [LENGTH] video on [TOPIC] so no two asks collide.
+Output format (table):
+CTA # | TIMESTAMP | TYPE (comment / save / subscribe / link / watch next) | LINE (max 16 words) | WHAT PRECEDES IT (the value given first) | RISK TO RETENTION (low/med + fix)
+Constraints: exactly 3 CTAs, no CTA in the first 60 seconds, no two CTAs within 45 seconds of each other, at least one must be a value ask (comment/save) rather than a conversion ask, total under 400 words.
+```
+
+### P132 — End-Screen Verbal Script
+```text
+Write the spoken end-screen script for [TOPIC] while the last 20 seconds of graphics play.
+Format:
+VERBAL LINE 1 — points to video A (max 14 words)
+VERBAL LINE 2 — points to video B or playlist (max 14 words)
+VERBAL LINE 3 — subscribe reason for [AUDIENCE] (max 14 words)
+ON-SCREEN — the two end-card titles, max 8 words each
+MUSIC NOTE — one line
+Constraints: total spoken under 50 words, no "click the circle", no exclamation marks, every line must work with the mouth not visible (voice-over friendly), no more than one ask per line.
+```
+
+### P133 — Keyword-Comment CTA
+```text
+Write a keyword-comment CTA for [TOPIC] where commenting [KEYWORD] triggers a reply or DM with [LEAD_MAGNET].
+Format:
+THE SETUP — one line creating a reason to comment (max 18 words)
+THE INSTRUCTION — exact word + what happens, max 16 words
+ON-SCREEN TEXT — max 6 words
+FOLLOW-UP REPLY — what you reply, max 25 words
+Constraints: total under 75 words, no fake scarcity, no promise you cannot deliver at scale, no exclamation marks, and the keyword must be one word, easy to spell.
+```
+
+### P134 — Description-Box Email Capture
+```text
+Write the email capture block for the description of a video on [TOPIC] for [AUDIENCE].
+Format:
+LINE 1 — the free thing in one sentence (max 16 words)
+LINE 2 — what problem it removes ([PAIN]) in 14 words
+LINE 3 — proof it works ([PROOF]) in 12 words
+LINE 4 — the exact action: "LINK: [URL]" plus one instruction
+Constraints: no sentence may start with "If you want", no adjectives, total under 60 words, must read on a phone where only 2 lines show before "show more" — the first two lines must carry the whole hook.
+```
+
+### P135 — CTA Rewrite Without Clichés
+```text
+Act as an editor who bans lazy CTAs. Rewrite these CTAs from [SOURCE]: "like and subscribe", "comment below", "turn on notifications", and any others you find.
+Output format:
+ORIGINAL | WHY IT FAILS (max 8 words) | REWRITE (max 16 words) | THE REASON IT NOW WORKS (max 10 words)
+Constraints: 6 rewrites minimum, no rewrite may contain "like and subscribe" in that order, no exclamation marks, every rewrite must give the viewer a reason that benefits them, total under 350 words.
+```
+
+## Section 10 — Script Rewrite & Punch-Up
+
+### P136 — Tighten to 60 Percent
+```text
+You cut scripts without losing meaning. Rewrite this script [SOURCE] at 60% of its word count for [AUDIENCE].
+Output format:
+BEFORE WORD COUNT
+AFTER WORD COUNT
+WHAT WAS CUT — 5 bullets, reason each (max 8 words)
+FULL REWRITE — the tightened script, in the same beat order
+Constraints: every number, name and fact from [SOURCE] survives, no new claims, no sentence may gain words, target 60% (state the exact percentage achieved), total output under the rewrite only after the summary block.
+```
+
+### P137 — Cliché and Filler Scrubber
+```text
+Scrub this script [SOURCE] of filler and clichés. Ban list: "at the end of the day", "game-changer", "let's dive in", "without further ado", "here's the thing", "insane", "epic", "basically", "actually", "so yeah", plus every throat-clearing line that says what you are about to say.
+Output format:
+HITS — PHRASE | COUNT | LINE
+REPLACEMENTS — each hit replaced with content (max 12 words each)
+CLEAN SCRIPT — full rewrite
+Constraints: no replacement may contain a ban-list phrase, word count must drop by at least 15%, no meaning lost, clean version printed last so it can be copied alone.
+```
+
+### P138 — Academic to Spoken
+```text
+You translate written English into spoken English. Rewrite this passage [SOURCE] for [AUDIENCE] reading it aloud on [PLATFORM].
+Rules: average sentence length 12 words or fewer, contractions throughout, no subordinate clause longer than 8 words, no semicolons, one idea per breath.
+Output format:
+ORIGINAL WORD COUNT / SPOKEN WORD COUNT
+SPOKEN REWRITE — full text
+LISTENING TEST — the longest sentence, marked with a breath break "/"
+Constraints: grade 7-8 reading level, no content added, no content removed beyond restructuring, total output under 600 words.
+```
+
+### P139 — Boring Intro Punch-Up
+```text
+The first three lines of this script [SOURCE] lose viewers. Rewrite them four ways.
+Output format:
+CURRENT OPENING — quoted
+DIAGNOSIS — why it fails (max 10 words)
+REWRITE A — result first (max 30 words)
+REWRITE B — scene first (max 30 words)
+REWRITE C — stake first (max 30 words)
+REWRITE D — question first (max 30 words)
+RECOMMENDED — pick one + reason (max 12 words)
+Constraints: no rewrite may contain a greeting, no rewrite may summarise what the video will cover, no "in this video", no exclamation marks.
+```
+
+### P140 — One-Line-Per-Beat Compression
+```text
+Compress this script [SOURCE] into one line per beat so an editor can shoot from it.
+Output format:
+BEAT # | ONE LINE (max 18 words) | SHOT: | WORD BUDGET (sec)
+Constraints: no beat may contain two ideas, every fact from [SOURCE] either survives in a beat or is listed under DELETED with a reason, at least 8 beats, total under 450 words, no line may be a transition ("and then").
+```
+
+### P141 — Plain-Language Pass
+```text
+Rewrite this script [SOURCE] at a grade-7 reading level for [AUDIENCE] without dumbing down the content.
+Rules: sentences average 14 words or fewer, one abstract term replaced per line by a concrete one, no jargon unless defined on first use in brackets.
+Output format:
+JARGON REPLACED — TERM | PLAIN VERSION | LINE
+FULL REWRITE
+Constraints: every number and name unchanged, no fact lost, no sentence over 25 words, output under 600 words total.
+```
+
+### P142 — Replace Vague Claims With Numbers
+```text
+Find every vague claim in this script [SOURCE] and replace it with a number.
+Output format (table):
+VAGUE LINE (quote) | CLAIM TYPE (time / cost / scale / frequency / comparison) | THE NUMBER (from [SOURCE] or [PROOF] or "[NEEDS DATA]") | REWRITTEN LINE (max 18 words)
+Constraints: at least 6 rows, never invent precision — round and label estimates "(est.)", if no honest number exists write "[NEEDS DATA]" instead of writing around it, final rewrite printed in full under the table, no adjectives added.
+```
+
+### P143 — Rambling Transcript Into Beats
+```text
+Turn this rambling transcript [SOURCE] into structured beats for [PLATFORM].
+Output format:
+BEAT MAP — # | THE POINT (max 10 words) | BEST QUOTE FROM SOURCE (verbatim, max 14 words) | CUT (what was dropped, max 8 words)
+ORDERED SCRIPT — the beats assembled, spoken prose, total [WORD_LIMIT]
+Constraints: verbatim quotes must stay verbatim, at least 30% of words cut, no invented sentences, no connective tissue ("anyway", "so yeah"), output under 700 words.
+```
+
+### P144 — Dual Length: 15 Seconds and 45 Seconds
+```text
+Write two versions of this idea from [SOURCE] for [AUDIENCE]: one at 15 seconds, one at 45 seconds.
+Output format:
+VERSION A (15s) — HOOK (max 10 words) / BEAT 1 (max 20 words) / CLOSE (max 12 words) / WORD COUNT
+VERSION B (45s) — HOOK (max 12 words) / BEAT 1..3 (max 40 words each) / CLOSE (max 16 words) / WORD COUNT
+SHARED LINE — the one line both versions must contain (max 14 words)
+Constraints: version A must not be a truncated B — it must be built to stand alone, no fact in A that is absent from [SOURCE], no exclamation marks, target word counts 40 and 120.
+```
+
+### P145 — Jargon Translation for One Audience
+```text
+You translate specialist language for [AUDIENCE]. Here is a script full of [SPECIALIST_JARGON] jargon: [SOURCE].
+Output format:
+Glossary — TERM | WHAT IT MEANS TO THEM (max 10 words) | THE ANALOGY (max 12 words, everyday domain)
+REWRITE — full script with jargon replaced or defined inline on first use
+Constraints: keep the technical term in brackets at first mention so an expert can still follow, no analogy that misrepresents the mechanism, word count within 10% of the original, total under 600 words.
+```
+
+### P146 — Energy Pass With Delivery Marks
+```text
+Add a delivery layer to this flat script [SOURCE] for a direct-to-camera performance.
+Output format:
+FULL SCRIPT with inline marks: // = pause, **word** = stress, ↑ = lift, ↓ = drop
+CHANGE LOG — 5 lines: LINE # | WHY IT WAS FLAT (max 8 words) | DELIVERY NOTE (max 8 words)
+Constraints: no words added or removed except punctuation, at least 8 pauses, no more than 12 stressed words in the whole script, no all-caps shouting, output under 600 words.
+```
+
+### P147 — List Into Story
+```text
+Convert this list-shaped script [SOURCE] into a narrative for [AUDIENCE] on [TOPIC].
+Output format:
+STORY SPINE — ONE CHARACTER (who, max 10 words) / WANT (max 8 words) / OBSTACLE (max 8 words) / CHANGE (max 10 words)
+SCRIPT — 4 beats: SETUP / STRUGGLE / TURN / LANDING, each max 60 spoken words with SHOT:
+WHERE EACH LIST ITEM LANDED — item # → beat #
+Constraints: every item from the original list must appear inside the story (none dropped), total spoken 350-450 words, no invented events not supported by [SOURCE], no moralising ending.
+```
+
+### P148 — De-Clickbait, Keep the Retention
+```text
+This title, thumbnail text and opening promise overstate the video. Fix them without killing curiosity.
+Input: [TITLE] / [THUMB] / [SOURCE] (the actual script).
+Output format:
+PROBLEM — exactly what is promised and not delivered (max 14 words)
+TITLE — 3 honest versions (max 55 chars each)
+THUMBNAIL TEXT — 3 versions (max 4 words each), no overlap with the title
+OPENING LINE — rewritten to make the honest promise (max 16 words)
+Constraints: no version may promise what [SOURCE] does not contain, no "we'll see", no hedging that removes all stakes, no exclamation marks.
+```
+
+### P149 — Teleprompter-Ready Script
+```text
+Format this script [SOURCE] for a teleprompter read by [CREATOR_NAME].
+Output format:
+FULL SCRIPT with: one clause per line, hard line breaks at every breath, "/" for breaths, no parentheses, numbers written as words under 10, no brackets
+READING STATS — word count / estimated seconds at 140 wpm / longest line (words)
+Flags: lines over 16 words must be split (list them before the script)
+Constraints: no content changed, no sentence split mid-clause, output under 700 words including stats.
+```
+
+### P150 — Score, Rewrite, Change Log
+```text
+You are the final reviewer. Score this script [SOURCE] for [PLATFORM], [LENGTH], [AUDIENCE].
+Output format:
+SCORECARD — 8 axes /10: hook, structure, retention, clarity, proof, pacing, voice, CTA — each with one-line evidence (max 10 words)
+VERDICT — publish / revise / reshoot, one line with the single biggest reason
+REWRITE — the full script, applying every fix
+CHANGE LOG — 6 bullets: WHAT CHANGED | WHY IT SCORES HIGHER (max 10 words)
+FINAL SCORE — projected score after the rewrite
+Constraints: no axis above 8 without quoted evidence, rewrite must not exceed the original word count, no advice without a matching rewrite, total under 800 words.
+```
+
+---
+
+Licensed to the original purchaser. Reselling or redistributing this file is not permitted.

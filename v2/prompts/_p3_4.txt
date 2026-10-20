@@ -1,0 +1,287 @@
+## Section 7 — Behavioral & "Tell Me About a Time" Story Bank
+
+### P091 — Build a 12-Story Bank
+```text
+Extract a reusable story bank from my career history: [SOURCE].
+Output format (table):
+# | STORY TITLE (max 8 words) | SITUATION IN ONE LINE | THE COMPETENCY IT PROVES (from: leadership, conflict, failure, ambiguity, initiative, analysis, influence, delivery, learning, customer, data, change) | RESULT ([METRIC] or "[NO METRIC]") | QUESTIONS IT CAN ANSWER (3 max)
+Constraints: exactly 12 stories, every story must come from [SOURCE] (no invented episodes), at least 4 stories must have hard numbers, no two stories may prove the same competency as their primary, total under 700 words.
+```
+
+### P092 — Ambiguity Story
+```text
+Answer "Tell me about a time you worked with incomplete information or ambiguity" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 150 words): S (25) / T (25) / A (70 — three decisions I made to reduce uncertainty) / R (35, with [METRIC] or "[NO METRIC]")
+WHAT I CHECK BEFORE SAYING THIS — 2 lines (facts I must verify in [STORY])
+Constraints: I must not pretend the ambiguity was low, no hindsight boasting, past tense in ACTION, no claim absent from [STORY], and the answer must include one thing I got wrong while guessing.
+```
+
+### P093 — Pushing Back on a Bad Decision
+```text
+Answer "Tell me about a time you pushed back on a decision" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 150 words) with the pushback shown as: DATA I BROUGHT (max 15 words) / HOW I SAID IT (one sentence I actually used, max 20 words) / THE OUTCOME (max 30 words)
+TONE CHECK — one line: how this sounds respectful, not insubordinate
+Constraints: no answer may end with "I was right", no criticism of the decision-maker's character, every fact from [STORY], result must be honest (including if the decision went ahead anyway).
+```
+
+### P094 — Failure That Cost Something
+```text
+Answer "Tell me about a failure and what you learned" using [STORY], with a real cost, for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 160 words): S (25) / T (20) / A (60: what I did, what I missed) / COST (one number or concrete consequence, max 20 words) / R (35: what changed in my process)
+THE LESSON LINE — one sentence I can repeat on its own (max 18 words)
+Constraints: the cost must be stated plainly, no "failure that was really a success", no blame of others, no claim absent from [STORY], no adjective self-flagellation ("devastating" banned).
+```
+
+### P095 — Three Deadlines at Once
+```text
+Answer "How do you prioritise when everything is urgent?" using [STORY] with three real deadlines, for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 150 words): S must name all three commitments (max 30 words) / T (max 20) / A (60: the prioritisation rule I used, named) / R (max 35 with [METRIC])
+THE RULE — the one-line prioritisation principle, quotable (max 14 words)
+Constraints: no "I use a to-do list" as the whole answer, no claim that everything was delivered if [STORY] says otherwise, no Eisenhower-matrix name-dropping without my own case.
+```
+
+### P096 — Mentoring Someone
+```text
+Answer "Tell me about a time you mentored or developed someone" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 150 words): S (25) / T (20) / A (70: three specific things I did — not general "support") / R (35: what they achieved, with [METRIC] or "[NO METRIC]")
+CREDIT LINE — one sentence that gives them the credit (max 16 words)
+Constraints: no answer may make the mentee sound like a project, no claim of continued contact unless true, everything from [STORY], no adjectives about my mentoring style.
+```
+
+### P097 — Disagreeing With the Team
+```text
+Answer "Tell me about a time you disagreed with your team" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 150 words): S (25) / T (25) / A (65: how I surfaced it, how I tested it, what I accepted) / R (35 with [METRIC] or "[NO METRIC]")
+THE TURN — the line where I show I could be wrong (max 16 words)
+Constraints: no villain in the story, no "they all agreed and I was the only one who saw it", every fact from [STORY], result stated without gloating.
+```
+
+### P098 — Turning Around a Failing Project
+```text
+Answer "Tell me about a project that was going badly and what you did" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 160 words): S — the state when I arrived, with one number (max 30) / T (20) / A — three moves in order (max 70) / R — the delta, with [METRIC] (max 35)
+DIAGNOSIS LINE — the root cause in one sentence (max 14 words)
+Constraints: no claim that I saved it alone if [STORY] says otherwise, dates must line up, no adjectives, no "chaos" without an example, no invented metrics.
+```
+
+### P099 — Unhappy Customer
+```text
+Answer "Tell me about a time you handled an unhappy customer/stakeholder" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 150 words): S — what they were upset about, in their words (max 30) / T (20) / A — what I said and did, including the first sentence I used (max 65) / R (35: their outcome + [METRIC] if any)
+ESCALATION NOTE — one line on when I escalated and why
+Constraints: no disparaging the customer, no "the customer was wrong", every detail from [STORY], the resolution must be stated even if it cost us something.
+```
+
+### P100 — Learning a Skill Fast
+```text
+Answer "Tell me about a time you had to learn something quickly" using [STORY] for [TARGET_ROLE], where the skill is [SKILL_1]-adjacent.
+Format:
+ANSWER (STAR, max 140 words): S (25) / T — the deadline pressure (max 25) / A — how I learned: sources, practice, who I asked (max 60) / R — what I shipped and when (max 30 with [METRIC])
+THE METHOD — my repeatable 3-step learning method in one line each (max 8 words per step)
+Constraints: timeline must be plausible and consistent with [STORY], no claim of mastery, no course name-dropping I did not take, no adjectives about aptitude.
+```
+
+### P101 — Initiative Beyond the Role
+```text
+Answer "Tell me about a time you took initiative beyond your job description" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 140 words): S (25) / T (20) / A — what I noticed, what I built or did without being asked (max 65) / R — adoption or result with [METRIC] (max 30)
+BOUNDARY LINE — one sentence showing I still did my day job (max 16 words)
+Constraints: the initiative must not be something that made someone else look bad, no volunteering clichés, everything from [STORY], no adjectives about being proactive.
+```
+
+### P102 — Presenting to Executives
+```text
+Answer "Tell me about a time you presented to senior leaders" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 150 words): S — audience + stakes (max 30) / T — what decision I needed from them (max 25) / A — how I structured it: the first slide, the one number, the ask (max 60) / R — the decision + [METRIC] (max 30)
+THE OPENING LINE — what I said first, verbatim from [STORY] if possible (max 18 words)
+Constraints: no claim of a standing ovation, the decision must be named, everything from [STORY], no adjectives about confidence.
+```
+
+### P103 — A Mistake That Cost Something
+```text
+Answer "Tell me about a mistake that had real consequences" using [STORY] for [TARGET_ROLE] — distinct from a general failure: this one was mine and it had a price.
+Format:
+ANSWER (STAR, max 150 words): S (20) / MY MISTAKE, STATED PLAINLY (max 25 words, no passive voice) / A — how I found out, told someone, and fixed it (max 60) / R — cost and what I changed (max 35 with a number)
+OWNERSHIP LINE — the sentence where I take it without hedging (max 14 words)
+Constraints: no "we" language for the mistake, no one else may be blamed, no "the system was at fault" unless [STORY] proves it, no invented cost.
+```
+
+### P104 — Cross-Functional Collaboration
+```text
+Answer "Tell me about a time you worked across teams" using [STORY] for [TARGET_ROLE].
+Format:
+ANSWER (STAR, max 150 words): S — the teams and what each wanted (max 35) / T (20) / A — how I aligned them: the artefact, meeting or decision rule I used (max 60) / R (35 with [METRIC])
+FRICTION LINE — the real disagreement, named in one sentence (max 16 words)
+Constraints: no "everyone was aligned from the start", no jargon about synergy, every fact from [STORY], the other teams must get credit in the result.
+```
+
+### P105 — Compress a 3-Minute Story to 90 Seconds
+```text
+Act as an interview coach with a stopwatch. Here is my rambling answer: [SOURCE] for question [QUESTION].
+Output format:
+CUT LOG — WHAT WAS REMOVED (max 10 words) | WHY (max 10 words) — at least 5 rows
+90-SECOND VERSION — max 210 words, STAR-shaped, with [METRIC] retained
+30-SECOND VERSION — max 70 words, the same story skeleton
+FIRST-SENTENCE FIX — the new opening line (max 14 words)
+Constraints: no fact may be added, every number from [SOURCE] must survive, no sentence may be longer than 20 words, the answer must end on the result rather than trailing off.
+```
+
+## Section 8 — Salary Negotiation, Offer Comparison & Thank-You Notes
+
+### P106 — Salary Expectation, Three Versions
+```text
+Write three answers to "What are your expectations?" for [TARGET_ROLE], based on my research: [SOURCE] and the range [RANGE].
+Format:
+VARIANT A — a researched range with a reason (max 35 words)
+VARIANT B — a single number with one justification clause (max 30 words)
+VARIANT C — a deferral that does not sound evasive (max 30 words, ends with a question about their band)
+Constraints: no version may say "negotiable", "whatever you think is fair", or "it depends", no adjectives, one question mark per version maximum, and a one-line note on when each is the right choice.
+```
+
+### P107 — Counter-Offer Email After the Offer
+```text
+Write a counter-offer email for [COMPANY] on [TARGET_ROLE]: base [OFFER] against my target [TARGET].
+Format:
+SUBJECT (max 6 words) / APPRECIATION (one line only) / THE COUNTER — number + one reason tied to the role's scope from [JD] (max 30 words) / THE EVIDENCE — [METRIC] or [SOURCE] proof (max 25 words) / WHAT ELSE I AM OPEN TO — one line (bonus, equity, start date) / CLOSE — one line inviting a conversation
+Constraints: 150 words maximum, exactly one number requested (state it plainly), no apology, no ultimatum, no adjectives, one question mark maximum, no exclamation marks.
+```
+
+### P108 — Negotiation Call Script
+```text
+Write a script for the negotiation call about [TARGET_ROLE] at [COMPANY].
+Format:
+YOUR OPEN — state the request and the reason in two sentences (max 40 words)
+THEN SILENCE — mark it: "[PAUSE — do not fill it]"
+IF THEY BUDGE — accept criteria, next step (max 25 words)
+IF THEY HOLD — "What would need to be true to get to [TARGET]?" (exact line)
+IF THEY SAY THE BAND IS FIXED — two trade asks (max 20 words each)
+CLOSE — restate what was agreed + email confirmation commitment (max 25 words)
+Constraints: no adjectives, no exclamation marks, total under 220 words, never make the first concession, every fallback must name something you get in return.
+```
+
+### P109 — Negotiate Beyond Base Salary
+```text
+Write the ask for the four non-base elements of [OFFER] at [COMPANY]: sign-on bonus, bonus target, equity/RSUs, extra leave.
+Format (per element):
+THE ASK — exact line (max 20 words) with a number where relevant
+THE REASON — one clause tied to [JD] or my [METRIC]
+IF REFUSED — the trade (max 16 words)
+Constraints: no element may be asked for without a reason, no adjectives, no exclamation marks, total under 350 words, and a priority order (1-4) with a one-line justification each.
+```
+
+### P110 — "The Band Is Fixed" Response
+```text
+The recruiter says the salary band for [TARGET_ROLE] cannot move. Write my response and the three alternatives I ask for instead.
+Format:
+ACKNOWLEDGE — one line (max 12 words)
+THE THREE ASKS — (1) level/title review (2) earlier review date with a stated [METRIC] target (3) sign-on or one-time element — each with an exact sentence (max 20 words)
+THE QUESTION — one line to test whether the band is truly fixed (max 14 words)
+Constraints: 100 words total, no adjectives, one question mark maximum, no threat, every alternative must be something a company can actually grant.
+```
+
+### P111 — Leveraging a Competing Offer
+```text
+I have a competing offer from [OTHER_COMPANY]. Write the message to [COMPANY] about [TARGET_ROLE] using it honestly.
+Format:
+STATEMENT — I have another offer, decision by [DATE] (one line, no bluffing)
+PREFERENCE — I prefer your role because [JD] reason (max 18 words)
+THE ASK — what would make it possible to say yes (one element, named)
+Constraints: 90 words maximum, no ultimatum, no invented competing offer details, no adjectives, one question mark maximum, no exclamation marks, and a fallback line if they cannot move (max 16 words).
+```
+
+### P112 — Offer Comparison Matrix
+```text
+Build a comparison matrix for two offers: [OFFER_A] at [COMPANY_A] and [OFFER_B] at [COMPANY_B], for [TARGET_ROLE].
+Output format (table):
+CRITERION | WEIGHT (1-5, you justify each in one line) | OFFER A | OFFER B | WINNER
+Criteria: base, variable, equity/vesting, growth path, manager, work model, workload, risk, learning, commute/location, values fit.
+Then: WEIGHTED TOTAL /100 for each, and THE DECISION QUESTION — the one thing I still need to know (max 18 words)
+Constraints: at least 10 criteria, every value must come from [SOURCE] (no vibes), no criterion may be weighted 5 without a one-line reason, no recommendation if data is missing — say what is missing.
+```
+
+### P113 — Accept With Clarifications
+```text
+Write an acceptance email for [TARGET_ROLE] at [COMPANY] with [OFFER], that confirms three points before I sign.
+Format:
+SUBJECT (max 6 words) / ACCEPTANCE — one clear line / CONFIRMATIONS — 3 numbered questions: title on day one, review date and metric, remote or hybrid days (each ≤ 16 words) / START DATE — my proposed date + one-line reason / NEXT STEP — what I will return and by when
+Constraints: 140 words maximum, no hedging on the acceptance itself, one question mark per numbered item, no adjectives, no exclamation marks, no salary reopening in this email.
+```
+
+### P114 — Decline an Offer Gracefully
+```text
+Write a decline for [COMPANY]'s offer on [TARGET_ROLE], keeping the door open.
+Format:
+SUBJECT (max 6 words) / DECISION — stated in the first sentence, no build-up / REASON — one honest line, no comparison of the other employer / THANK-YOU — specific: one thing from the process (max 16 words) / DOOR — one line about staying in touch, no false promise
+Constraints: 110 words maximum, no apology paragraph, no adjectives, no exclamation marks, must be sendable without them asking follow-up questions, and must not name the winning employer.
+```
+
+### P115 — Post-Interview Thank-You Note
+```text
+Write a thank-you note to [HIRING_MANAGER] after a final interview for [TARGET_ROLE] at [COMPANY], sent within 24 hours using [SOURCE] (my notes from the conversation).
+Format:
+SUBJECT or FIRST LINE (max 7 words) / ONE SPECIFIC THING we discussed (max 22 words, from [SOURCE]) / ONE CLARIFICATION or addition I forgot (max 30 words, only if [SOURCE] has it) / RESTATEMENT OF FIT — [SKILL_1] + [METRIC] in one line / CLOSE — next step acknowledgment (max 14 words)
+Constraints: 120 words maximum, no "thank you for taking the time to meet with me" as the opener, no adjectives, one question mark maximum, no exclamation marks.
+```
+
+### P116 — Request Feedback After a Rejection
+```text
+I was rejected for [TARGET_ROLE] at [COMPANY] at [STAGE]. Write a feedback request with three versions.
+VARIANT A — to the recruiter: 70 words, asks one specific thing (skill gap or fit)
+VARIANT B — to the hiring manager: 80 words, references one exchange from [SOURCE], asks what would have changed the outcome
+VARIANT C — short: 40 words, asks only whether I may reapply for [TARGET_ROLE] and when
+Constraints: no version may argue with the decision, no adjectives, one question mark each, no exclamation marks, every version must be sendable without expecting a reply.
+```
+
+### P117 — Rejection Response and Re-Application Timing
+```text
+Write my response to a rejection from [COMPANY], plus a re-application plan for [TARGET_ROLE].
+Format:
+REPLY — 60 words: accept, ask to stay in touch for [FUNCTION] roles, one line on [METRIC] I will bring next time
+TIMING RULE — when to reapply (condition-based, not just "in 6 months"), one line
+WHAT TO HAVE CHANGED — 3 bullets: what must be true on my side before reapplying (each ≤ 12 words)
+Constraints: no bitterness, no request for reconsideration of this decision, no adjectives, one question mark maximum, all three bullets must be actionable by me.
+```
+
+### P118 — Counter-Offer From My Current Employer
+```text
+My current employer counters after I accepted [TARGET_ROLE] elsewhere. Write both conversations from [SOURCE].
+Format:
+PART A — WHAT TO ASK THEM FOR (base/title/scope), one exact sentence each (max 16 words)
+PART B — THE RISK: 3 things that change after a counter (each ≤ 14 words) with an honest verdict line
+PART C — MESSAGE TO THE NEW EMPLOYER if I stay: 60 words max, honest without burning the bridge
+Constraints: no recommendation to accept the counter by default — give the decision rule instead (one line), no adjectives, no exclamation marks, nothing invented beyond [SOURCE].
+```
+
+### P119 — First-90-Days Expectation Email
+```text
+Write an email to [HIRING_MANAGER] before I start [TARGET_ROLE] at [COMPANY]: confirm expectations for the first 90 days.
+Format:
+SUBJECT (max 6 words) / CONFIRMATION — start date, title, work model (one line each) / 30-DAY TARGET — one measurable outcome from [JD] (max 16 words) / 60-DAY — same / 90-DAY — same / THE ONE RESOURCE I WILL NEED — max 14 words / QUESTION — one line
+Constraints: 140 words maximum, one question mark maximum, no adjectives, no exclamation marks, targets must be achievable in 30/60/90 days as stated.
+```
+
+### P120 — Researching a Defensible Salary Number
+```text
+Act as a compensation researcher. I need a defensible number for [TARGET_ROLE] in [LOCATION] at [LEVEL]. Sources I have: [SOURCE] (job postings, offer letters, survey excerpts).
+Output format:
+EVIDENCE TABLE — SOURCE | DATA POINT (number + basis) | DATE | RELIABILITY (H/M/L)
+RANGE — low / midpoint / high, each with the reasoning (max 14 words)
+MY NUMBER — the figure I will say out loud + the one-line reason (max 16 words)
+FLOOR — the number below which I walk, with a reason (max 14 words)
+QUESTIONS TO ASK THEM — 3 that reveal their band (each ≤ 14 words)
+Constraints: every number must come from [SOURCE] or be marked "[ASSUMPTION]", no range without showing its inputs, no advice to bluff, total under 500 words.
+```
+
+---
+
+Licensed to the original purchaser. Reselling or redistributing this file is not permitted.

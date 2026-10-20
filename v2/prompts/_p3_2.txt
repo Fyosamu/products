@@ -1,0 +1,276 @@
+## Section 3 — Cover Letters: Warm Intro vs Cold (2 Variants Each)
+
+### P031 — Standard Role Cover Letter
+```text
+You write cover letters that get read past line one. For [TARGET_ROLE] at [COMPANY], using [SOURCE] as my history and [JD] as the target, write TWO letters.
+VARIANT A — WARM: opens through a mutual contact or referral: [MUTUAL]
+VARIANT B — COLD: no connection, opens on their problem
+Output format per variant: HEADING / PARAGRAPH 1 (max 45 words) / PARAGRAPH 2 proof ([METRIC], max 50 words) / PARAGRAPH 3 fit to [SKILL_1] (max 45 words) / PARAGRAPH 4 close + ask (max 30 words)
+Constraints: 220 words each, no "I am writing to apply", no adjective stacks, no sentence over 22 words, no claim absent from [SOURCE].
+```
+
+### P032 — Referral vs Speculative Application
+```text
+Write two letters: one sent after [MUTUAL] offered to introduce me, one sent with no introduction, both for [TARGET_ROLE] at [COMPANY].
+VARIANT A — WARM: the referral mentioned in the first sentence, their endorsement paraphrased in max 12 words
+VARIANT B — COLD: opens with one specific observation about [COMPANY] from [SOURCE]
+Shared requirements: both must contain the same [METRIC] proof line and the same closing ask, both 200-240 words.
+Output: both letters in full, plus a 3-bullet note on what differs and why.
+Constraints: no letter may claim a relationship that does not exist, no "I was thrilled to hear", no exclamation marks.
+```
+
+### P033 — Career Changer Cover Letter
+```text
+I am moving from [PRIOR_FIELD] to [TARGET_ROLE]. Write two letters using [SOURCE].
+VARIANT A — WARM (through [MUTUAL]): leads with the transferable result, not the career change confession
+VARIANT B — COLD: leads with the problem [COMPANY] is hiring this role to solve, then bridges
+Both must: name 2 transferable skills with evidence (max 14 words each), acknowledge the change in one sentence only, and end with a specific ask.
+Constraints: 210-250 words each, no apology for the change, no "passion for" language, no claim absent from [SOURCE].
+```
+
+### P034 — Internal Transfer Letter
+```text
+I am applying internally at [COMPANY] for [TARGET_ROLE]. Write two letters: one to my current manager (warm), one to the new hiring manager (cold to them but internal).
+VARIANT A — WARM: thanks for current role in one line, then the results here ([METRIC]), then the ask for the move
+VARIANT B — COLD: why the new team needs what I have built, referencing [SKILL_1] and one internal fact from [SOURCE]
+Constraints: 180-220 words each, no criticism of my current team, no promise to leave before [DATE], no exclamation marks, both must state a start-date willingness.
+```
+
+### P035 — Return-to-Work Gap Letter
+```text
+Explain a [GAP_LENGTH] career gap when applying for [TARGET_ROLE] at [COMPANY]. Write two letters.
+VARIANT A — WARM (referral via [MUTUAL]): gap acknowledged in one clause, spends the rest on current proof
+VARIANT B — COLD: gap mentioned in paragraph 2 only, opened instead with a relevant result from [SOURCE]
+Both must include: what I did or learned (max 25 words, only what is true per [SOURCE]), readiness statement (one line), the ask.
+Constraints: 200-240 words each, no over-explaining, no medical or personal detail beyond one clause, no apology, no fabricated activity during the gap.
+```
+
+### P036 — Remote-Role Cover Letter
+```text
+I am applying for a remote [TARGET_ROLE] at [COMPANY] from [LOCATION]. Write two letters.
+VARIANT A — WARM: through [MUTUAL] or a past colleague at [COMPANY]
+VARIANT B — COLD: opens on the remote-specific risk this team faces (handoffs, time zones, async clarity) tied to [PAIN]... use instead the hiring problem from [JD]
+Both must: prove async working with one concrete example (max 30 words), state overlap hours (one line), and name the result [METRIC].
+Constraints: 200-230 words each, no "I am a self-starter", no timezone excuses, no exclamation marks, no claim absent from [SOURCE].
+```
+
+### P037 — Senior and Lead Role Letter
+```text
+I am applying for a [LEVEL] [TARGET_ROLE] at [COMPANY]. Write two letters that signal leadership without inflated titles.
+VARIANT A — WARM: opens on a shared connection's description of the team's problem
+VARIANT B — COLD: opens with the business problem behind the hire, from [JD]
+Both must contain: one decision I owned with its trade-off (max 30 words), one result with [METRIC], one line on how I lead (no adjectives), and the ask.
+Constraints: 220-260 words each, no résumé re-telling, no word "passionate", no claim absent from [SOURCE].
+```
+
+### P038 — Contract-to-Full-Time Letter
+```text
+I want to convert from contract to permanent at [COMPANY] for [TARGET_ROLE]. Write two letters.
+VARIANT A — WARM (to my current manager): what I have delivered since [START_DATE] ([METRIC]), what the team would get, the ask + proposed date
+VARIANT B — COLD (to HR or a new hiring manager): framed as an internal application, third-party proof from [SOURCE] if any
+Constraints: 180-220 words each, no ultimatum, no threat of leaving, every claim traceable to [SOURCE], no exclamation marks, both must state a decision date.
+```
+
+### P039 — Rejection-Then-Reapply Letter
+```text
+I was rejected for [TARGET_ROLE] at [COMPANY] on [DATE] and I am reapplying after [NEW_PROOF]. Write two letters.
+VARIANT A — WARM (through [MUTUAL] who knows the hiring manager): names the rejection in sentence two, leads with what changed
+VARIANT B — COLD: opens with the new [METRIC] or credential, mentions the prior application in paragraph 2
+Constraints: 190-230 words each, no mention of the old rejection more than once, no grievance, no "I think I deserve", every change must be verifiable per [SOURCE].
+```
+
+### P040 — Post-Networking Thank You
+```text
+I met [RECRUITER] or [HIRING_MANAGER] at [EVENT]. Write two follow-up letters: one where we had a real conversation (warm), one where we only exchanged cards or a scan (cold).
+VARIANT A — WARM: quote one thing they said (from [SOURCE], max 14 words), connect to [TARGET_ROLE], one specific promise, the ask
+VARIANT B — COLD: restate who I am in one line, one proof ([METRIC]), the ask
+Constraints: 150-180 words each, sendable within 24 hours (no reference to later events), no exclamation marks, no "great meeting you" as the opener.
+```
+
+### P041 — Overqualified Applicant Letter
+```text
+I am applying below my previous level for [TARGET_ROLE] at [COMPANY]. Write two letters that make this read as a choice, not a fallback.
+VARIANT A — WARM: through [MUTUAL], one line on why this exact role, one line on the scope I want ([SOURCE])
+VARIANT B — COLD: opens on the work itself and what good looks like in 90 days, from [JD]
+Both: name one thing I will not do (no managing for now) as a positive, and include [METRIC].
+Constraints: 190-220 words each, no apology for seniority, no salary discussion, no claim absent from [SOURCE].
+```
+
+### P042 — Problem-Led Letter (Their Pain)
+```text
+Write two letters that open on the problem this role exists to fix, using this excerpt from [COMPANY]'s site/announcement: [SOURCE] and the requirement [SKILL_1].
+VARIANT A — WARM: the connection introduced the problem; letter names it and claims one relevant result
+VARIANT B — COLD: the problem is the first sentence; the ask is last
+Both must: show one piece of evidence (max 30 words), and end with a specific 20-minute window.
+Constraints: 200-230 words each, first sentence may not mention me, no adjective stacks, no exclamation marks, all facts from [SOURCE].
+```
+
+### P043 — Referral Request Letter
+```text
+Ask [MUTUAL] to refer me for [TARGET_ROLE] at [COMPANY]. Write two letters: one where they already know my work (warm), one where the connection is weak (cold).
+VARIANT A — WARM: names the role, gives them 3 lines they can forward, asks for one specific action by [DATE]
+VARIANT B — COLD: earns the favour first — offers something concrete (max 15 words), then makes the smaller ask (an introduction, not a referral)
+Constraints: 160-200 words each, no guilt, no "it would mean the world", the forwarded blurb must be max 60 words and appear inside both letters, no exclamation marks.
+```
+
+### P044 — Recruiter-Submitted Application Letter
+```text
+[RECRUITER] is submitting me for [TARGET_ROLE] at [COMPANY]. Write two letters: one addressed to the recruiter's client (warm via the recruiter), one sent directly to [HIRING_MANAGER] (cold).
+VARIANT A — WARM: one line crediting [RECRUITER], then straight to the fit for [SKILL_1] + [METRIC]
+VARIANT B — COLD: no mention of the recruiter, opens on the requirement from [JD] I solve best
+Constraints: 170-200 words each, no duplicating the recruiter's pitch (they already sent it), no salary line, no claim absent from [SOURCE], no exclamation marks.
+```
+
+### P045 — 120-Word Cover Letter, Both Variants
+```text
+Write the shortest cover letters that still work: exactly 120 words each, for [TARGET_ROLE] at [COMPANY].
+VARIANT A — WARM: opens through [MUTUAL], contains one [METRIC], one ask
+VARIANT B — COLD: opens on their problem, contains one [METRIC], one ask
+Output format per letter: the text, then "WORDS: n", then a 2-bullet note on what was sacrificed to hit 120 words.
+Constraints: exactly 120 words (±3), no sentence over 18 words, no "I am writing to", no adjective stacks, no claim absent from [SOURCE].
+```
+
+## Section 4 — LinkedIn Headline, About & Featured Rewrite
+
+### P046 — Ten Headlines Under 80 Characters
+```text
+You rewrite LinkedIn headlines so they survive a search and a skim. Write 10 headlines for me: [SOURCE], targeting [TARGET_ROLE].
+Format:
+HEADLINE | CHARACTER COUNT | ANGLE (keyword / proof / problem / outcome)
+Constraints: 80 characters maximum including spaces (print the count for each), at least 5 must contain the literal title words from [TARGET_ROLE], no emoji, no pipe chains longer than 3 segments, no "Helping X do Y" without a specific Y, no exclamation marks.
+```
+
+### P047 — Above-the-Fold About Lines
+```text
+Write the first 3 lines of my LinkedIn About section for [TARGET_ROLE] — the part visible before "see more". Source: [SOURCE].
+Output format:
+LINE 1 — who I am + the problem I solve (max 16 words)
+LINE 2 — proof: one [METRIC] with context (max 16 words)
+LINE 3 — who I do it for / what I want next (max 16 words)
+Plus: 2 alternate line-1 options (max 16 words each)
+Constraints: first 3 lines must total under 45 words, no "Passionate", no first-person opener that begins "I am a", no exclamation marks, all facts from [SOURCE].
+```
+
+### P048 — Full About Section, 200 Words
+```text
+Write my full LinkedIn About section in 200 words for [TARGET_ROLE], based on [SOURCE].
+Output format:
+OPENING — 2 lines, the hook (no greeting)
+STORY — 3-4 sentences: what I do and the pattern I have seen (all from [SOURCE])
+PROOF — 2 bullets with [METRIC] each
+HOW I WORK — 2 lines, concrete behaviours, no adjectives
+CLOSING — 1 line + the ask (what I am open to)
+Constraints: exactly 200 words (print the count), no bullet longer than 16 words, no keyword stuffing, no third person, no exclamation marks.
+```
+
+### P049 — Featured Section Lineup
+```text
+Plan my LinkedIn Featured section for [TARGET_ROLE]: 5 items from my real material [SOURCE].
+Output format (table):
+ORDER | ITEM TYPE (post / article / media / link / document) | TITLE (max 10 words) | WHY IT IS HERE (max 10 words) | WHAT A VIEWER LEARNS (max 10 words) | CTA ON ITEM (max 6 words)
+Constraints: exactly 5 items, ordered so item 1 proves [SKILL_1], every item must exist in [SOURCE] (mark any gap "[NEEDS ASSET]"), no more than 1 self-promotional item, total under 400 words.
+```
+
+### P050 — Experience Section Rewrite
+```text
+Rewrite my LinkedIn Experience section for [TARGET_ROLE] using [SOURCE]: company, title and dates unchanged.
+Output format:
+PER ROLE — COMPANY, TITLE, DATES / 3-4 bullets, first bullet proves the role's main requirement, each bullet ≤ 26 words, one metric per role where [SOURCE] allows
+Constraints: no duties-only bullets, no bullet may repeat a resume line verbatim (slightly rephrase for LinkedIn), no invented tools or teams, no exclamation marks, output the full section as final text plus a change log of 4 lines.
+```
+
+### P051 — Ten Post Ideas for a Target Role
+```text
+Plan 10 LinkedIn posts that make me visible for [TARGET_ROLE], using my background [SOURCE] and the audience at [COMPANY]-type companies.
+Output format (table):
+# | ANGLE (lesson / mistake / teardown / opinion / story) | HOOK (first line, max 14 words) | POINT (max 20 words) | PROOF TO USE ([METRIC] or [SOURCE]) | BEST DAY
+Constraints: 10 posts, no two hooks share their first 3 words, at least 3 must use a mistake I actually made (from [SOURCE]), no engagement-bait openers ("Agree?"), total under 550 words.
+```
+
+### P052 — Profile CTA and Keywords
+```text
+Optimise the searchable parts of my profile for [TARGET_ROLE]: headline, custom button, and the skills order. Source: [SOURCE], target words from [JD].
+Output format:
+CUSTOM BUTTON — action label (max 4 words) + why (max 10 words)
+HEADLINE — final version (≤ 80 chars, print count)
+TOP 5 SKILLS — in order, exactly as [JD] spells them
+KEYWORD PLACEMENT — where each keyword appears (headline / about line 1 / experience bullet #)
+Constraints: no keyword may appear more than 3 times on the profile, nothing may be added that [SOURCE] does not support, no exclamation marks, total under 350 words.
+```
+
+### P053 — Recommendation Request Message
+```text
+Ask [CONTACT] for a LinkedIn recommendation. I worked with them at [COMPANY] on [PROJECT]; I need it to speak to [SKILL_1] and the result [METRIC].
+Format:
+MESSAGE — max 90 words: ask, the specific angle, the deadline, an offer to draft it if they are short on time
+DRAFT THEY CAN EDIT — 4 sentences: context / what I owned / the result / what it was like to work together (max 25 words each)
+Constraints: no flattery adjectives, no exclamation marks, the draft must only contain facts from [SOURCE], and the ask must be answerable with yes/no plus one edit.
+```
+
+### P054 — Writing a Recommendation for Someone Else
+```text
+Write a LinkedIn recommendation for [CONTACT] based on this input: [SOURCE] (my honest notes on their work).
+Format:
+DRAFT — 4-5 sentences, max 110 words: the working context, what they specifically did, one result with a number if [SOURCE] has one, and one trait shown by behaviour (not adjective)
+OPENING LINE OPTIONS — 2 alternatives (max 12 words each)
+Constraints: no exaggerated claims, no adjective-only praise ("amazing colleague" banned), everything traceable to [SOURCE], no exclamation marks, must not promise future performance.
+```
+
+### P055 — Profile Visual Brief
+```text
+Write a creative brief for my LinkedIn profile visuals using my background [SOURCE] and target [TARGET_ROLE].
+Output format:
+PHOTO — framing, expression, wardrobe, background, light (one line each), plus 2 "do not" lines
+BANNER — THE IMAGE (max 16 words) / TEXT ON BANNER (max 6 words) / TEXT POSITION (safe zone) / ONE NUMBER TO SHOW ([METRIC])
+ALT TEXT — for both, max 16 words each
+Constraints: no stock office backgrounds, no text overlapping the avatar circle, banner text ≤ 6 words, no claim in the banner that [SOURCE] does not support, total under 350 words.
+```
+
+### P056 — Skills Endorsement Order
+```text
+Reorder my LinkedIn skills for [TARGET_ROLE] using [JD] and [SOURCE].
+Output format (table):
+ORDER | SKILL | WHY HERE (max 10 words) | ENDORSEMENT TARGET (who to ask first — role only, max 8 words)
+Then: 5 SKILLS TO REMOVE — each with a reason (max 8 words)
+Constraints: top 3 must match [JD] wording exactly, nothing may stay that [SOURCE] does not evidence, no skill may be both kept and removed, total under 400 words, no invented endorsements.
+```
+
+### P057 — Career-Changer Headline and About Open
+```text
+I am moving from [PRIOR_FIELD] to [TARGET_ROLE]. Rewrite my headline and About opening.
+Format:
+HEADLINE — 5 options, ≤ 80 chars each (print counts), no "Career changer" in the first 3
+ABOUT OPENING — 2 variants: (A) lead with transferable result, (B) lead with why the change, each ≤ 45 words
+WHICH WINS — one line
+Constraints: no apology, no "passionate about", no claim absent from [SOURCE], headline must be searchable for [TARGET_ROLE], no exclamation marks, total under 350 words.
+```
+
+### P058 — First Person vs Third Person
+```text
+Decide and produce: should my LinkedIn About be first person or third person for [TARGET_ROLE]? Then write both versions in 160 words each from [SOURCE].
+Output format:
+DECISION — first/third + 2-line reason specific to my field
+VERSION A (first person) — 160 words
+VERSION B (third person) — 160 words
+SWITCHING COST — what is lost if I pick wrong (max 12 words)
+Constraints: both versions must contain the same facts and the same [METRIC], no adjective stacks, no exclamation marks, facts only from [SOURCE], print word counts.
+```
+
+### P059 — Open-to-Work and Visibility Wording
+```text
+Write the wording for my job-search visibility settings on LinkedIn for [TARGET_ROLE], keeping my current employer from seeing it.
+Output format:
+OPEN TO WORK — visible-to-recruiters note (max 20 words), headline-safe
+HEADLINE WHILE SEARCHING — 2 options ≤ 80 chars that do not read as "unemployed"
+ABOUT LINE — one line stating what I am looking for (max 16 words)
+WHAT NOT TO CHANGE — 3 lines: profile elements that would signal I am leaving (max 10 words each)
+Constraints: no desperate phrasing, no mention of my current employer's competitors, no exclamation marks, total under 300 words.
+```
+
+### P060 — Recruiter Search-Term Placement
+```text
+Build a keyword placement plan so recruiters searching [TARGET_ROLE] terms find my profile. Inputs: my profile text [SOURCE], their search terms [JD].
+Output format (table):
+SEARCH TERM | WHERE IT MUST APPEAR (exact section + position) | THE EXACT LINE I WILL USE (max 14 words) | ALREADY PRESENT? (yes/no)
+Constraints: at least 10 terms, every line must read naturally to a human (no keyword salad), no term may be added where [SOURCE] cannot support it, total under 450 words, and a final line listing the 3 highest-volume terms from [JD] I am missing.
+```

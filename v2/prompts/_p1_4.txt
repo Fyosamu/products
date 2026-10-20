@@ -1,0 +1,305 @@
+## Section 7 — Repurposing (Blog to Video, Video to Thread)
+
+### P091 — Blog Post to 60-Second Reel
+```text
+You convert written work into spoken scripts. Turn this blog post [SOURCE] into a 60-second Reel for [AUDIENCE] on [TOPIC].
+Output format:
+SOURCE MAP — which paragraph each beat comes from (P1, P3...)
+HOOK — taken from the strongest line in the post, rewritten to ≤ 12 spoken words
+BEAT 1 — SAY (max 45 words) / SHOT: / SOURCE LINE: "quote from post"
+BEAT 2 — same fields
+BEAT 3 — same fields
+CTA — max 16 words
+Constraints: no invented claims, every beat traceable to a paragraph, total spoken 200-260 words, nothing in the Reel that is not in the post.
+```
+
+### P092 — Blog Post to 10-Minute YouTube Script
+```text
+Expand this post [SOURCE] into a 10-minute YouTube script on [TOPIC] for [AUDIENCE].
+Output format:
+WHAT IS MISSING — 3 things a video needs that the post does not have (research, demo, visual), max 12 words each
+COLD OPEN — new, max 60 words
+BEAT 1..6 — HEADLINE (from post section) / SPOKEN (max 140 words) / VISUAL: / [SOURCE] PARAGRAPH:
+RECAP + CTA — max 50 words
+Constraints: no paragraph may be read verbatim on camera, every post section either earns a beat or gets cut (list the cuts), total spoken 850-950 words.
+```
+
+### P093 — Video to Eight-Post Thread
+```text
+Turn this video transcript [SOURCE] into an 8-post text thread for [PLATFORM], on [TOPIC] for [AUDIENCE].
+Output format:
+POST 1 — the hook, max 40 words, must work without the video
+POST 2..7 — one idea each, max 55 words, each ending on a line that pulls to the next
+POST 8 — the summary + [CTA], max 45 words
+Constraints: exactly 8 posts, no post may repeat an idea from an earlier post, no hashtags, no "thread starts below", total under 380 words, and a final line naming the video timestamp each post came from.
+```
+
+### P094 — Transcript to Newsletter Issue
+```text
+Convert this video transcript [SOURCE] into a newsletter issue for [AUDIENCE] about [TOPIC].
+Output format:
+SUBJECT LINE A (max 7 words) / B (max 7 words)
+PREHEADER — max 12 words
+OPENING — 2 sentences, max 45 words, personal, no "hope you're well"
+THE LESSON — 3 short sections with H2s, total 300-400 words, drawn from the transcript
+ONE-LINE TAKEAWAY — max 20 words
+CTA — [CTA], max 20 words
+Constraints: no transcript sentence copied verbatim, no more than one link, no exclamation marks in the subject, plainly written (grade 8 or below).
+```
+
+### P095 — Podcast Episode to Five Reels
+```text
+Take this podcast episode transcript [SOURCE] and cut 5 standalone Reels from it for [AUDIENCE].
+Output format (per Reel):
+# | SOURCE TIMESTAMP OR QUOTE (max 12 words) | HOOK (max 12 words, must not need context) | SHOT: | SPoken beats as SAY lines (max 45 words each, 3 beats) | [CTA]
+Constraints: 5 Reels, no two may use the same idea, each must be under 60 seconds spoken (max 150 words), quotes must be verbatim and attributed, no Reel may depend on the host's earlier introduction.
+```
+
+### P096 — Webinar to Short Course Outline
+```text
+Turn this webinar recording [SOURCE] into a 5-part short course for [AUDIENCE] on [TOPIC].
+Output format:
+COURSE PROMISE — max 20 words
+MODULE 1 — TITLE (max 6 words) / SOURCE SEGMENT: / KEY TEACHING (max 25 words) / ONE ACTION (max 12 words) / QUIZ OR CHECKPOINT (one line)
+MODULE 2..5 — same fields
+Constraints: 5 modules exactly, no module may exceed the source material, every module ends with a doable action, output under 600 words, and any gap in the source is marked "[NEEDS NEW RECORDING]".
+```
+
+### P097 — Long Video to Fifteen Shorts
+```text
+You find Shorts inside long videos. Here is a transcript with timestamps: [SOURCE]. Find 15 moments that stand alone for [AUDIENCE].
+Output format (table):
+# | TIMESTAMP | MOMENT (max 10 words) | WHY IT STANDS ALONE (max 10 words) | HOOK TO ADD (max 10 words) | CUT LENGTH (sec)
+Constraints: exactly 15 rows, no moment may rely on earlier context, first 3 seconds of each must contain a complete idea, no two moments from the same minute, output under 600 words.
+```
+
+### P098 — Case Study to Narrative Video
+```text
+Convert this written case study [SOURCE] into a narrative video script for [AUDIENCE] on [TOPIC].
+Output format:
+OPENING SCENE — the customer's worst moment, max 40 words, no company name yet
+IDENTIFY — who they are + [PAIN], max 40 words
+ESCALATE — what it cost, one number from [SOURCE]
+TURN — the change, max 50 words
+RESULT — [PROOF] with timeframe
+RESOLUTION — one line, no moralising
+Constraints: total spoken 350-450 words, every number from [SOURCE], permission-safe (no quotes invented), no adjectives that the source does not support.
+```
+
+### P099 — Thread to Video Script
+```text
+Reverse-engineer this text thread [SOURCE] into a video script for [PLATFORM] on [TOPIC].
+Output format:
+CLAIM MAP — each post's claim listed, numbered
+COLD OPEN — the strongest claim, spoken in ≤ 14 words
+BEAT 1..5 — CLAIM (from post #) / EXPAND (max 60 words, adds what the post could not fit) / VISUAL:
+OBJECTION BEAT — the strongest pushback a viewer would have, max 40 words
+CLOSE — max 25 words + [CTA]
+Constraints: total spoken 400-500 words, nothing may contradict the original thread, every expansion must be new value (not padding).
+```
+
+### P100 — Customer FAQ to Five-Video Series
+```text
+Here are real customer questions: [SOURCE]. Build a 5-video series for [AUDIENCE] about [TOPIC], one video per question.
+Output format (per video):
+# | THE QUESTION (verbatim) | HOOK (max 12 words) | DIRECT ANSWER IN ONE SENTENCE (max 20 words) | PROOF TO SHOW ([PROOF] or [SOURCE]) | DEMO OR EXPLANATION BEATS (3 lines max 20 words each) | [CTA]
+Constraints: 5 videos, the answer must appear before 0:20 in each, no answer may exceed one sentence before proof, total output under 700 words.
+```
+
+### P101 — Spec Sheet to Demo Video
+```text
+Turn this product spec sheet [SOURCE] into a 45-second demo video script for [AUDIENCE] facing [PAIN].
+Output format:
+FEATURE → BENEFIT MAP — 4 rows: SPEC (from sheet) / WHAT IT MEANS FOR THEM (max 10 words) / PROOF (bench test, [PROOF], or "[NEEDS DEMO]")
+SCRIPT:
+SHOT 1..4 — PROBLEM (max 12 spoken words) / FEATURE IN ACTION / RESULT / [CTA]
+Constraints: only specs present in [SOURCE], no performance claim without a test line, total spoken 110-140 words, banned: revolutionary, game-changing, best-in-class.
+```
+
+### P102 — Ebook Chapter to Animated Explainer
+```text
+Convert chapter [CHAPTER] of this ebook [SOURCE] into a script for a 90-second animated explainer for [AUDIENCE].
+Output format:
+CONCEPT LIST — 5 visual metaphors for the chapter's ideas (each: IDEA (max 8 words) / ANIMATION BEAT (max 12 words))
+SCRIPT — LINE (max 25 words) / ANIMATION (what is drawn) / TEXT ON SCREEN (max 5 words), 8-10 rows
+Constraints: no talking-head animation, every line must have a matching visual, total spoken 280-340 words, one idea per scene, no claim beyond the chapter text.
+```
+
+### P103 — Quote to Talking-Head Short
+```text
+Given this quote/post [SOURCE] by [AUTHOR] about [TOPIC], write a talking-head short for [AUDIENCE] that does more than read it aloud.
+Output format:
+OPENING DISAGREEMENT OR NUANCE — max 14 words
+THE QUOTE — verbatim, on screen
+WHAT IT GETS RIGHT — max 30 words
+WHERE IT BREAKS FOR [AUDIENCE] — max 35 words, one scenario
+WHAT TO DO INSTEAD — max 30 words
+[CTA] — max 14 words
+Constraints: total spoken 130-160 words, attribution line included, no adjectives about the author, no outrage framing.
+```
+
+### P104 — Old Video Redone as an Update
+```text
+You rewrite old videos as updates. Here is my old script [SOURCE] on [TOPIC]. Produce a "what I got wrong / what changed" version for [AUDIENCE].
+Output format:
+COLD OPEN — names the old claim and the change, max 16 words
+THE OLD CLAIM — verbatim line from [SOURCE], with its date
+WHAT CHANGED — 3 beats: THEN (max 20 words) / NOW (max 20 words) / WHY (max 25 words)
+WHAT STILL HOLDS — max 30 words
+VIEWER ACTION — max 20 words + [CTA]
+Constraints: no pretending the old take was right, total spoken 350-450 words, no apology longer than one line, every change dated.
+```
+
+### P105 — Three Posts to One Roundup Video
+```text
+Merge these three posts [SOURCE] into one roundup video script on [TOPIC] for [AUDIENCE] in [LENGTH].
+Output format:
+OVERLAP REPORT — what all three say (dedupe it, max 20 words)
+UNIQUE POINTS — 6 bullets, each tagged P1/P2/P3
+COLD OPEN — must use the strongest unique point, max 16 words
+BEAT 1..6 — POINT / SPOKEN (max 90 words) / VISUAL: / SOURCE TAG
+CLOSE — the through-line in one sentence + [CTA]
+Constraints: no point may appear twice, total spoken 700-800 words, no intro thanking three separate audiences.
+```
+
+## Section 8 — Retention & Edit Pattern Prompts
+
+### P106 — Retention Audit of a Script
+```text
+Act as a retention analyst. Audit this script [SOURCE] for a [LENGTH] video on [TOPIC] for [AUDIENCE].
+Output format (table):
+TIMESTAMP | LINE (first 6 words) | RISK (drop-off / confusion / repetition / slow) | SEVERITY (H/M/L) | FIX (max 18 words)
+Then: TOP 5 FIXES ranked, each with the rewritten line.
+Constraints: at least 10 rows, every risk must quote the script, fixes must be rewrites not advice, no row may say "add more energy", total under 600 words.
+```
+
+### P107 — Pattern Break Every 20 Seconds
+```text
+You insert pattern breaks so viewers stop leaving. Take this script [SOURCE] and mark where a break must occur every 20 seconds.
+Output format (table):
+TIME | CURRENT CONTENT (first 6 words) | BREAK TYPE (question, cutaway, number, POV change, object, silence) | WHAT TO ADD (max 14 words) | LENGTH (sec)
+Constraints: no two consecutive breaks of the same type, breaks must add information or reset attention — never filler, at least 8 breaks for a [LENGTH] video, output under 550 words.
+```
+
+### P108 — Open-Loop Tracker
+```text
+Map every open loop in this script [SOURCE].
+Output format (table):
+LOOP # | OPENED AT (timestamp) | THE QUESTION PLANTED (max 12 words) | CLOSED AT (timestamp) | VERDICT (closed / leaked / never closed)
+Then: REWRITE any loop that leaks (gives the answer before the payoff) — max 18 words each.
+Constraints: at least 4 loops must be open in a [LENGTH] video, every loop must close before the final 20 seconds or be explicitly stated as a series tease, output under 500 words.
+```
+
+### P109 — Cut List
+```text
+You cut scripts without losing meaning. Here is a draft [SOURCE]. Produce a delete list and a tightened version.
+Output format:
+DELETE LIST — LINE # | WHY IT GOES (repetition / no stake / throat-clear / meta / slow) — max 8 words each
+SAVE LIST — lines that must survive, with reason (max 6 words)
+REWRITE — the full script with deletions applied, same order
+Constraints: remove at least 25% of words, keep every number and every proper noun, no sentence may gain words, total output shows before/after word counts.
+```
+
+### P110 — Cold-Open Restructure
+```text
+Restructure this script [SOURCE] so the best moment plays at 0:00.
+Output format:
+STRONGEST MOMENT — identified (timestamp) + why in 10 words
+NEW COLD OPEN — max 60 words, spoken, containing no background context
+SET-UP MOVED — where the necessary context now sits (timestamp + one line)
+CUE LINE — the line that connects 0:20 back to the cold open (max 16 words)
+Constraints: nothing may be deleted in this pass, the cold open may not ask a question it answers within 5 seconds, total output under 400 words.
+```
+
+### P111 — Pace Map With Delivery Marks
+```text
+Mark up this script [SOURCE] for delivery: pace, pauses, emphasis.
+Output format (table):
+LINE | DELIVERY (fast / normal / slow) | PAUSE MARKS (use "/" and "//") | EMPHASISE (bold one word per line) | RUN TIME (sec)
+Then: TOTAL ESTIMATED RUN TIME for [LENGTH] and a note if it runs long.
+Constraints: exactly one word emphasised per line, no more than 20% of lines marked fast, run time must land within 10% of [LENGTH], output under 600 words.
+```
+
+### P112 — Plateau Fix (Saggy Middle)
+```text
+The middle of this script [SOURCE] sags. Find the plateau and rebuild it.
+Output format:
+PLATEAU — line range (first 6 words of each end) + diagnosis (max 12 words)
+STAKES LADDER — 3 new beats that raise what is at risk: RISK (max 10 words) / EVIDENCE (from [SOURCE] or [NEEDS SOURCE]) / PAYOFF (max 12 words)
+REWRITE — the plateau section only, same length as the original or shorter
+Constraints: no invented facts, no manufactured drama, the middle must connect to the ending already in the script, output under 500 words.
+```
+
+### P113 — Comment Bait Without Frustration
+```text
+You design comment triggers that do not damage retention. For this video on [TOPIC] for [AUDIENCE], write 5 comment-bait lines placed at safe moments.
+Output format:
+# | TIMESTAMP | LINE (max 18 words) | WHY PEOPLE REPLY (max 10 words) | RISK TO RETENTION (low/med + fix)
+Constraints: no question may be answerable by one word, no rage bait, no question whose answer is already given in the video, total under 300 words, place at least 2 bait lines in the last 30 seconds.
+```
+
+### P114 — Mid-Roll Re-Hook
+```text
+Write a 30-second mid-roll re-entry for this script [SOURCE], placed at [TIMESTAMP].
+Output format:
+RECAP — one line that recaps without repeating (max 16 words)
+NEW STAKE — why continuing matters now (max 20 words, new information)
+BRIDGE — a line that connects to what was just said (max 14 words)
+Constraints: must not begin with "so", "now", or "anyway", no summary of the first 3 minutes, must work for a viewer who just joined, total under 60 words.
+```
+
+### P115 — Editor's Cleanup Notes
+```text
+You write edit notes an editor can execute without asking questions. Here is the raw transcript [SOURCE].
+Output format (table):
+IN/OUT (timestamp) | ACTION (cut / b-roll / zoom / caption / sound) | INSTRUCTION (max 14 words) | PRIORITY (must / should / optional)
+Then: THREE RULES for this edit (e.g. "remove every 'um' within 2 words of a number").
+Constraints: at least 15 rows, no instruction may be "make it better", timestamps must be sequential, total under 550 words.
+```
+
+### P116 — Chapter Re-Hook Structure
+```text
+Add a re-hook to every chapter of this script [SOURCE] so a viewer joining at any chapter stays.
+Output format (table):
+CHAPTER | START | RE-HOOK LINE (max 16 words) | WHAT THE VIEWER KNOWS NOW | WHAT THEY STILL LACK (the loop)
+Constraints: one re-hook per chapter, no re-hook may repeat the previous chapter's, no chapter opens with "in this chapter", last chapter's re-hook points to [CTA], output under 500 words.
+```
+
+### P117 — First-30-Seconds Density Check
+```text
+Measure the first 30 seconds of this script [SOURCE] for information density.
+Output format:
+PER-10-SECOND BLOCK — CONTENT (first 6 words) | NEW FACTS (count) | RESTATEMENTS (count) | VERDICT (keep / cut / add)
+TOTALS — facts, restatements, word count vs the ideal for [LENGTH]
+REWRITE — the full first 30 seconds, each 10-second block carrying at least 2 new facts
+Constraints: restatements may not exceed 1 in the rewrite, no background paragraph, rewrite 130 words or fewer, every fact must come from [SOURCE].
+```
+
+### P118 — Final 15 Seconds
+```text
+Rewrite the last 15 seconds of this script [SOURCE] so viewers reach the end and take [CTA].
+Output format:
+LAST LINE BEFORE — the current closing line, quoted
+NEW SEQUENCE: LINE 1 — one-sentence payoff (max 16 words) / LINE 2 — the transferable takeaway (max 16 words) / LINE 3 — [CTA] with a reason (max 16 words)
+WHY THIS WORKS — max 12 words
+Constraints: no "that's it for this video", no thank-you paragraph, no second CTA after the first, total 48 words or fewer, must land inside 15 seconds at normal pace.
+```
+
+### P119 — Timestamped Edit Pass
+```text
+Act as an editor marking a cut. Here is a rough cut description with timestamps: [SOURCE].
+Output format (table):
+TC IN | TC OUT | ACTION (hold / trim / cut / overlay) | REASON (max 10 words) | REPLACEMENT (if cut: what goes there, max 10 words)
+Constraints: strictly sequential timecodes, at least 12 rows, every trim must state its reason in retention terms (not taste), no row may say "tighten pacing", output under 550 words.
+```
+
+### P120 — Retention Scorecard and Rewrite
+```text
+Score this script [SOURCE] for a [LENGTH] video on [TOPIC].
+Output format:
+SCORES /10 on six axes: first 30 seconds, open loops, information density, pattern breaks, re-hooks, ending — each with one-line evidence (max 12 words)
+WEAKEST AXIS — name it
+REWRITE — only the section belonging to the weakest axis, before and after
+TOTAL SCORE before and after
+Constraints: no axis may score above 8 without quoted evidence from the script, rewrite no longer than the original, no advice-only rows, total under 650 words.
+```

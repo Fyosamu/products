@@ -1,0 +1,359 @@
+# AI Video, Reels & YouTube Script Prompt Vault — 150 Prompts
+
+150 prompts for hooks, short-form scripts, long-form outlines, faceless narration, titles, B-roll, repurposing, retention edits, CTAs and rewrites. Every prompt locks an output format so you get a shootable script instead of generic advice.
+Works in ChatGPT, Claude and Gemini; shot-list and thumbnail prompts double as briefs for Midjourney when noted.
+
+## How to use
+- Swap every [BRACKET] token for real detail; the more specific the input, the less rewriting you do afterwards.
+- Keep each "Output format" line intact — it is what stops the model from answering with generic prose.
+- Run prompts in order inside a section: hook first, then script, then shot list, then title and thumbnail text.
+- Paste real material into [SOURCE] (transcript, blog post, notes). Never let the model invent facts about your video.
+- If output runs long, re-run with "Hard cap: [N] words" added. Never just say "make it shorter".
+- Chain across sections: Section 2 script → Section 6 shot list → Section 9 CTA → Section 10 punch-up.
+- Save the outputs you like in one swipe file; the Section 10 rewrites are the fastest quality lift in this pack.
+
+## Fill-in variables
+- [TOPIC] — the exact subject of this video, e.g. "sourdough starter rescue"
+- [AUDIENCE] — who it is for, e.g. "renters with no balcony"
+- [PLATFORM] — YouTube, TikTok, Reels, Shorts, LinkedIn
+- [NICHE] — your broader category, e.g. "home coffee"
+- [PRODUCT] / [OFFER] — what you sell or promote, if anything
+- [PROOF] — one real number, result or credential
+- [SOURCE] — your raw material: transcript, blog post, script draft, notes
+- [CTA] — the one action you want next
+- [LENGTH] — target runtime, e.g. "30 seconds", "10 minutes"
+- [TONE] — dry, warm, urgent, clinical, playful
+- Any other [BRACKET] inside a prompt is self-explanatory; fill it with your own concrete detail.
+
+## Section 1 — Hook Formulas (3-Second Openers)
+
+### P001 — Pattern-Interrupt Cold Open
+```text
+You write the first 3 seconds of short-form video and you know the hook earns the next 30. Write 10 pattern-interrupt openers for a [PLATFORM] video about [TOPIC] aimed at [AUDIENCE].
+Rules: each hook is 8 words or fewer, starts mid-action or mid-thought, contains no greeting and no "hey guys", hooks 1-5 contain no question marks, and every hook leaves one gap the rest of the video must close.
+Output format (repeat per hook):
+HOOK 01 — the spoken line, max 8 words
+VISUAL — one line, what is on screen at frame 1
+DELIVERY — one line, how it is said (whisper, rushed, flat)
+Hard cap: 220 words total.
+```
+
+### P002 — Contrarian Flip
+```text
+Act as a retention editor who turns safe hooks into contrarian ones. Given [TOPIC] and the common belief [COMMON_BELIEF] that [AUDIENCE] holds, write 8 contrarian openers that flip it without lying or exaggerating.
+Each hook names the belief and the flip in one sentence of 14 words or fewer, and must be defensible if a viewer fact-checks it against [PROOF].
+Output format (one block per hook):
+HOOK — max 14 words
+BELIEF FLIPPED — max 8 words
+ON-SCREEN PROOF — cite [PROOF] or write "needs source"
+Hard constraint: ban list — controversial, shocking, nobody, everyone, truth. No exclamation marks.
+```
+
+### P003 — Numbered Stakes
+```text
+Write 8 numbered-stakes openers for a video about [TOPIC] for [AUDIENCE].
+Formula: name a countable cost (3 mistakes, 5 signs, 2 questions), then stop before revealing any of them.
+Rules: the number sits between 2 and 7, the hook is 12 words or fewer, and the stakes must be specific to [NICHE] — generic productivity stakes are rejected.
+Output format (one line per hook):
+HOOK (max 12 words) | STAKES PRE-SOLDED (max 6 words) | PAYOFF TIMESTAMP (e.g. 0:42)
+Hard cap: 180 words.
+```
+
+### P004 — Before/After Reveal
+```text
+You script transformation openers. For [TOPIC], create 7 hooks that promise a visible before/after change for [AUDIENCE].
+Each hook states the "after" state first, then implies the "before" was worse. No fake screenshots and no invented numbers — use [PROOF] wherever a figure is needed.
+Output format (repeat per hook):
+AFTER STATE — max 8 words, nouns and verbs only
+BEFORE STATE — max 8 words, nouns and verbs only
+FIRST FRAME — one line, what we see before anything is spoken
+Hard constraint: no adjectives in the AFTER/BEFORE lines, no exclamation marks, total output under 200 words.
+```
+
+### P005 — Seeded Curiosity Gap
+```text
+Write 9 curiosity-gap openers for [PLATFORM]: the viewer learns there is one specific, named thing they do not know about [TOPIC].
+Rules: each hook must state where the payoff lands ("at 0:38", "in the last 10 seconds") or the loop never closes and viewers leave. The word "secret" may appear once across all 9 hooks, not once each.
+Output format (one line per hook):
+HOOK (max 13 words) | PAYOFF PLACEMENT | WHAT IS ON SCREEN WHILE IT IS SPOKEN
+Hard cap: 200 words.
+```
+
+### P006 — Confession Opener
+```text
+You write confessional openers. Give 6 first-person hooks for a video where [CREATOR_NAME] admits a mistake about [TOPIC] that [AUDIENCE] is also making.
+Rules: 20 words or fewer, past tense, contains one concrete detail (a number, a place, or a tool name), and ends on the moment of realization — not the lesson.
+Output format (repeat per hook):
+CONFESSION — max 20 words
+PROOF DETAIL USED
+NEXT LINE OF THE VIDEO — one sentence
+Hard constraint: no exclamation marks, no self-praise words (proud, grateful, blessed), max 180 words total.
+```
+
+### P007 — Direct Viewer Callout
+```text
+Write 10 viewer-callout openers that begin "If you are..." or "You're the person who..." for [AUDIENCE] dealing with [PAIN].
+Rules: the callout must describe an observable situation — something you could point a camera at — never an emotion. Max 16 words each, at least 4 hooks must start with "you", no rhetorical questions anywhere.
+Output format (one line per hook):
+CALLOUT HOOK | THE SCENE IT IMPLIES (filmable, max 10 words)
+Hard cap: 190 words.
+```
+
+### P008 — Loss-Aversion Opener
+```text
+Act as a script doctor who uses loss aversion ethically. Write 8 openers showing what [AUDIENCE] loses every week or month by ignoring [PAIN] in [TOPIC].
+Rules: the loss must be countable (minutes, dollars, attempts), no scare imagery, no medical claims. If a figure is required, use [PROOF] or write "[SOURCE NEEDED]" instead of guessing.
+Output format (one line per hook):
+LOSS (countable, max 10 words) | TIMEFRAME | FOLLOW-UP BEAT (one line)
+Hard constraint: no adjectives, no exclamation marks, every hook max 15 words.
+```
+
+### P009 — Money and ROI Hook
+```text
+Write 7 money-led openers where the payoff of [TOPIC] is financial for [AUDIENCE].
+Rules: lead with the number, follow with the mechanism, and never promise an income level. Use [PROOF] for any figure; label any figure you cannot source as "[UNVERIFIED]".
+Output format (one line per hook):
+NUMBER | WHAT IT COSTS OR SAVES (max 9 words) | MECHANISM (max 7 words)
+Hard cap: 170 words. Ban list: easy, passive, guaranteed, hack. No exclamation marks.
+```
+
+### P010 — Speed Promise
+```text
+You write speed-promise openers. Create 8 hooks that promise a result inside a fixed, honest time window for [TOPIC] and [AUDIENCE].
+Rules: the window must be plausible for the format ("in 30 seconds", "by minute 4"), the hook must say what the viewer has when the window closes, and each is 15 words or fewer.
+Output format (one line per hook):
+PROMISE | WINDOW | DELIVERABLE THE VIEWER GETS | TIMER CUE ON SCREEN (yes/no)
+Hard constraint: ban list — instantly, immediately, overnight, fast-track. Hard cap: 180 words.
+```
+
+### P011 — Question Stack
+```text
+Write 6 openers built as a stack of exactly two short questions about [PAIN] that [AUDIENCE] has never answered out loud.
+Rules: the questions must be answerable inside the video and must not be yes/no; "What if I told you" is banned; both questions together are 18 words or fewer.
+Output format (repeat per hook):
+Q1
+Q2
+ANSWER LINE — one sentence, plus the timestamp where it lands
+Hard cap: 160 words. No adjectives in Q1 or Q2.
+```
+
+### P012 — Receipt and Data Hook
+```text
+You open videos with evidence. Write 8 data-first openers about [TOPIC], each built on one real statistic.
+Rules: pull the statistic from [PROOF] or [SOURCE]. If none exists, output "NO VERIFIED STAT — needs source" rather than inventing one. Always name the source in 4 words or fewer ("US Census, 2023").
+Output format (one line per hook):
+STAT (number + unit) | SOURCE (max 4 words) | HOOK (max 14 words)
+Hard cap: 180 words.
+```
+
+### P013 — POV Cold Open
+```text
+Write 6 POV cold opens where the camera is a specific person or object, for a video about [TOPIC].
+Rules: the first line establishes the POV in under 10 words, the second line stays in that POV, and there is no narration voice-over at all.
+Output format (repeat per hook):
+POV LINE — max 10 words
+SECOND LINE — max 14 words
+WHAT THE LENS SHOWS — one line
+Hard constraint: no exclamation marks, max 30 words per opener, hard cap 170 words total.
+```
+
+### P014 — Comment-Reply Opener
+```text
+Act as a creator answering a real comment. Given this comment: "[COMMENT]" and video topic [TOPIC], write 5 openers that reply to it directly.
+Rules: quote or paraphrase the comment inside the first 8 words, take a clear position in the second sentence, and never open with "great question".
+Output format (repeat per hook):
+REPLY HOOK — max 16 words
+POSITION — max 8 words, one side only
+WHERE IT PAYS OFF — timestamp
+Hard cap: 170 words. No exclamation marks.
+```
+
+### P015 — Cold-Open Result
+```text
+Write 7 openers that start at the outcome — the finished object, the result, the moment after — then rewind, for [TOPIC].
+Rules: the first 10 words describe only what is visible or audible right now, with no context and no explanation. The word "here's" is banned, and the first line takes no adjectives.
+Output format (repeat per hook):
+FRAME-1 LINE — max 10 words
+WHAT WE SEE — one line
+REWIND LINE — max 12 words
+Hard cap: 160 words.
+```
+
+## Section 2 — Short-Form Reels & TikTok Scripts (With Shot Lists)
+
+### P016 — 30-Second Educational Reel
+```text
+You are a short-form director. Write a complete 30-second educational script for [PLATFORM] on [TOPIC] for [AUDIENCE].
+Output format — use exactly these labels:
+HOOK — spoken, max 12 words, plus SHOT:
+BEAT 1 — SHOT: / SAY: / TEXT ON SCREEN: / DURATION:
+BEAT 2 — same four fields
+BEAT 3 — same four fields
+CTA — SHOT: / SAY: / DURATION:
+Constraints: 5 shots maximum, max 45 spoken words per beat, one idea only, and a "/" breath mark where every cut happens.
+```
+
+### P017 — 15-Second Listicle
+```text
+Write a 15-second, three-item listicle about [TOPIC] for [AUDIENCE] on [PLATFORM].
+Output format:
+HOOK — max 10 words / SHOT:
+ITEM 1 — SAY (max 12 words) / VISUAL / ON-SCREEN TEXT (max 6 words)
+ITEM 2 — same three fields
+ITEM 3 — same three fields
+LOOP LINE — the last 3 words repeat the first 3 words of the hook
+Constraints: 40 spoken words total, no intro, no outro, and each item must still work if a viewer only sees one of them.
+```
+
+### P018 — Talking Head With Cutaways
+```text
+You direct talking-head video. For [TOPIC] and [AUDIENCE], write a 45-second direct-to-camera script with 4 cutaways.
+Output format:
+0:00 HOOK — SAY: (max 14 words) — CUT TO:
+0:06 BEAT 1 — SAY: — CUTAWAY: (the b-roll that covers this line)
+0:18 BEAT 2 — SAY: — CUTAWAY:
+0:30 BEAT 3 — SAY: — HOLD ON FACE
+0:40 CTA — SAY: (max 16 words)
+Constraints: every cutaway must be filmable with a phone, "add relevant clip" placeholders are rejected, max 45 words per beat.
+```
+
+### P019 — UGC Product Demo
+```text
+Write a 30-second UGC-style demo for [PRODUCT] aimed at [AUDIENCE] who currently live with [PAIN]. This is one person showing a thing they already use, not an ad voice.
+Output format:
+SHOT 1 (0-3s) — HANDHELD CLOSE-UP: / SAY: (max 12 words)
+SHOT 2 (4-12s) — DEMO ACTION: / SAY:
+SHOT 3 (13-22s) — RESULT: / SAY: (must include [PROOF])
+SHOT 4 (23-30s) — HAND TO CAMERA: / SAY: / ON-SCREEN TEXT (max 6 words)
+Constraints: no superlatives, no exclamation marks, the product name appears twice at most, spoken total 65 words or fewer.
+```
+
+### P020 — 60-Second Story-Time
+```text
+You write story-time Reels. Turn this raw event into a 60-second spoken story for [PLATFORM]: [SOURCE] (two to four sentences of what actually happened).
+Output format:
+HOOK — max 12 words, must land inside the event rather than before it
+BEAT 1: SETUP — max 45 words / SHOT:
+BEAT 2: COMPLICATION — max 45 words / SHOT:
+BEAT 3: TURN — max 45 words / SHOT:
+BEAT 4: LANDING — max 45 words / SHOT:
+CTA — max 16 words
+Constraints: past tense, one scene per beat, at least two concrete details pulled from [SOURCE], and no moralising in the landing beat.
+```
+
+### P021 — Three-Mistakes Reel
+```text
+Write a 40-second "3 mistakes" script about [TOPIC] for [AUDIENCE].
+Output format:
+HOOK — max 14 words, must contain the count
+MISTAKE 1 — NAME (max 6 words) / WHAT IT LOOKS LIKE (max 20 words) / FIX IN ONE LINE / SHOT:
+MISTAKE 2 — same four fields
+MISTAKE 3 — same four fields
+CLOSE — max 16 words, points to [CTA]
+Constraints: 120 spoken words total, every mistake must be something the viewer does rather than an abstract state ("bad mindset" is rejected), no exclamation marks.
+```
+
+### P022 — Day-in-the-Life POV
+```text
+You script day-in-the-life POV video. Write a 45-second sequence for [AUDIENCE] following [CREATOR_NAME]'s workday around [TOPIC].
+Output format — 7 shots, one line each:
+TIME STAMP (e.g. 07:10) | POV FRAME (what the lens sees, max 10 words) | ONE SPOKEN LINE (max 14 words) | AUDIO (room tone / voice / music cue)
+Constraints: chronological order, every shot filmable with at most one location change, no greeting at the start, and the final shot carries [CTA].
+```
+
+### P023 — Text-on-Screen, No Voice
+```text
+Write a silent, text-on-screen script for [TOPIC] — music only, no voice-over — for [AUDIENCE] on [PLATFORM].
+Output format:
+FRAME 1 (0-1.5s) — TEXT (max 8 words) / VISUAL / MUSIC CUE:
+FRAME 2 (1.5-4s) — TEXT (max 8 words) / VISUAL:
+FRAME 3 to FRAME 6 — same pattern
+END FRAME — TEXT (max 8 words) / VISUAL:
+Constraints: 7 frames maximum, reading speed 3 words per second or slower, one continuous idea, no word repeats between frames except the end frame, no emoji.
+```
+
+### P024 — Voiceover Over B-Roll
+```text
+You write voiceover scripts laid over b-roll. Create a 35-second voiceover for [TOPIC] that will be cut against 8 b-roll clips for [AUDIENCE].
+Output format:
+VO LINE 1 (max 16 words) → B-ROLL: (each clip 6 words or fewer, and filmable)
+VO LINE 2 through VO LINE 6 — same pattern
+CTA LINE (max 16 words) → B-ROLL:
+Constraints: read aloud the VO must form one continuous paragraph, total 110 words or fewer, "in this video" is banned, and no two consecutive clips may show the same subject.
+```
+
+### P025 — Green-Screen Reaction
+```text
+Write a green-screen reaction script responding to [SOURCE] (a post, headline or screenshot) for [AUDIENCE].
+Output format:
+OPEN — max 12 words, states your take immediately
+READ-ALONE — quote max 12 words from [SOURCE], shown behind you
+YOUR READ — max 30 words on what they got right or wrong
+EVIDENCE — max 30 words, cite [PROOF]
+REVERSAL OR REFINEMENT — max 25 words
+CTA — max 15 words
+Constraints: no personal attacks, no adjectives aimed at the source, 130 spoken words or fewer, and every claim checkable against [SOURCE].
+```
+
+### P026 — Duet or Stitch Response
+```text
+Act as a creator answering [CREATOR_NAME]'s claim: "[CLAIM]", in a duet for [AUDIENCE] on [TOPIC].
+Output format:
+FIRST 3 SECONDS — max 10 words, states where you agree or disagree
+THEIR POINT, RESTATED FAIRLY — max 18 words
+WHY IT BREAKS FOR [AUDIENCE] — max 30 words, one concrete scenario
+WHAT WORKS INSTEAD — max 30 words, concrete steps
+RESPECTFUL CLOSE — max 14 words
+Constraints: steel-man before disagreeing, no adjectives about the other creator, no exclamation marks, 120 spoken words total.
+```
+
+### P027 — Before/After Reveal Reel
+```text
+Write a before/after reveal script for [TOPIC], where the change is [CHANGE] for [AUDIENCE].
+Output format:
+TEASE (0-3s) — SEE: (only the "after", half-framed) / SAY: (max 10 words)
+REWIND (3-8s) — SEE: (the "before") / SAY: (max 14 words)
+STEP 1 (8-16s) — SAY: (max 18 words) / SHOT:
+STEP 2 (16-24s) — SAY: (max 18 words) / SHOT:
+STEP 3 (24-35s) — SAY: (max 18 words) / SHOT:
+REVEAL (35-45s) — SEE: / SAY: (max 16 words, includes [PROOF])
+CTA — max 14 words
+Constraints: 110 spoken words total, no invented improvement claims, and the "before" must be the viewer's actual current state rather than a strawman.
+```
+
+### P028 — 60-Second Tutorial
+```text
+You write step-by-step tutorial scripts. Produce a 60-second tutorial for [AUDIENCE] who want to [GOAL] using [TOOL].
+Output format:
+HOOK — max 12 words, names the end state
+STEP 1 — ACTION (max 12 words) / ON-SCREEN: / DURATION (sec):
+STEP 2 through STEP 5 — same three fields
+DONE STATE — SAY: (max 14 words, includes [PROOF])
+CTA — max 14 words
+Constraints: every step starts with a verb, 130 spoken words total, no step may rely on a tool that is not named in the prompt, and each step must be checkable so the viewer knows it worked.
+```
+
+### P029 — Trend-Audio Adaptation
+```text
+Adapt a trend format to [TOPIC] for [AUDIENCE]. The audio runs "[AUDIO_CUE]" (describe the beat drop or format) and the visual gag is [GAG].
+Output format:
+SETUP LINE — max 12 words, shown before the beat
+BEAT-DROP FRAME — WHAT CHANGES ON SCREEN / TEXT (max 6 words)
+FRAME 3 — TEXT (max 8 words) / VISUAL:
+FRAME 4 — TEXT (max 8 words) / VISUAL:
+FRAME 5 — TEXT (max 8 words) / VISUAL:
+LOOP LINE — final frame ties back to frame 1
+Constraints: the video must still teach something about [TOPIC], total on-screen text 45 words or fewer, no hashtags inside frames, and it must read with the sound off.
+```
+
+### P030 — Testimonial From a Customer Quote
+```text
+You turn customer proof into video. Using this quote: "[QUOTE]" from [CUSTOMER_NAME] about [PRODUCT], and their result [PROOF], write a 30-second testimonial Reel.
+Output format:
+FRAME 1 — THE PROBLEM THEY HAD (max 12 words, their language, not marketing language)
+FRAME 2 — QUOTE ON SCREEN (verbatim, max 20 words) + VOICE:
+FRAME 3 — WHAT CHANGED (max 14 words) + VISUAL:
+FRAME 4 — RESULT ([PROOF]) + VISUAL:
+CTA — max 14 words
+Constraints: no invented quotes and no superlatives; if the quote exceeds 20 words, select the most specific sentence and state which words you dropped. Spoken total 70 words or fewer.
+```

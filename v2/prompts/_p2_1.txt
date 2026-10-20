@@ -1,0 +1,271 @@
+# Cold Outreach & Sales Prompt Vault — 120 Prompts
+
+120 prompts for first touches, follow-ups, LinkedIn, cold calls, proposals, pricing talks, lost-deal autopsies and reviving dead leads. Every prompt carries the same four personalization slots plus one hard constraint, so the output stays short enough that a human will actually answer it.
+Built for ChatGPT, Claude and Gemini; paste CRM notes or a call transcript wherever a prompt asks for [SOURCE].
+
+## How to use
+- Fill [COMPANY], [TRIGGER_EVENT], [PAIN] and [PROOF] with checkable detail — a wrong trigger event is worse than no trigger event.
+- Keep the hard constraint line when you re-run; it is what keeps replies possible (short, one idea, no adjectives).
+- One idea per touch. Never stack two asks in a single email or DM.
+- Ask for the smallest next step: 15 minutes, a yes/no, or one number — never "a conversation about exploring synergies".
+- Run the sequence prompt first, then sharpen individual touches with the Section 1 or Section 8 prompts.
+- Never invent [PROOF]. If you have no number yet, write "[PROOF: no metric yet]" and go find one before sending.
+- Read every draft aloud once; if it sounds like a machine wrote it, re-run with "sound like one human writing to another, plainly".
+
+## Fill-in variables
+- [COMPANY] — the prospect's company
+- [TRIGGER_EVENT] — the observable change: funding, hire, launch, outage, regulation, job post
+- [PAIN] — the problem you remove, phrased in their language
+- [PROOF] — one real result, metric or credential
+- [YOUR_COMPANY] / [OFFER] — what you sell and how it is packaged
+- [NAME] / [ROLE] — recipient name and job title
+- [PROOF_SOURCE] — where the proof comes from: case study, review, client logo
+- [DAY] / [DATE] — scheduling slots for sequences
+- [COMPETITOR] — who they use today, if known
+- [PRICE] — your number, when it is relevant
+- Any other [BRACKET] inside a prompt is self-explanatory; fill it with real detail.
+
+## Section 1 — Cold Email First Touch
+
+### P001 — Problem-First First Touch
+```text
+You are an SDR who writes first touches that get replies, not opens. Write a cold email to [NAME], [ROLE] at [COMPANY], referencing the [TRIGGER_EVENT] and the [PAIN] it likely created, then offer one way you remove it, backed by [PROOF].
+Structure: subject (max 6 words) / first line (no greeting, no "I hope you're well") / problem line / proof line / one-question ask.
+Hard constraint: maximum 90 words in the body, no exclamation marks, one question mark in the whole email.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P002 — Trigger-Event First Touch
+```text
+Write a cold email that opens on the [TRIGGER_EVENT] at [COMPANY] and connects it to the [PAIN] your [OFFER] removes for teams like theirs. Include [PROOF] as a single number with its source in brackets.
+Format: SUBJECT (max 6 words) / BODY with paragraphs of one line each / ASK as a standalone final line.
+Hard constraint: maximum 120 words, no adjectives about the prospect's company, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P003 — No-Adjectives First Touch
+```text
+Act as an editor who removes everything that sounds like sales. Write a first-touch email to [NAME] at [COMPANY] about [PAIN], referencing the [TRIGGER_EVENT] and supported by [PROOF].
+Hard constraint: zero adjectives anywhere in the email. Nouns, verbs and numbers only. Maximum 90 words. Subject line max 5 words.
+Format: SUBJECT / FIRST LINE / PROOF LINE / ASK (one sentence, no question mark — a statement such as "Tell me Tuesday or Thursday and I will send times").
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P004 — Peer Proof First Touch
+```text
+Write a cold first-touch email where the hero is [PROOF]: a result you delivered for a company like [COMPANY]. Open with the [TRIGGER_EVENT], name the [PAIN] in one sentence, then show the number and how long it took.
+Format: SUBJECT (max 6 words) / HOOK LINE / PAIN LINE / PROOF LINE (number + timeframe + source) / ONE-SENTENCE ASK.
+Hard constraint: maximum 100 words, no superlatives (best, leading, world-class), no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P005 — Question-First First Touch
+```text
+You write emails that open with the only question worth asking. Draft a first touch to [ROLE] at [COMPANY] that starts with one specific question about [PAIN], implied by the [TRIGGER_EVENT], and follows with a 25-word answer to why you are asking, plus [PROOF].
+Format: SUBJECT (max 6 words) / QUESTION (line one) / WHY I AM ASKING (max 25 words) / PROOF / ASK.
+Hard constraint: maximum 70 words in the body, exactly one question mark, no adjectives.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P006 — Problem-Agitate-Solve
+```text
+Write a first-touch email using a problem-agitate-solve spine: name the [PAIN] at [COMPANY] (visible through [TRIGGER_EVENT]), show what it costs them in a concrete line, then resolve it with [PROOF] and your [OFFER] in one sentence.
+Format: SUBJECT (max 6 words) / PROBLEM / COST / RESOLUTION / ASK.
+Hard constraint: maximum 110 words, no exclamation marks, no more than three sentences before the proof appears.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P007 — Short CEO-to-CEO Note
+```text
+You are writing on behalf of a founder to a peer. Draft a first-touch email from [SENDER_NAME] to the CEO of [COMPANY] about the [TRIGGER_EVENT] and the [PAIN] it creates, with [PROOF] in one clause.
+Format: SUBJECT (max 5 words) / 4 lines total / signature line only.
+Hard constraint: maximum 60 words, no bullet points, no adjectives, one question mark at most.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P008 — Referral and Name-Drop Touch
+```text
+Write a first-touch email that opens with a mutual connection or a warm signal: "[MUTUAL]" suggested I write regarding [COMPANY] and the [PAIN] tied to [TRIGGER_EVENT]. Back the claim with [PROOF].
+Format: SUBJECT (max 6 words) / NAME-DROP LINE / CONTEXT (max 20 words) / PROOF / ASK.
+Hard constraint: maximum 90 words, the name-drop must be the first sentence, no exclamation marks, and if [MUTUAL] is empty write a version that removes the reference cleanly.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P009 — Observation-First Touch
+```text
+Act as someone who studies companies before writing to them. Draft a first-touch email to [COMPANY] that opens with one specific, verifiable observation (the [TRIGGER_EVENT]), links it to [PAIN], and closes with [PROOF] plus a single ask.
+Format: SUBJECT (max 6 words) / OBSERVATION / IMPLICATION / PROOF / ASK.
+Hard constraint: maximum 100 words, the observation must be checkable by the recipient, no flattery adjectives, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P010 — Research-Heavy First Touch
+```text
+Write a first-touch email after this research note: [SOURCE] (job posts, press release, product page, podcast quote). Use it to infer one [PAIN] at [COMPANY], connect it to [TRIGGER_EVENT], and support your offer with [PROOF].
+Format: SUBJECT (max 6 words) / TWO-LINE RESEARCH OBSERVATION / PAIN LINK (one sentence) / PROOF / ASK.
+Hard constraint: maximum 120 words, every claim traceable to [SOURCE], no invented details, no adjectives, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P011 — Direct Offer First Touch
+```text
+You write no-fluff offer emails. Draft a first touch that states what you sell, who it is for, the price or price range, the [PAIN] it removes at [COMPANY] after [TRIGGER_EVENT], and [PROOF] — then asks one yes/no question.
+Format: SUBJECT (max 6 words) / WHAT IT IS (one sentence) / WHO IT IS FOR / PROOF / PRICE / YES-NO ASK.
+Hard constraint: maximum 80 words, no exclamation marks, exactly one question mark.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P012 — Loom/Video Teaser Touch
+```text
+Write a first-touch email that teases a 60-second video you recorded for [COMPANY]: describe in one line what the video shows about [PAIN] after [TRIGGER_EVENT], then give [PROOF] as the reason to click.
+Format: SUBJECT (max 6 words, no "video" in it) / ONE-LINE TEASE / PROOF / LINK LINE (write "LINK: [VIDEO_URL]") / ASK.
+Hard constraint: maximum 70 words, no adjectives, no exclamation marks, and the video description must be a scene, not a claim.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P013 — Three-Bullet Pain Checklist
+```text
+Draft a first-touch email to [ROLE] at [COMPANY] that lists exactly three observable symptoms of [PAIN] (each one bullet of max 9 words), ties them to [TRIGGER_EVENT], then offers proof in [PROOF].
+Format: SUBJECT (max 6 words) / ONE-LINE OPENER / 3 BULLETS / PROOF LINE / ASK.
+Hard constraint: maximum 100 words total including bullets, no adjectives in the bullets, one question mark maximum, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P014 — Pain-to-ROI First Touch
+```text
+You write emails that do the math. Draft a first-touch email that turns [PAIN] at [COMPANY] (following the [TRIGGER_EVENT]) into a rough monthly cost using only the numbers in [SOURCE], then contrasts it with [PROOF].
+Format: SUBJECT (max 6 words) / COST LINE (formula shown as "N x M = $X") / PROOF LINE / ASK.
+Hard constraint: maximum 110 words, no adjectives, no exclamation marks, and any figure not given in [SOURCE] must be labelled "[ASSUMPTION]".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P015 — First-Line Bank for One Account
+```text
+Act as a copywriter building a swipe file for one account. Write 20 different first lines for cold emails to [COMPANY], each tied to a different angle on [TRIGGER_EVENT], [PAIN] or [PROOF].
+Format: numbered list of 20 lines, each on its own line, each ending with the angle used in brackets, e.g. "01. <line> (TRIGGER)".
+Hard constraint: every line max 12 words, no greetings, "I hope this finds you well" is banned, no two lines may share their first three words, total output under 300 words.
+Personalization slots required: every line must reference [COMPANY], and the set as a whole must cover [TRIGGER_EVENT], [PAIN] and [PROOF].
+```
+
+## Section 2 — Follow-Up Sequences (2nd, 3rd, 4th Touch and Breakup)
+
+### P016 — Second Touch: Value Add
+```text
+Write the second touch in a sequence to [NAME] at [COMPANY], sent [DAY] after a first email that mentioned [TRIGGER_EVENT], [PAIN] and [PROOF].
+Rules: "just checking in" and "circling back" are banned. The second touch must add one new thing: a stat, a question, a link, or a short observation from [SOURCE].
+Format: SUBJECT (max 6 words) / NEW VALUE (max 25 words) / ONE-LINE RECAP / ASK.
+Hard constraint: maximum 80 words, no exclamation marks, exactly zero questions in the recap line.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P017 — Third Touch: New Angle
+```text
+Draft the third touch to [NAME] at [COMPANY] using a completely different angle than the first two, which already used [TRIGGER_EVENT] and [PROOF]. Approach the same [PAIN] from the cost, the risk, or the team impact — pick one and say which.
+Format: SUBJECT (max 6 words) / ANGLE LABEL (one word: COST, RISK or TEAM) / BODY (short paragraphs) / ASK.
+Hard constraint: maximum 90 words, no adjectives, no exclamation marks, and the word "follow-up" must not appear.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P018 — Fourth Touch: Proof Stack
+```text
+Write the fourth touch to [NAME] at [COMPANY] as a proof stack: [PROOF], plus one comparable company result, plus one line from [PROOF_SOURCE]. Tie it to [PAIN] and the reason you first wrote (the [TRIGGER_EVENT]).
+Format: SUBJECT (max 6 words) / PROOF 1 (number + timeframe) / PROOF 2 (peer example, max 16 words) / RECAP (one line) / SOFT ASK.
+Hard constraint: maximum 100 words, no adjectives, no exclamation marks, no question marks — close with a statement such as "Say the word and I will send the two case studies."
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P019 — Breakup Email
+```text
+You write breakup emails that stay dignified. Draft the final touch to [NAME] at [COMPANY]: state that you are closing the loop, summarise in one line why you wrote (the [TRIGGER_EVENT], the [PAIN], the [PROOF]), and leave one low-pressure door open.
+Format: SUBJECT (max 6 words, no "last chance") / 4 lines total / SIGN-OFF.
+Hard constraint: maximum 55 words, no guilt-tripping, no exclamation marks, no adjectives, and the word "since" may not open any line.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P020 — Five-Touch Sequence Map
+```text
+Act as an outreach strategist. Build a 5-touch sequence for [COMPANY] around [TRIGGER_EVENT], [PAIN] and [PROOF], scheduled on Day 0, 2, 5, 9, 14.
+Format: markdown table with columns TOUCH | DAY | CHANNEL (email/LinkedIn/phone) | OBJECTIVE (max 6 words) | SUBJECT OR OPENER (max 6 words) | HARD CONSTRAINT (e.g. "max 70 words", "no adjectives").
+Hard constraint: no two consecutive touches may use the same objective or the same channel, total output under 450 words, and each touch must carry a distinct constraint.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF] must each appear in at least one row's objective or opener.
+```
+
+### P021 — Follow-Up After an Event
+```text
+Write a second touch to [NAME] at [COMPANY] after you met briefly at [EVENT], where you mentioned [PAIN] and [PROOF]. The first email already referenced the [TRIGGER_EVENT].
+Format: SUBJECT (max 6 words) / RECALL LINE (max 14 words, what you both said) / RELEVANCE (max 25 words) / ASK.
+Hard constraint: maximum 80 words, no exclamation marks, no "great to meet you", no adjectives about the event.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P022 — Follow-Up to a Forwarded Thread
+```text
+Draft a touch that re-asks after your email was forwarded (or ignored) inside [COMPANY]. Reference [TRIGGER_EVENT], restate [PAIN] in one line for the new reader, and include [PROOF].
+Format: SUBJECT (max 6 words, restated for a new reader) / RE-ORIENT LINE (who you are, max 12 words) / PAIN LINE / PROOF / ASK.
+Hard constraint: maximum 90 words, no adjectives, no exclamation marks, must be readable by someone who never saw the first email.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P023 — Asset-Led Follow-Up
+```text
+Write a follow-up whose only payload is one useful asset: a checklist, template or benchmark relevant to [PAIN] at [COMPANY] after [TRIGGER_EVENT]. Mention [PROOF] in one clause as the reason it is credible.
+Format: SUBJECT (max 6 words) / WHAT THE ATTACHMENT IS (one line) / WHO IT IS FOR (one line) / NO-ASK CLOSE (one line).
+Hard constraint: maximum 70 words, no call-to-action verb in the close (no "book", "grab", "unlock"), no exclamation marks, no adjectives.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P024 — Metric-Question Follow-Up
+```text
+Draft a follow-up to [NAME] at [COMPANY] that asks one diagnostic question about [PAIN]: which metric they watch for it. Use [TRIGGER_EVENT] as the reason for asking and [PROOF] as a single-line credential.
+Format: SUBJECT (max 6 words) / CONTEXT (max 20 words) / THE QUESTION (one line) / OPTIONAL PROOF (max 14 words).
+Hard constraint: maximum 70 words, exactly one question mark, no adjectives, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P025 — Mutual-Connection Follow-Up
+```text
+Write a follow-up to [NAME] at [COMPANY] that leans on a shared signal: [MUTUAL] or a shared group, event or employer, tied to the [TRIGGER_EVENT]. Include one line on [PAIN] and one on [PROOF].
+Format: SUBJECT (max 6 words) / SHARED-SIGNAL LINE (max 14 words) / CONTEXT / PROOF / ASK.
+Hard constraint: maximum 90 words, the shared signal must appear in the first two lines, no exclamation marks, no adjectives about [MUTUAL].
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P026 — Website-Visit Follow-Up
+```text
+Draft a follow-up to [ROLE] at [COMPANY] triggered by an observed visit or activity on your site, combined with the [TRIGGER_EVENT]. Reference [PAIN] in one line and [PROOF] in one line; do not claim to know more than [SOURCE] actually shows.
+Format: SUBJECT (max 6 words) / OBSERVATION (one line) / RELEVANCE (one line) / PROOF / ASK.
+Hard constraint: maximum 80 words, no creepy phrasing (no "I noticed you were on our pricing page"), no adjectives, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P027 — Spoken-Tone Follow-Up
+```text
+Write a follow-up to [NAME] at [COMPANY] as if it were dictated into a phone: short lines, contractions, one thought per line, nothing a person would not actually say aloud about [PAIN], [TRIGGER_EVENT] and [PROOF].
+Format: SUBJECT (max 6 words) / BODY as 5 short lines, each max 10 words / SIGN-OFF.
+Hard constraint: maximum 70 words, no semicolons, no adjectives, no exclamation marks, no corporate vocabulary (leverage, synergy, solutions, align).
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P028 — Real-Deadline Follow-Up
+```text
+Draft a follow-up to [NAME] at [COMPANY] that names one real deadline (capacity, pricing date, cohort start, regulation) and links it to [PAIN] and [TRIGGER_EVENT], with [PROOF] as support.
+Format: SUBJECT (max 6 words) / DEADLINE LINE (date + what changes) / RELEVANCE / PROOF / ASK.
+Hard constraint: maximum 70 words, no fake scarcity — if [DEADLINE] is not real, write "NO REAL DEADLINE — build one or drop this touch" instead of inventing one. No exclamation marks, no adjectives.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P029 — Breakup With a Leave-Behind
+```text
+Write a breakup email to [NAME] at [COMPANY] that attaches one leave-behind (case study or one-pager) covering [PAIN] and [PROOF], and closes the loop on the [TRIGGER_EVENT] that started the sequence.
+Format: SUBJECT (max 6 words) / STATEMENT OF CLOSING (one line) / WHAT THE ATTACHMENT COVERS (max 14 words) / DOOR LEFT OPEN (one line, statement not question).
+Hard constraint: maximum 65 words, no guilt, no exclamation marks, no adjectives, and the email must still work if the recipient never replies.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P030 — Sequence Tightening Pass
+```text
+Act as an editor who cuts outreach by half. Here is my current sequence: [SOURCE]. Rewrite all three touches to [COMPANY] so each one earns its send, keeping the [TRIGGER_EVENT], the [PAIN] and [PROOF] but cutting repetition.
+Output format: for each touch give BEFORE WORD COUNT / AFTER WORD COUNT / WHAT WAS CUT (max 8 words) / REWRITE.
+Hard constraint: each rewritten touch max 90 words, no touch may repeat an idea already made in an earlier touch, no adjectives, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```

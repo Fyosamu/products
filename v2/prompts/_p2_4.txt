@@ -1,0 +1,320 @@
+## Section 7 — Proposal Autopsy (Why a Deal Died)
+
+### P091 — Six-Factor Autopsy Scorecard
+```text
+Act as a sales manager running a lost-deal review. Here is what happened: [SOURCE]. Deal: [COMPANY], started by [TRIGGER_EVENT], solving [PAIN], priced at [PRICE], proof presented: [PROOF].
+Output format (table):
+FACTOR | SCORE /5 | EVIDENCE (quote from [SOURCE], max 12 words) | WHAT A 5 LOOKED LIKE (max 10 words)
+Factors: discovery, decision-maker access, value framing, proof, price, urgency.
+Then: VERDICT — the one factor that lost it (max 12 words).
+Hard constraint: no score above 5, no factor may be scored without quoted evidence, no adjectives, output under 450 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P092 — Feedback Request Email
+```text
+Write a 5-question feedback email after [COMPANY] chose someone else or went quiet following the [TRIGGER_EVENT].
+Format:
+SUBJECT (max 6 words) / OPENING — no hard feelings, one line / 5 QUESTIONS — numbered, each answerable in one line, none answerable yes/no / CLOSE — a genuine thank-you without asking to be reconsidered
+Hard constraint: 90 words maximum in the body, no adjectives, one question mark per line only, no "we would still love to work with you", and question 1 must ask what would have made the decision easier.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P093 — Loss-Reason Classifier
+```text
+Classify why this deal died. Evidence: [SOURCE]. Deal context: [COMPANY], [TRIGGER_EVENT], [PAIN], [PRICE], [PROOF].
+Output format:
+CANDIDATE REASONS — from this fixed list: no pain / no access / no proof / price / competitor / timing / no decision / champion left / we were slow
+PICK ONE — primary reason + the line in [SOURCE] that proves it (quote, max 14 words)
+RULED OUT — 2 reasons with one-line evidence each (max 10 words)
+Confidence: high / medium / low, with what evidence would raise it
+Hard constraint: exactly one primary reason, no reason may be picked without a quote, no adjectives, no exclamation marks, output under 400 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P094 — Price vs Value Diagnosis
+```text
+Diagnose whether this deal was lost on price or on value. Evidence: [SOURCE], with [PRICE] quoted, [PROOF] presented, [PAIN] identified, [COMPANY] context.
+Output format:
+TEST 1 — would a 20% cut have won it? YES/NO + evidence (max 14 words)
+TEST 2 — did the buyer ever name price as the blocker? quote or "never"
+TEST 3 — did [PROOF] match the size of [PAIN]? YES/NO + why (max 14 words)
+VERDICT — price / value / unprovable (one line)
+FIX — the one thing to change before the next similar deal (max 18 words)
+Hard constraint: verdict must follow the three tests, no adjectives, no wishful reading of silence, output under 350 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P095 — Urgency and Timeline Failure Analysis
+```text
+You review deals that died of "no decision". Evidence: [SOURCE]. Context: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+Output format:
+WHAT CREATED URGENCY — what you assumed vs what you could prove (two lines)
+THE MISSING DEADLINE — what real event should have set one (max 16 words)
+WHERE IT SLIPPED — timestamp or message where momentum stopped (quote, max 14 words)
+REWRITE — the sentence you should have said at that moment (max 20 words, must contain a real date)
+Hard constraint: no invented deadlines, no adjectives, no exclamation marks, output under 350 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P096 — Competitor Reconstruction
+```text
+Reconstruct what the winning competitor likely said, based only on [SOURCE] and the fact that [COMPANY] chose them after [TRIGGER_EVENT].
+Output format:
+LIKELY PITCH — 4 lines, what they probably promised (max 14 words each), labelled "RECONSTRUCTION"
+WHY IT WON — mapped to [PAIN] (one line per line of their pitch)
+OUR GAP — what we said or failed to say (max 14 words)
+WHAT TO ADD — one line to our pitch for the next deal (max 18 words)
+Hard constraint: everything about the competitor must be labelled RECONSTRUCTION, no disparaging claims, no adjectives, output under 400 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P097 — Stakeholder Map Failure
+```text
+Map the stakeholders in this lost deal and show who we never spoke to. Evidence: [SOURCE]. Context: [COMPANY], [PAIN].
+Output format (table):
+ROLE | NAME (or "[UNKNOWN]") | INFLUENCE (H/M/L) | SPOKEN TO? (yes/no) | WHAT THEY NEEDED (max 10 words) | HOW WE MISSED THEM (max 10 words)
+Then: THE MISSING SEAT — the one role whose absence likely lost it (max 12 words)
+Hard constraint: at least 5 roles, no invented names, "never spoken to" must be evidenced from [SOURCE], no adjectives, output under 450 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P098 — Proposal Readability Autopsy
+```text
+Score the proposal itself for scan-ability: [SOURCE] (the document we sent to [COMPANY]).
+Output format:
+10-SECOND TEST — what a busy reader learns in 10 seconds (max 18 words)
+SCAN PASS — section by section: SECTION | FIRST LINE | VERDICT (clear / buried / missing)
+FIXES — 6 bullets: WHAT TO MOVE UP (max 10 words) / WHY (max 10 words)
+Hard constraint: every section must appear, no fix may add words (reorder and cut only), no adjectives, output under 400 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P099 — Silence Analysis (Last Three Touches)
+```text
+Here are my last three touches to [COMPANY]: [SOURCE]. Analyse what killed the thread.
+Output format (table):
+TOUCH | DATE | MY WORDS (quote, max 10 words) | THE ASK | THEIR RESPONSE (or "none") | WHAT THE SILENCE MEANS (max 12 words)
+Then: THE MOMENT — the message after which they stopped replying (identified)
+REWRITE — a response to that message, 70 words maximum, referencing [TRIGGER_EVENT] and [PROOF]
+Hard constraint: no blaming the prospect, no "they were just busy" without evidence, no adjectives, no exclamation marks, output under 450 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P100 — Win/Loss Pattern Report
+```text
+You analyse a quarter. Here are 10 deals with outcome and notes: [SOURCE]. Find the pattern.
+Output format:
+SUMMARY — won: n, lost: n, no-decision: n
+PATTERN TABLE — SIGNAL | HOW MANY DEALS SHOWED IT | OUTCOME CORRELATION (won/lost) | CONFIDENCE
+STRONGEST PATTERN — one line, evidence-based
+ACTION — one process change with an owner and a deadline column (max 16 words per row, 3 rows)
+Hard constraint: no correlation may be presented as cause, sample size always stated, no adjectives, output under 500 words.
+Personalization slots required: reference [COMPANY] as the example case and use [TRIGGER_EVENT], [PAIN], [PROOF] in the worked row.
+```
+
+### P101 — Lost After a Verbal Yes
+```text
+The deal was verbally agreed and then died. Evidence: [SOURCE], including the [TRIGGER_EVENT] and the last three messages with [COMPANY].
+Output format:
+THE YES — quote it (max 14 words) + date
+THE GAP — what was never put in writing (max 14 words)
+THE KILLER MOMENT — the message or silence after the yes (quote + interpretation, max 14 words)
+REWRITE — the confirmation email you should have sent within 24 hours (under 90 words, includes [PAIN], [PROOF] and a signature date)
+Hard constraint: no adjectives, no blame, no exclamation marks, output under 400 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P102 — Self-Blame vs Market-Blame Split
+```text
+Split this loss into what we controlled and what we did not. Evidence: [SOURCE]. Deal: [COMPANY], [PAIN], [PRICE], [PROOF].
+Output format:
+OURS (controllable) — 4 items: WHAT (max 10 words) | EVIDENCE (quote) | FIX (max 14 words)
+THEIRS (market) — 3 items: WHAT (max 10 words) | EVIDENCE | WHETHER IT WAS AVOIDABLE (yes/no + why, max 10 words)
+NET — controllable share as a percentage, with the reasoning (max 14 words)
+Hard constraint: no item without quoted evidence, no self-flagellation, no excuses, no adjectives, output under 450 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P103 — One-Page Team Postmortem
+```text
+Produce a one-page postmortem the team will actually read, for the lost deal with [COMPANY] after [TRIGGER_EVENT].
+Format:
+DEAL IN ONE LINE — what we sold, to whom, for how much ([PRICE]), outcome
+WHAT WE KNEW — 3 bullets on [PAIN] and [PROOF]
+WHAT WE GOT WRONG — 3 bullets, each with a quote from [SOURCE]
+COST — hours / fees / opportunity cost, numbers only
+ONE CHANGE — the single process change, owner + date
+Hard constraint: one page, 350 words maximum, no adjectives, no exclamation marks, no section longer than 40 words, readable in 60 seconds.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P104 — Five Fixes With Owners
+```text
+Turn this autopsy into five preventive actions. Evidence: [SOURCE], deal [COMPANY], loss reason [REASON], [PAIN] and [PROOF] in play.
+Output format (table):
+# | FIX (max 14 words) | WHEN IT APPLIES (deal stage) | OWNER (role) | DONE WHEN (measurable) | DEADLINE (date)
+Constraints: exactly 5 fixes, every fix must be testable ("done when" must be checkable), no fix may be "follow up more", no adjectives, total under 400 words, at least one fix must address [TRIGGER_EVENT]-driven deals specifically.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P105 — Rewrite the Losing Section
+```text
+Rewrite the section that lost this deal. Here it is: [SOURCE], sent to [COMPANY] about [PAIN] after [TRIGGER_EVENT], with [PROOF] available but unused.
+Output format:
+SECTION NAME
+BEFORE — quoted, max 60 words
+DIAGNOSIS — why it lost the reader (max 12 words)
+AFTER — full rewrite, same length or shorter
+WHY IT CONVERTS — 3 bullets, max 10 words each
+Hard constraint: no adjectives added, no claims beyond the evidence in [SOURCE], rewrite 100% of the section (not an excerpt), output under 500 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+## Section 8 — Re-Engagement of Dead Leads
+
+### P106 — 90-Day Dormant Revival
+```text
+Write a revival email to [NAME] at [COMPANY] after 90 days of silence, using a fresh [TRIGGER_EVENT] and the original [PAIN], with [PROOF] as one clause.
+Format:
+SUBJECT (max 6 words) / WHAT CHANGED (max 30 words) / WHY IT MATTERS TO THEM NOW (max 25 words) / SOFT ASK (max 16 words)
+Hard constraint: 100 words maximum, no "it's been a while", no adjectives, one question mark maximum, no exclamation marks, and the email must be true if they never replied to the original sequence.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P107 — Permission Check-In
+```text
+Write a low-pressure check-in to [NAME] at [COMPANY] that asks whether this is still their problem, not for a meeting.
+Format:
+SUBJECT (max 6 words) / CONTEXT (one line: who you are + why you wrote, max 18 words) / THE QUESTION (is [PAIN] still on your list?) / OPTION LINE (keep talking, or I close the file — stated as a choice)
+Hard constraint: 70 words maximum, exactly one question mark, no adjectives, no exclamation marks, no "just checking in" or "circling back", no meeting request.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P108 — Change-Based Reengagement
+```text
+Something changed in your offer: [CHANGE]. Write an email to dormant leads at [COMPANY] that leads with the change, not the apology, connecting it to [TRIGGER_EVENT] and [PAIN], with [PROOF].
+Format:
+SUBJECT (max 6 words) / THE CHANGE (one line, concrete) / WHAT IT FIXES FOR THEM (max 24 words) / PROOF (max 16 words) / ASK (one line)
+Hard constraint: 90 words maximum, no adjectives, no exclamation marks, no "we've been listening" boilerplate, and the change must be specific enough to verify.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P109 — Content-Led Reactivation
+```text
+Write a reactivation email whose only payload is one useful item for [COMPANY]: a checklist, benchmark or teardown relevant to [PAIN] and the [TRIGGER_EVENT]. Cite [PROOF] in one clause as why it is trustworthy.
+Format:
+SUBJECT (max 6 words) / WHAT IT IS (one line) / WHAT THEY WILL FIND IN IT (2 bullets, max 10 words each) / NO-ASK CLOSE (statement, not a question)
+Hard constraint: 80 words maximum, no call-to-action verb in the close (no book, grab, download, unlock), no adjectives, no exclamation marks, no link besides the asset itself.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P110 — Three-Question Reactivation Survey
+```text
+Write a short reactivation survey to [NAME] at [COMPANY] to find out why the deal stalled, framed by [TRIGGER_EVENT] and [PAIN].
+Format:
+SUBJECT (max 6 words) / ONE-LINE WHY (max 16 words) / Q1 (multiple choice: timing, budget, priority, chose someone else, other) / Q2 (what would have made it easier, max 14 words) / Q3 (may I check back in [MONTH]?) / THANK-YOU line (max 12 words)
+Hard constraint: 80 words maximum total, no adjectives, exactly three questions, Q1 and Q3 must be answerable in one tap/word, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P111 — Down-Sell a Dead Lead
+```text
+The full offer died at [COMPANY]. Write an email offering a smaller first step against the same [PAIN], triggered by the [TRIGGER_EVENT], priced at [ENTRY_PRICE], with [PROOF].
+Format:
+SUBJECT (max 6 words) / ACKNOWLEDGE (one line, no apology) / THE SMALLER STEP (scope, price, time — one line each) / PROOF (max 14 words) / ASK (one line)
+Hard constraint: 100 words maximum, no adjectives, no exclamation marks, the smaller step must be genuinely smaller (state what was removed), no discount language.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P112 — Comparable-Win Reengagement
+```text
+Write a reactivation email that leads with a result you delivered for a company comparable to [COMPANY]: [PROOF]. Anchor it to their [TRIGGER_EVENT] and the [PAIN] from the original thread.
+Format:
+SUBJECT (max 6 words) / THE RESULT (number + timeframe + who, max 24 words) / THE SIMILARITY (one line, why it maps to them) / WHAT CHANGED SINCE (max 18 words) / ASK (one line)
+Hard constraint: 100 words maximum, no adjectives, no exclamation marks, the comparison must be honest (state the one way they differ in a parenthetical), no client name unless [PROOF_SOURCE] permits it.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P113 — Reactivate a Lead Who Chose a Competitor
+```text
+Write an email to [NAME] at [COMPANY] who went with [COMPETITOR] [N] months ago, now showing a new [TRIGGER_EVENT] and the same old [PAIN].
+Format:
+SUBJECT (max 6 words) / OPEN (no mention of winning them back, one line) / OBSERVATION (the new signal, max 18 words) / THE ONE THING [COMPETITOR] DOES NOT DO (factual, max 18 words) / LOW-FRICTION ASK (max 14 words)
+Hard constraint: 90 words maximum, no disparaging [COMPETITOR] — no negative adjective at all, no exclamation marks, must work even if they reply "we're happy with them".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P114 — Market-Change Newsletter Note
+```text
+Write a reactivation email that frames your return around a real market change: [MARKET_CHANGE], relevant to [COMPANY] because of [TRIGGER_EVENT] and [PAIN]. Include [PROOF] in one clause.
+Format:
+SUBJECT (max 6 words) / THE CHANGE (fact + date, max 22 words) / WHAT IT DOES TO THEIR PLAN (max 22 words) / WHAT WE ARE DOING ABOUT IT (max 18 words) / ASK (one line)
+Hard constraint: 110 words maximum, no adjectives, no exclamation marks, the market change must be verifiable (no "in today's fast-paced world"), one question mark maximum.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P115 — Archive-Permission Breakup
+```text
+Write the final reactivation email: you are asking permission to close their file. To [NAME] at [COMPANY], referencing the [TRIGGER_EVENT], the [PAIN] you can still solve, and [PROOF].
+Format:
+SUBJECT (max 6 words, no "closing your file" cliché) / STATEMENT OF INTENT (one line) / WHAT THEY LOSE ACCESS TO (max 18 words, factual) / THE CHOICE (two options as a statement: reply "keep open" or do nothing) / SIGN-OFF
+Hard constraint: 65 words maximum, no guilt, no adjectives, no exclamation marks, no question marks, and it must be true and honourable if they never respond.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P116 — Phone Revival Script
+```text
+Write a phone revival for a dormant lead at [COMPANY]: the live opening and the voicemail.
+Format:
+LIVE OPENER — identity + reason + [TRIGGER_EVENT], max 22 words
+LIVE QUESTION — is [PAIN] still on the list this quarter? max 14 words
+IF YES — next step, max 18 words
+IF NO — graceful exit + permission to close, max 16 words
+VOICEMAIL — max 30 words, includes a number for [PROOF] and one callback instruction
+Hard constraint: no adjectives, no exclamation marks, voicemail speakable in 12 seconds, total under 140 words, never mention "following up".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P117 — LinkedIn Revival After Email Silence
+```text
+Write a LinkedIn DM to [NAME] at [COMPANY] after your emails went unanswered, using a new [TRIGGER_EVENT], the old [PAIN] and one line of [PROOF].
+Format:
+LINE 1 — why you are here instead of email (max 14 words, honest)
+LINE 2 — the signal you saw (max 16 words)
+LINE 3 — the question or the door (one line)
+Hard constraint: 50 words maximum, no adjectives, no exclamation marks, no "I guess email didn't work", no link, and it must not reveal you have emailed 5 times.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P118 — Real Availability Offer
+```text
+Write a reactivation email that opens one specific real slot: [SLOT] for [COMPANY] to solve [PAIN], prompted by [TRIGGER_EVENT], with [PROOF] as the reason they should take it.
+Format:
+SUBJECT (max 6 words) / THE SLOT (exact date/time, one line) / WHAT FITS IN IT (max 18 words) / WHY THEM (max 16 words) / HOW TO TAKE IT (one line, one instruction)
+Hard constraint: 80 words maximum, no fake scarcity — if [SLOT] is not real write "NO REAL SLOT — do not send" instead of inventing one, no adjectives, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P119 — Subject and First-Line Pairs
+```text
+Build 4 subject/first-line pairs for a reactivation campaign to [COMPANY] about [PAIN] after [TRIGGER_EVENT], with [PROOF] used in only one pair.
+Format (per pair):
+PAIR n — SUBJECT (max 6 words) / FIRST LINE (max 10 words) / ANGLE (trigger, pain, proof, change) / WHY IT EARNS AN OPEN (max 8 words)
+Hard constraint: 4 pairs, no two subjects share their first word, no first line may contain a greeting or "I wanted to", total under 250 words, no adjectives, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P120 — Four-Touch Revival Sequence Map
+```text
+Design a 4-touch revival sequence over 14 days for dormant leads like [COMPANY].
+Output format (table):
+TOUCH | DAY | CHANNEL | OBJECTIVE (max 6 words) | OPENER (max 6 words) | CONSTRAINT (e.g. "max 70 words", "no adjectives", "no question")
+Then: ONE-LINE RULES — 3 rules for the whole sequence (max 12 words each).
+Constraints: exactly 4 touches, no two may share an objective or a channel, each touch must carry a different hard constraint, at least one touch must use [TRIGGER_EVENT] and one must use [PROOF], total under 400 words, no touch may ask for a meeting twice.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+---
+
+Licensed to the original purchaser. Reselling or redistributing this file is not permitted.

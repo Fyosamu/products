@@ -1,0 +1,268 @@
+## Section 5 — Video Title & Thumbnail Text Pairing
+
+### P061 — Ten Titles, Three Thumbnail Texts
+```text
+You write titles that survive a skim. For a video on [TOPIC] aimed at [AUDIENCE] on [PLATFORM], produce 10 titles and 3 thumbnail text options.
+Output format:
+TITLES — numbered list, each max 55 characters, with the keyword placement marked (front/middle)
+THUMBNAIL TEXT — 3 options, each max 4 words, no number may repeat the title
+PAIRING NOTE — for each thumbnail: which title it pairs with and why (max 10 words)
+Constraints: no title may exceed 55 characters, no clickbait words (you won't believe, shocking), no overlap between thumbnail text and title wording.
+```
+
+### P062 — Curiosity Gap Without Clickbait
+```text
+Write 8 titles for [TOPIC] that create a curiosity gap while keeping an honest promise the video actually delivers.
+Output format:
+TITLE (max 55 chars) | THE GAP (what the viewer does not know yet, max 8 words) | THE PAYOFF (where it is answered: timestamp or section) | TRUTHFUL? (yes/no)
+Constraints: every title must be answerable by the video's actual content, no hyperbole, banned: this will change everything, the truth about, exposed, no exclamation marks, total output under 300 words.
+```
+
+### P063 — Number-Led Listicle Titles
+```text
+You optimise listicle titles. Create 7 number-led titles for a [LENGTH] video listing [TOPIC] items for [AUDIENCE].
+Rules: the number must be honest to the video, the noun must be specific to [NICHE] (not "things" or "tips"), and each title must read in under 3 seconds.
+Output format:
+TITLE (max 50 chars) | THE NUMBER | THE SPECIFIC NOUN | SEARCH PHRASE IT TARGETS (max 4 words)
+Constraints: no repeated number across titles, no "top" without a qualifier, total under 250 words.
+```
+
+### P064 — Honest Niche Titles
+```text
+Write 8 plain-spoken titles for [PLATFORM] about [TOPIC] that would work on a channel with no personal brand — the promise alone carries the click.
+Output format:
+TITLE (max 55 chars) | FORMAT (tutorial, comparison, story, list) | WHY A STRANGER CLICKS (max 10 words)
+Constraints: no personal names, no "I", no adjectives that cannot be verified, no clickbait markers, at least 4 titles must front-load a keyword a searcher would type.
+```
+
+### P065 — Three-Way A/B/C Title Test
+```text
+You run title tests. For the same video about [TOPIC] for [AUDIENCE], write 5 variants in each of three styles.
+Output format:
+A: SEARCH-FIRST — 5 titles, keyword in the first 3 words, max 55 chars each
+B: BROWSE-FIRST — 5 titles, curiosity + stakes, max 55 chars each
+C: BRANDED — 5 titles, series-like, consistent structure, max 55 chars each
+TEST NOTE — which style fits a new channel vs an established one (one line)
+Constraints: 15 titles total, no two may share their first 3 words, banned words: best, ultimate, guide, everything you need to know.
+```
+
+### P066 — Thumbnail Text and Face Pairing
+```text
+Act as a thumbnail designer. For a video on [TOPIC] with this footage: [SOURCE], propose 5 thumbnail concepts.
+Output format:
+CONCEPT 1 — TEXT (max 4 words) / FACE OR SUBJECT (expression + framing, max 10 words) / BACKGROUND (max 8 words) / CONTRAST PLAN (two hex-ish colours in words) / PAIRS WITH TITLE:
+(concepts 2-5 same fields)
+Constraints: text never repeats the title verbatim, text max 4 words, one focal point per concept, every concept must be legible at 120px wide — state how in the CONTRAST PLAN.
+```
+
+### P067 — Title/Thumbnail Conflict Fix
+```text
+Here is my title [TITLE] and thumbnail text [THUMB]. They repeat each other and waste the click.
+Output format:
+DIAGNOSIS — what is duplicated (max 12 words)
+FIX A — keep the title, change the thumbnail: TEXT (max 4 words) / VISUAL:
+FIX B — keep the thumbnail, change the title: (max 55 chars)
+FIX C — restructure both: TITLE / THUMB TEXT / HOW THEY COMPLEMENT (max 12 words)
+Constraints: no fix may repeat wording between title and thumbnail, no fix may exceed 55 characters in the title, output under 250 words.
+```
+
+### P068 — Search-Intent Title
+```text
+You write titles for search. Given the search phrase people actually type: [SEARCH_TERM] and video content on [TOPIC], write 6 titles that satisfy the intent without sounding engineered.
+Output format:
+TITLE (max 60 chars) | INTENT (learn / compare / fix / buy) | WHICH WORD MUST STAY EXACTLY AS TYPED | EXPECTED CTR RISK (low/med/high + 4-word reason)
+Constraints: the exact search phrase must appear once in at least 4 titles, no title may exceed 60 characters, no year unless [YEAR] is supplied, total under 280 words.
+```
+
+### P069 — Seasonal and Deadline Titles
+```text
+Write 7 titles tied to a real deadline for [TOPIC]: [DEADLINE] (a date, tax window, sale, season, event).
+Output format:
+TITLE (max 55 chars) | DEADLINE REFERENCE (exact date or period) | WHY IT IS URGENT NOW (max 10 words)
+Constraints: no fake urgency — the deadline must be [DEADLINE] or a named annual event, banned: hurry, don't miss out, last chance, no exclamation marks, at least 3 titles must omit the deadline from the title itself and place it in the description.
+```
+
+### P070 — Strong-Take Titles With a Hedge
+```text
+You title opinion videos responsibly. For a strong take on [TOPIC] for [AUDIENCE], write 8 titles that carry the opinion without asserting an unproven fact.
+Output format:
+TITLE (max 55 chars) | THE CLAIM | THE HEDGE (the qualifier that keeps it honest, max 6 words) | EVIDENCE NEEDED (cite [SOURCE] or "opinion")
+Constraints: no title may state as fact what the video only argues, banned: why X is wrong, X is a lie, no exclamation marks, output under 300 words.
+```
+
+### P071 — Tutorial Title for Search and Browse
+```text
+Write 6 titles for a how-to video on [GOAL] using [TOOL] for [AUDIENCE].
+Output format:
+VERSION — SEARCH (keyword first, max 60 chars) / BROWSE (promise first, max 55 chars)
+Do this 3 times with 3 different angles (task, problem, outcome).
+Constraints: no version may contain both the tool name and the outcome if that pushes it over 60 characters — state which you dropped, no "step-by-step" unless the video has numbered steps, total under 250 words.
+```
+
+### P072 — Family-Safe Title Set
+```text
+You title videos for a family/education channel on [TOPIC] for [AUDIENCE].
+Write 8 titles with no fear hooks, no shock language, and nothing a school would object to.
+Output format:
+TITLE (max 55 chars) | WHAT THE KID LEARNS (max 10 words) | WHY A PARENT CLICKS (max 10 words)
+Constraints: banned words: scary, crazy, insane, deadly, destroyed, no exclamation marks, no curiosity gap that relies on danger, at least 3 titles must contain a number, output under 300 words.
+```
+
+### P073 — Podcast Clip Titles
+```text
+You title short clips cut from a podcast episode: [SOURCE] (a 2-4 sentence excerpt). Write 8 titles for clips on [TOPIC].
+Output format:
+CLIP TITLE (max 55 chars) | THE HOOK LINE FROM THE EXCERPT (quote, max 14 words) | WHO THIS REACHES (max 8 words)
+Constraints: titles must be attributable to a real statement in [SOURCE], no invented quotes, no drama the excerpt does not support, no exclamation marks, output under 300 words.
+```
+
+### P074 — Shorts Titles Under 40 Characters
+```text
+Write 15 titles for a Short about [TOPIC] that fit in 40 characters including spaces.
+Output format:
+TITLE | CHARACTER COUNT | THE FIRST 3 WORDS (must carry the hook)
+Constraints: 40 characters maximum — count exactly and print the count for each, no abbreviations that read as typos, no full stops, at least 5 must contain a number, no hashtag in the title, output under 250 words.
+```
+
+### P075 — Weak Title Rescue
+```text
+Act as a title editor. Here are 5 weak titles: [TITLES]. Rewrite each into 3 stronger options for a video about [TOPIC] aimed at [AUDIENCE].
+Output format (per original):
+ORIGINAL | DIAGNOSIS (max 8 words: vague / no stakes / too long / keyword missing / generic)
+OPTION 1 — CURIOUS (max 55 chars)
+OPTION 2 — SEARCHABLE (max 60 chars)
+OPTION 3 — SPECIFIC (max 55 chars, must contain a number or a named thing)
+Constraints: 15 rewrites total, none may copy the original's first 3 words, no clickbait markers, no exclamation marks.
+```
+
+## Section 6 — B-Roll & Shot-List Generation
+
+### P076 — Shot List for a 30-Second Reel
+```text
+You are a shot lister. Build the shot list for a 30-second Reel on [TOPIC] from this script: [SOURCE].
+Output format (table):
+# | TIME | SHOT (framing + subject, max 10 words) | CAMERA MOVE (static/push/pan/handheld) | DURATION (sec) | AUDIO (VO / room / music beat)
+Constraints: 8-12 shots, no shot under 1.5 seconds, every shot must be filmable by one person with a phone, last shot must hold the [CTA] text for 2 seconds.
+```
+
+### P077 — B-Roll Shopping List
+```text
+Write a b-roll shopping list for a video on [TOPIC]: 20 clips the editor will need.
+Output format (table):
+# | CLIP (max 6 words, filmable) | WHY IT IS NEEDED (max 8 words) | WHERE TO GET IT (film / stock / screen record / generate) | SEARCH KEYWORDS (for stock, max 4 words)
+Constraints: exactly 20 clips, no two clips may show the same action, at least 6 must be detail/close-up shots, no clip may be "generic footage of people working".
+```
+
+### P078 — Overhead Hands-Only Tutorial Shot List
+```text
+You plan overhead tutorials. Build a shot list for a hands-only demonstration of [TASK] for [AUDIENCE], based on [SOURCE].
+Output format:
+SETUP SHOT — table of: gear, surface, light direction, camera height (one line each)
+ACTION SHOTS — # | BEAT (max 8 words) | FRAMING | WHEN TO CUT IN | TEXT ON SCREEN (max 5 words)
+COMMON MISTAKE SHOTS — 2 shots showing what not to do
+Constraints: 10-14 shots, no face required, all shots from one camera position unless stated, total output under 500 words.
+```
+
+### P079 — Product Hero Shot List
+```text
+Build a hero-shot list for [PRODUCT] using one window, a phone and [COLOUR] backdrop.
+Output format:
+SHOT 1 — SETUP (surface / light angle / prop / distance) | PURPOSE (max 8 words)
+SHOTS 2-8 — same fields, rotating through: silhouette, detail macro, in-use, scale reference, flat lay, motion pour/drop, packaging
+Constraints: 8 shots, each setup must be describable in 15 words or fewer, no studio lighting vocabulary the reader cannot execute at home, note which shots need [PROOF] text overlaid.
+```
+
+### P080 — Establishing Sequence With Continuity
+```text
+You plan opening sequences. Create a 6-shot establishing sequence for [LOCATION] that orients the viewer before the first spoken line.
+Output format:
+SHOT — TIME | FRAME (max 10 words) | WHAT IT TELLS THE VIEWER (max 8 words) | LIGHT/DIRECTION NOTE | MATCH CUT OPPORTUNITY (one line)
+Constraints: 6 shots, chronological light direction must stay consistent, no two shots may show the same framing size, final shot must land where the host starts speaking, output under 350 words.
+```
+
+### P081 — Screen-Record Shot List
+```text
+Plan the screen-recorded portions of a tutorial on [TASK] in [TOOL] for [AUDIENCE].
+Output format:
+# | SCREEN (which view/menu, max 8 words) | ACTION (click/type, max 6 words) | ZOOM (which region + %) | ON-SCREEN LABEL (max 5 words) | DURATION (sec)
+Constraints: 10-14 steps, no step may require the cursor to move across the whole screen without a zoom note, personal data must be flagged "[BLUR]", total under 450 words.
+```
+
+### P082 — Transition Map
+```text
+You design transitions that carry meaning. Build a 10-transition map for a video on [TOPIC] from this script: [SOURCE].
+Output format (table):
+# | FROM (last frame of previous shot, max 8 words) | TO (first frame of next, max 8 words) | TRANSITION TYPE (match cut, whip, object wipe, audio J-cut, none) | HOW TO FILM IT (max 10 words) | BEAT IT MARKS
+Constraints: exactly 10 transitions, at least 6 must be in-camera (no post effects), no transition may be listed as "smooth transition", no cross-dissolve more than twice.
+```
+
+### P083 — B-Roll for an Abstract Topic
+```text
+You visualise ideas that cannot be filmed. For an abstract topic — [TOPIC] — for [AUDIENCE], invent 12 concrete b-roll shots that stand in for the concept.
+Output format:
+CONCEPT (the abstract thing, max 6 words) | SHOT (filmable, max 10 words) | WHY IT READS AS THE CONCEPT (max 10 words)
+Constraints: 12 shots, every shot must be filmable in a normal room or on a screen, no stock footage of handshakes or whiteboards, no literal text-on-screen substitutes, output under 450 words.
+```
+
+### P084 — One-Take Walk-and-Talk Blocking
+```text
+You block one-take videos. Plan a 45-second walk-and-talk on [TOPIC] for [AUDIENCE], script at [SOURCE].
+Output format:
+BLOCKING — START (position + framing) / TURN POINT (where the beat changes) / END (final framing)
+LINE MAP — LINE 1 (max 14 words) → WHERE YOU LOOK / PACE; repeat for all lines
+PITFALLS — 4 risks (wind, people, stairs, audio) each with a fix, max 12 words
+Constraints: total route under 150 metres, every line must land while facing camera, no line may be spoken while turning away, output under 450 words.
+```
+
+### P085 — Two-Camera Interview Shot List
+```text
+Build a two-camera interview setup for a conversation with [GUEST] about [TOPIC].
+Output format:
+CAM A — subject / lens / height / eyeline / depth note (one line each)
+CAM B — same fields
+LAYOUT — seating angle, distance, background (one line each)
+SHOT PLAN — START (wide) / MIDS (when to cut) / INSERTS (hands, notes) / CLOSE (tight on the answer)
+Constraints: no shot may cross the 180-degree line, eyelines must be noted for both cameras, at least 3 insert shots listed, output under 400 words.
+```
+
+### P086 — Montage Sync Points
+```text
+You cut montages to music. Build a 40-second montage plan for [TOPIC] to a [TEMPO] track, from this footage list: [SOURCE].
+Output format (table):
+CUT # | BEAT NUMBER (e.g. 17) | CLIP (max 8 words) | ACTION IN CLIP (max 6 words) | MOTION DIRECTION (L→R etc.)
+Constraints: 16-20 cuts, no two consecutive clips with the same motion direction, at least 4 cuts must land on a hard beat, one cut must land on the drop (name the beat number), first clip must show the end state, output under 450 words.
+```
+
+### P087 — Day-to-Night Continuity Checklist
+```text
+Act as a script supervisor. You are shooting [SCENE] across changing daylight for [TOPIC]. Return a continuity checklist.
+Output format:
+TIME BLOCK — WINDOW (times) | LIGHT (direction + quality) | WARDROBE STATE | PROP STATE | WHAT MUST NOT CHANGE
+SHOT ORDER — the order to shoot in so light does not break continuity (numbered)
+PICKUPS — shots to grab before the light goes (max 8 words each)
+Constraints: at least 5 time blocks, every listed change must be filmable, no invented gear, output under 450 words.
+```
+
+### P088 — Stock-Footage Search Sheet
+```text
+Turn this script into a stock-footage order sheet: [SOURCE]. The editor will search a stock library.
+Output format (table):
+LINE # | SCRIPT LINE (first 8 words) | SEARCH QUERY 1 (max 5 words) | SEARCH QUERY 2 (max 5 words) | LICENCE NOTE (if any) | FALLBACK (what to use if nothing matches)
+Constraints: 10-14 rows, every query must be literal (no abstract words), no query may contain the video's topic noun only ("business" alone is rejected), fallbacks must be original footage ideas, output under 500 words.
+```
+
+### P089 — Vertical Shot List With Safe Zones
+```text
+Build a 9:16 shot list for a video on [TOPIC] that keeps text and faces clear of platform UI.
+Output format (table):
+# | SHOT (max 10 words) | SAFE ZONE NOTE (top 10% / middle / avoid bottom 25%) | TEXT PLACEMENT (if any, max 6 words) | DURATION
+Constraints: 10 shots, no text may sit in the bottom 25%, faces must be framed so the eyes sit between 30-45% from the top (state it for each), no landscape shots cropped from 16:9, output under 450 words.
+```
+
+### P090 — Minimum-Gear Shot List
+```text
+You shoot good video with almost nothing. For [TOPIC] and [AUDIENCE], build a 12-shot list using only a phone, a window and household objects.
+Output format:
+SHOT # | FRAME (max 10 words) | THE HACK (what household object stands in, max 10 words) | LIGHT NOTE (one line) | DURATION
+Constraints: exactly 12 shots, no purchase may be required, every shot must work in an average room, no tripod-dependent shots unless a DIY stand is described, total under 450 words.
+```

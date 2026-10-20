@@ -1,0 +1,352 @@
+## Section 5 — Proposal & Scope Writing
+
+### P061 — Two-Page Proposal Skeleton
+```text
+You write proposals that get signed. Build a proposal for [COMPANY] solving [PAIN], triggered by [TRIGGER_EVENT], backed by [PROOF].
+Output format:
+SECTION 1 EXECUTIVE SUMMARY — max 150 words
+SECTION 2 OUTCOMES — 3 bullets, each with a measure (max 14 words each)
+SECTION 3 SCOPE — what we do (5 bullets max 12 words)
+SECTION 4 TIMELINE — milestones with dates
+SECTION 5 INVESTMENT — price, payment schedule
+SECTION 6 TERMS — start date, expiry, signature line
+Hard constraint: 2 pages or 900 words maximum, no adjectives in the outcomes, no exclamation marks, section 1 may not contain the word "solution".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P062 — Fixed-Scope SOW With Out-Of-Scope List
+```text
+Write a statement of work for [COMPANY]: fixed scope, fixed price, against the [PAIN] named in the [TRIGGER_EVENT].
+Format:
+OBJECTIVE — one sentence
+IN SCOPE — 6 bullets, each measurable (max 12 words)
+OUT OF SCOPE — 6 bullets, explicit, including the phrase "not included unless changed in writing"
+ACCEPTANCE — how a deliverable is approved (one line + timeline)
+CHANGE PROCESS — one line pointing to the change-request clause
+Hard constraint: 700 words maximum, no adjectives, no exclamation marks, every in-scope item must be testable by a third party.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P063 — Outcome-Based Proposal
+```text
+Write a proposal for [COMPANY] where the price is tied to an outcome, using [PROOF] as precedent.
+Format:
+THE OUTCOME — one measurable result (max 14 words)
+BASELINE — where they are now (from [SOURCE] or "[NEEDS DATA]")
+HOW WE GET THERE — 4 steps, max 12 words each
+PRICING MODEL — base fee + outcome component, stated plainly with numbers or [PRICE]
+RISK — what happens if the outcome is not hit (one line, no weasel wording)
+Hard constraint: 650 words maximum, no adjectives, no exclamation marks, no outcome may be outside your control — name the shared dependency.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P064 — Three-Tier Pricing
+```text
+Build a three-tier option table for [COMPANY] against [PAIN], with [PROOF] cited on the middle tier.
+Output format:
+TIER 1 ESSENTIALS — WHAT'S IN (3 bullets max 10 words) | PRICE: | BEST FOR (max 8 words)
+TIER 2 RECOMMENDED — same fields, includes [PROOF]
+TIER 3 FULL — same fields
+ANCHOR NOTE — which tier you expect them to pick and why (max 12 words)
+Hard constraint: prices must be plain numbers or "[PRICE]", tiers must differ in scope not adjectives, no word may be "premium" without a scope change, total under 400 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P065 — Scope-Creep Guardrails
+```text
+Write the change-control clauses for a proposal to [COMPANY] where [PAIN] is likely to expand mid-project.
+Format:
+CLAUSE A REQUEST — how a change is requested (one line)
+CLAUSE B IMPACT — what you send back: cost + time delta (one line)
+CLAUSE C APPROVAL — no approval means no work (one line)
+CLAUSE D EMERGENCY — small items under [THRESHOLD] handled how (one line)
+CLAUSE E RECAP — what is explicitly not in this agreement
+Hard constraint: plain language a non-lawyer can read, each clause 30 words or fewer, no legal Latin, no adjectives, total under 250 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P066 — Timeline With Client Dependencies
+```text
+Build a milestone timeline for [COMPANY] against [PAIN], where delays on their side are the main risk.
+Output format (table):
+MILESTONE | DATE | WHAT YOU DELIVER | WHAT THEY MUST DELIVER (dependency) | DELAY CONSEQUENCE (one line)
+Constraints: at least 5 milestones, every dependency has a named owner, no milestone may be "ongoing", consequences stated without blame language, total under 450 words, no adjectives.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P067 — Payment Terms Clause
+```text
+Write the payment section of a proposal to [COMPANY]: schedule, late terms, and what happens if payment stops.
+Format:
+SCHEDULE — e.g. "50% to start, 50% on delivery" as a plain list
+INVOICING — day, method, contact (one line each)
+LATE PAYMENT — consequence, stated neutrally (one line)
+SUSPENSION — what you may pause and when (one line)
+Hard constraint: 150 words maximum, no adjectives, no exclamation marks, no threat language, written so a client cannot say they misunderstood it.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P068 — Executive Summary Under 150 Words
+```text
+Write an executive summary for a proposal to [COMPANY] about [PAIN] after [TRIGGER_EVENT], with [PROOF].
+Format: exactly 3 paragraphs — SITUATION / APPROACH / RESULT, each labelled.
+Hard constraint: 150 words total (print the count), no adjectives, no exclamation marks, no sentence over 20 words, the word "solution" may not appear, and the first sentence must be about them, not you.
+Output: the summary + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P069 — Risk Register
+```text
+Write the risk section for a proposal to [COMPANY]: 4 risks with mitigations.
+Output format (table):
+RISK | LIKELIHOOD (H/M/L) | IMPACT (H/M/L) | MITIGATION (one line) | OWNER (you/them/shared)
+Constraints: exactly 4 risks, at least one must be their-side (adoption, data, access), no risk may be generic ("things may change"), mitigations must be actions you will take, total under 350 words, no adjectives.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P070 — Renewal and Expansion Clause
+```text
+Write the renewal section for an agreement with [COMPANY] covering [PAIN].
+Format:
+TERM — length + start date (one line)
+RENEWAL — automatic or by notice, stated plainly (one line)
+REVIEW — the check-in date and what is reviewed (one line)
+EXPANSION — how additional scope is priced (one line, reference [PRICE] logic)
+EXIT — how either side ends it, notice period (one line)
+Hard constraint: 160 words maximum, no adjectives, no auto-renewal tricks — the notice period must be visible in the first line of the clause, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P071 — Proposal for a Repeat Buyer
+```text
+Write a shorter proposal for [COMPANY], a client who already bought from you: reference the previous work, the new [TRIGGER_EVENT], and the current [PAIN], with [PROOF] from their own history rather than a third party.
+Format:
+OPENING — one line naming the prior engagement + result
+WHAT CHANGED — max 30 words
+SCOPE — bullets only, 5 max
+PRICE — number + any loyalty term
+START DATE + ASK — one line
+Hard constraint: 350 words maximum, no adjectives, no restating your company history, no exclamation marks, must be readable in 45 seconds.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P072 — "Cost of Doing Nothing" Section
+```text
+Write the do-nothing section for a proposal to [COMPANY]: what happens if [PAIN] continues after [TRIGGER_EVENT].
+Format:
+MONTH 6 — what is true (max 25 words, one number)
+MONTH 12 — same
+THE COMPOUND — the one cost that grows (max 25 words)
+WHAT WE ARE NOT CLAIMING — an honest limits line (max 20 words)
+Hard constraint: 120 words total, no fear adjectives, no exclamation marks, every projection labelled with its assumption or marked "[ASSUMPTION]", must avoid saying they will fail without you.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P073 — Vague Brief to Priced Scope
+```text
+Here is a vague client brief from [COMPANY]: [SOURCE]. Turn it into a priced scope, and list what you must ask before quoting.
+Output format:
+RESTATED BRIEF — 3 bullets: what they said / what they likely mean / what is undefined (max 10 words each)
+10 QUESTIONS — numbered, each answerable yes/no or with a number
+PROVISIONAL SCOPE — in / out, 5 bullets each
+PROVISIONAL PRICE — [PRICE] with the assumption line ("based on answers to Q1-Q4")
+Hard constraint: 600 words maximum, no adjectives, no exclamation marks, no price given without naming the assumption that sets it.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P074 — Proposal Cover Email
+```text
+Write the email that sends the proposal to [COMPANY].
+Format:
+SUBJECT (max 7 words) / LINE 1 — what is attached + why now ([TRIGGER_EVENT]) / LINE 2 — the one decision you want / LINE 3 — [PROOF] in one clause / LINE 4 — the deadline for a decision (real, from [DATE])
+Hard constraint: 90 words maximum, no adjectives, one question mark maximum, no exclamation marks, must not say "please find attached" or "let me know if you have any questions".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P075 — Redline Response (Three Change Requests)
+```text
+[COMPANY] sent three change requests on the proposal: [SOURCE]. Respond with a give/get for each.
+Output format (table):
+THEIR REQUEST | OUR RESPONSE | GIVE (what we will do) | GET (what we need in return) | PRICE/TIME IMPACT
+Constraints: exactly 3 rows, at least one response must be a refusal with a reason (max 14 words), no adjectives, no apology longer than 5 words, total under 400 words, and a closing line that keeps the signature date intact.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+## Section 6 — Price Increase & Negotiation Scripts
+
+### P076 — Price Increase Announcement
+```text
+You announce price increases without losing clients. Write an email to [COMPANY] raising [PRICE] by [PERCENT]% effective [DATE], referencing the relationship, the [PAIN] you keep solving, and one [PROOF] of value.
+Format:
+SUBJECT (max 7 words) / ANNOUNCEMENT (one line, no burying) / REASON (factual, max 30 words) / WHAT STAYS THE SAME (max 20 words) / GRANDFATHER OPTION (if offered) / DATE + CONTACT
+Hard constraint: 120 words maximum, exactly one apology line or none, no exclamation marks, no adjectives, and the new price must appear in the first three lines.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P077 — Grandfathering Script
+```text
+Offer a time-limited grandfather rate to [COMPANY] during a price increase tied to [TRIGGER_EVENT].
+Format:
+THE OFFER — old rate held until [DATE] (one line)
+WHAT THEY GET — unchanged scope, reference [PROOF] (one line)
+WHAT CHANGES AFTER — new rate + the one thing that improves for them (max 20 words)
+DECISION LINE — what to say to hold it (one line)
+Hard constraint: 100 words maximum, no pressure words (act now, don't miss), no adjectives, one question mark maximum, no exclamation marks, must be honourable if they reply on day 30.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P078 — Discount Request: Trade, Never Give
+```text
+[COMPANY] asks for a discount on [PRICE]. Write your response as a trade.
+Format:
+ACKNOWLEDGE — one line, no apology
+THE TRADE — "we can do X if you Y" with 3 possible trades: longer term, case study, prepay, referral (each max 14 words)
+FLOOR — the line that holds the price (max 16 words)
+PROOF — one clause with [PROOF]
+Hard constraint: 110 words maximum, the word "discount" appears at most once, no adjectives, no exclamation marks, and no trade may cost you more than the discount.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P079 — Three-Option Anchor
+```text
+Build a three-option response when [COMPANY] asks "what does this cost?" around [PAIN] and [PRICE].
+Output format:
+OPTION A — SCOPE (max 10 words) | PRICE | TIMELINE
+OPTION B — same fields, marked RECOMMENDED
+OPTION C — same fields
+ANCHOR LINE — the sentence that frames B as the sensible one (max 16 words)
+Hard constraint: no option may exceed 12 words of scope, prices are numbers only (no "starting at" weasel), no adjectives, total under 250 words, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P080 — "Budget Is X" Response
+```text
+[COMPANY] says "our budget is [BUDGET]" for [PAIN]. Write the response.
+Format:
+LINE 1 — accept the number without flinching (max 12 words)
+LINE 2 — what changes at that number: reduced scope stated concretely (max 20 words)
+LINE 3 — what stays (the part that produces [PROOF]), max 18 words
+LINE 4 — question to confirm (max 12 words)
+Hard constraint: 80 words maximum, no adjectives, one question mark, no exclamation marks, never say "we can probably make that work".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P081 — Scope-for-Price Swap
+```text
+When [COMPANY] pushes on [PRICE], swap scope instead of cutting it. Here is the current scope: [SOURCE].
+Output format:
+THEIR PUSH — restated in one line
+SWAP 1 — REMOVE (max 10 words) | KEEP PRICE | WHAT THEY LOSE (max 12 words)
+SWAP 2 — same fields
+SWAP 3 — same fields
+RECOMMENDED — which swap + one-line reason (max 12 words)
+Hard constraint: total under 350 words, no swap may remove the element tied to [PROOF], no adjectives, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P082 — Multi-Year Commit Discount
+```text
+Write the offer email for a 24-month commitment with [COMPANY] at a reduced [PRICE], triggered by the [TRIGGER_EVENT].
+Format:
+SUBJECT (max 6 words) / THE MATH (old vs new, shown as numbers) / WHAT THEY COMMIT (2 bullets max 10 words) / WHAT YOU COMMIT (2 bullets) / [PROOF] / DECISION DATE (real)
+Hard constraint: 110 words maximum, no adjectives, no exclamation marks, the trade-off must be explicit in both directions, no phrase "special offer".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P083 — Prepay and Payment-Term Negotiation
+```text
+[COMPANY] wants Net-60. You want prepayment or Net-15. Write the exchange for a call.
+Format:
+THEIR POSITION — one line
+YOUR REASON — fact-based, max 18 words
+OPTION 1 — prepay at [PRICE] with the benefit (max 16 words)
+OPTION 2 — Net-15 with what changes (max 16 words)
+MEET-IN-MIDDLE — the acceptable third: 50/50, max 16 words
+CLOSE — one line asking them to choose, max 12 words
+Hard constraint: 100 words total, no adjectives, no exclamation marks, one question mark maximum, no threatening to withdraw work.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P084 — Walk-Away Script
+```text
+Write the polite final message to [COMPANY] when the deal cannot proceed on [PRICE] after [PATTERN] of negotiation.
+Format:
+SUBJECT (max 6 words) / THE POSITION — one line, final / WHAT WAS TRUE — the [PAIN] and [PROOF] you still believe (max 25 words) / WHAT WOULD REOPEN — one condition, stated without an ask / DOOR — one line, no expectation
+Hard constraint: 90 words maximum, no adjectives, no exclamation marks, no guilt, no "last chance", and the message must be sendable without expecting a reply.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P085 — Retention Save After a Bad Quarter
+```text
+[COMPANY] signals they will cut you after a rough quarter. Write the save conversation.
+Format:
+OPEN — acknowledge the numbers without panic (max 16 words)
+DIAGNOSE — 2 questions about [PAIN] and their current [TRIGGER_EVENT] (max 14 words each)
+PROPOSAL — a reduced or restructured engagement for [N] months, max 25 words
+PROOF — [PROOF] as the reason to keep going, max 18 words
+DATE — a specific review date, one line
+Hard constraint: 130 words maximum, no adjectives, one question mark maximum, no exclamation marks, never offer the biggest concession in the first message.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P086 — Rate Card Talking Points
+```text
+Prepare talking points for a pricing call with [COMPANY] where [PAIN] and [PRICE] will both come up.
+Output format:
+OPENING LINE — max 14 words
+THE NUMBER — how you say it aloud, word for word (max 10 words)
+IF THEY GO SILENT — what you say next (max 16 words)
+IF THEY ASK WHY — the reason, referencing [TRIGGER_EVENT] and [PROOF] (max 24 words)
+IF THEY ASK FOR A DISCOUNT — the trade line (max 16 words)
+CLOSING — the ask, max 12 words
+Hard constraint: 110 words total, no adjectives, no exclamation marks, never apologise for the number.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P087 — Hold-the-Line Email
+```text
+Write an email to [COMPANY] holding your price after they pushed back on [PRICE], referencing the [PAIN] you still own and [PROOF].
+Format:
+SUBJECT (max 6 words) / POSITION (one line) / WHY (fact + [PROOF], max 30 words) / WHAT IS STILL ON THE TABLE (max 20 words) / NEXT STEP (specific date)
+Hard constraint: 90 words maximum, no adjectives, no exclamation marks, no apology, no word "unfortunately".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P088 — Value Justification Math One-Pager
+```text
+Build the one-page math that justifies [PRICE] to [COMPANY] about [PAIN].
+Output format:
+COST OF [PAIN] — the calculation written out: "A x B = $C per [period]" with each input sourced from [SOURCE] or marked "[ASSUMPTION]"
+COST OF DOING NOTHING — one line, 6 months
+WHAT YOU CHARGE — [PRICE] + timeframe
+NET — the arithmetic, one line
+[PROOF] — one precedent number
+LIMITS — what this math does not prove (max 20 words)
+Constraints: total under 350 words, no adjectives, no exclamation marks, every input visible so they can check your arithmetic.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P089 — Upfront-Payment Negotiation
+```text
+You prefer 100% upfront; [COMPANY] wants to pay on delivery. Write the compromise exchange.
+Format:
+THEIR POSITION — one line
+YOUR POSITION — one line, reason (max 16 words)
+OPTION A — 100% upfront with a [PERCENT]% incentive (show numbers)
+OPTION B — 50/50 with the start and gate defined (one line each)
+OPTION C — their way, with what changes (e.g. [PRICE] + X%, one line)
+RECOMMENDATION — which and why (max 12 words)
+Hard constraint: total under 300 words, no adjectives, no exclamation marks, all three options must be real offers you would honour.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P090 — Buyer-Side Role-Play
+```text
+Play the buyer. Assume you are the [ROLE] at [COMPANY] evaluating this offer about [PAIN] at [PRICE], with [PROOF] on the table.
+Output format:
+10 PUSHBACKS — numbered, each a realistic line the buyer would say (max 14 words each)
+FOR EACH — YOUR COUNTER (max 18 words, no adjectives) + THE QUESTION THAT DISARMS IT (max 12 words)
+TOP 3 THEY WILL NOT SAY — the real objections underneath (each: surface line / hidden line)
+Hard constraint: 450 words maximum, no exclamation marks, counters must never contradict [PROOF], no counter may start with "actually".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```

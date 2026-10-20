@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',Helvetica,Arial,sans-serif; width:1200px; height:900px; overflow:hidden; }
+  .canvas { width:1200px; height:900px; background:linear-gradient(135deg,#FDF6F0 0%,#F6E4E7 60%,#EFD9DE 100%); position:relative; display:flex; padding:70px; color:#3B2F3A; }
+
+  .left { width:480px; position:relative; z-index:3; }
+  .badge { display:inline-block; background:#D4849A; color:#fff; font-size:15px; font-weight:700; letter-spacing:3px; padding:9px 20px; border-radius:30px; text-transform:uppercase; }
+  h1 { font-size:56px; line-height:1.03; margin-top:30px; font-weight:800; letter-spacing:-1.5px; color:#3B2F3A; }
+  h1 span { color:#D4849A; }
+  .sub { font-size:22px; color:#7A6A78; margin-top:22px; line-height:1.5; font-weight:300; max-width:430px; }
+  .feats { margin-top:36px; display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:440px; }
+  .feat { background:#fff; border-radius:12px; padding:16px 18px; box-shadow:0 8px 22px rgba(59,47,58,.08); font-size:16.5px; font-weight:600; color:#3B2F3A; }
+  .feat b { color:#D4849A; display:block; font-size:24px; margin-bottom:3px; }
+  .price { display:inline-block; margin-top:36px; background:#3B2F3A; color:#fff; font-size:30px; font-weight:800; padding:16px 38px; border-radius:50px; }
+  .price small { display:block; font-size:13px; color:#C9B8C6; font-weight:600; letter-spacing:2px; }
+
+  /* spreadsheet card */
+  .card { position:absolute; right:44px; top:120px; width:540px; background:#fff; border-radius:16px; box-shadow:0 45px 90px rgba(59,47,58,.28); overflow:hidden; transform:rotate(2deg); }
+  .tabs { background:#3B2F3A; padding:13px 16px; display:flex; gap:7px; }
+  .tab { font-size:12px; padding:7px 13px; border-radius:6px 6px 0 0; background:#584a57; color:#cbbcc9; }
+  .tab.on { background:#fff; color:#3B2F3A; font-weight:700; }
+  .head { padding:20px 22px 6px; }
+  .head .t { font-size:20px; font-weight:800; color:#3B2F3A; }
+  .head .d { font-size:12.5px; color:#D4849A; font-weight:600; margin-top:3px; }
+  .kpis { display:flex; gap:9px; padding:14px 22px; }
+  .kpis div { flex:1; background:#FDF6F0; border-radius:9px; padding:11px; text-align:center; }
+  .kpis .n { font-size:19px; font-weight:800; color:#D4849A; }
+  .kpis .l { font-size:8.5px; color:#A798A5; text-transform:uppercase; letter-spacing:.5px; margin-top:3px; }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  th { background:#D4849A; color:#fff; padding:9px; text-align:left; font-size:11px; }
+  td { padding:8.5px 9px; border-bottom:1px solid #F2E9EC; }
+  tr:nth-child(even) td { background:#FBF7F8; }
+  .prog { display:inline-block; width:70px; height:8px; background:#F2E9EC; border-radius:5px; position:relative; }
+  .prog i { position:absolute; left:0; top:0; height:8px; background:#5B8C5A; border-radius:5px; }
+  .ok { color:#1E7E34; font-weight:700; }
+  .foot { background:#5B8C5A; color:#fff; padding:13px 20px; font-size:13px; font-weight:700; display:flex; justify-content:space-between; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="left">
+    <div class="badge">Excel · Google Sheets</div>
+    <h1>The Ultimate<br>Wedding <span>Planner</span></h1>
+    <div class="sub">Budget, guest list, vendors, 12-month timeline and seating — everything for your 2026 wedding in one beautiful workbook.</div>
+    <div class="feats">
+      <div class="feat"><b>Auto</b>budget dashboard</div>
+      <div class="feat"><b>40+</b>guest tracker</div>
+      <div class="feat"><b>27</b>timeline tasks</div>
+      <div class="feat"><b>3-way</b>vendor quotes</div>
+    </div>
+    <div class="price">Launch price <small>GETLY.STORE · PAY WITH USDT</small></div>
+  </div>
+
+  <div class="card">
+    <div class="tabs"><div class="tab on">Budget</div><div class="tab">Guest List</div><div class="tab">Vendors</div><div class="tab">Timeline</div><div class="tab">Seating</div></div>
+    <div class="head"><div class="t">BUDGET OVERVIEW</div><div class="d">Total budget $15,000 · Wedding date 2026-09-19</div></div>
+    <div class="kpis">
+      <div><div class="n">$18,500</div><div class="l">Planned</div></div>
+      <div><div class="n">$11,150</div><div class="l">Paid</div></div>
+      <div><div class="n">$7,350</div><div class="l">Still owed</div></div>
+      <div><div class="n">214</div><div class="l">Days left</div></div>
+    </div>
+    <table>
+      <tr><th>Category</th><th>Planned</th><th>Paid</th><th>Progress</th></tr>
+      <tr><td>Venue & Catering</td><td>$4,500</td><td>$4,500</td><td><span class="prog"><i style="width:100%"></i></span></td></tr>
+      <tr><td>Photography & Video</td><td>$2,200</td><td>$1,400</td><td><span class="prog"><i style="width:64%"></i></span></td></tr>
+      <tr><td>Attire & Beauty</td><td>$1,500</td><td>$900</td><td><span class="prog"><i style="width:60%"></i></span></td></tr>
+      <tr><td>Flowers & Decor</td><td>$1,300</td><td>$650</td><td><span class="prog"><i style="width:50%"></i></span></td></tr>
+      <tr><td>Rings</td><td>$2,000</td><td>$2,000</td><td><span class="prog"><i style="width:100%"></i></span></td></tr>
+      <tr><td>Honeymoon</td><td>$3,000</td><td>$800</td><td><span class="prog"><i style="width:27%"></i></span></td></tr>
+    </table>
+    <div class="foot"><span>Cost per guest: $198.40</span><span>Contingency: 5% ✓</span></div>
+  </div>
+</div>
+</body>
+</html>

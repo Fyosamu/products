@@ -1,0 +1,304 @@
+## Section 3 — LinkedIn Connection + DM
+
+### P031 — Connection Note, No Pitch
+```text
+Write a LinkedIn connection request note to [NAME] at [COMPANY] referencing the [TRIGGER_EVENT] and one honest reason you want the connection. No offer, no link, no pitch — the [PAIN] may be implied only.
+Hard constraint: 300 characters maximum (print the count), no exclamation marks, no adjectives, the word "networking" is banned.
+Output: the note only, plus "CHARACTERS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P032 — First DM After Accept
+```text
+Write the first LinkedIn DM to [NAME] after they accept your connection. Thank them briefly, reference the [TRIGGER_EVENT] that prompted the request, name the [PAIN] in one line, and end without asking for anything. Do not paste [PROOF] yet — save it for touch three.
+Hard constraint: 60 words maximum, no exclamation marks, no adjectives, exactly zero links.
+Output: DM text only, plus "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF] must all appear in the draft or in your planning note beneath it.
+```
+
+### P033 — Trigger-Based Connection Note
+```text
+Write a connection note that opens on a specific [TRIGGER_EVENT] at [COMPANY] and connects it to [PAIN] you have solved before, using [PROOF] as one clause.
+Hard constraint: 250 characters maximum (print the count), one sentence only, no exclamation marks, no "I saw your company is..." phrasing — start with the event itself.
+Output: note + "CHARACTERS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P034 — Referral-Based Connection Note
+```text
+Write a connection note to [NAME] at [COMPANY] that leads with a shared connection, shared employer, or shared group: [MUTUAL]. Tie it to a real reason (the [TRIGGER_EVENT] and a one-line mention of [PAIN]); keep [PROOF] out of the note.
+Hard constraint: 280 characters maximum (print the count), no adjectives, no exclamation marks, no mention of your product.
+Output: note + "CHARACTERS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P035 — Content-Based Connection Note
+```text
+[NAME] at [COMPANY] posted about [TOPIC]. Write a connection note responding to that post honestly — agree, add one concrete point, or ask one precise question. Link it lightly to [PAIN] and the [TRIGGER_EVENT]; do not use [PROOF].
+Hard constraint: 260 characters maximum (print the count), no flattery adjectives (great, insightful, loved), no exclamation marks, one sentence or two short ones.
+Output: note + "CHARACTERS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P036 — Value-Drop DM (No Ask)
+```text
+Write DM 2 to [NAME] at [COMPANY]: give one thing worth having — a benchmark, a checklist line, or a fix for [PAIN] — with no request attached. Reference the [TRIGGER_EVENT] in one clause and cite [PROOF] only as the reason you are credible.
+Hard constraint: 80 words maximum, no question marks at all, no exclamation marks, no adjectives, no link — offer to send it only if they say yes.
+Output: DM text + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P037 — Soft Ask DM
+```text
+Write DM 3 to [NAME] at [COMPANY], the first message that asks for anything: 15 minutes, framed around [PAIN] and the [TRIGGER_EVENT]. Include [PROOF] in one line and offer two concrete times.
+Hard constraint: 70 words maximum, one question mark, no exclamation marks, no "would you be open to", no adjectives, must propose two specific windows ("Tue 10:00 or Thu 14:00") rather than "sometime next week".
+Output: DM text + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P038 — Spoken-Voice DM
+```text
+Write a LinkedIn DM to [NAME] that sounds dictated, not composed: contractions, short lines, one thought per line, addressing [PAIN] at [COMPANY] after the [TRIGGER_EVENT], with [PROOF] as a throwaway line.
+Hard constraint: 60 words maximum, no semicolons, no adjectives, no exclamation marks, no corporate vocabulary (leverage, synergy, solutions, circle back).
+Output: DM text + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P039 — Post-Event Follow-Up DM
+```text
+Write a DM to [NAME] at [COMPANY] after you both attended [EVENT]. Reference one specific thing from the event, connect it to [PAIN] and the [TRIGGER_EVENT], then add [PROOF] in one clause. Ask for nothing except a reply.
+Hard constraint: 70 words maximum, no "great to meet you", no adjectives about the event, no exclamation marks, exactly one question mark.
+Output: DM text + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P040 — InMail to the Decision Maker
+```text
+Write a LinkedIn InMail to [ROLE] at [COMPANY] about [PAIN], prompted by [TRIGGER_EVENT], with [PROOF] as evidence.
+Format: SUBJECT (max 6 words, no brackets) / BODY of 4 short paragraphs / one final ask line.
+Hard constraint: 100 words maximum in the body, no exclamation marks, no adjectives, the ask must be a specific 15-minute window, and the first sentence must contain no mention of you or your company.
+Output: subject + body + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P041 — Creator or Partner Collab DM
+```text
+Write a collab DM to [CREATOR_NAME] proposing one specific collaboration around [TOPIC] for [AUDIENCE], tied to their [TRIGGER_EVENT] and the audience pain [PAIN]. Mention [PROOF] once as evidence you can pull weight.
+Hard constraint: 90 words maximum, no exclamation marks, no adjectives, the proposal must state exactly what each side does (one line each), no mention of "exposure".
+Output: DM text + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P042 — "Not Interested" Reply
+```text
+[NAME] at [COMPANY] replied "not interested". Write one response that does not argue: acknowledge, ask one diagnostic question about [PAIN], and reference the [TRIGGER_EVENT] as the reason you wrote, with [PROOF] in a single clause.
+Hard constraint: 55 words maximum, one question mark, no exclamation marks, no adjectives, no counter-argument, must give them an easy exit.
+Output: DM text + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P043 — "Send Me Info" Reply
+```text
+[NAME] at [COMPANY] replied "send me some info". Write a response that does not send a deck: summarize your offer in three lines (what it is, who for, [PROOF]) and ask one qualifying question about [PAIN] and [TRIGGER_EVENT].
+Hard constraint: 60 words maximum, no attachments mentioned, no adjectives, no exclamation marks, exactly one question mark.
+Output: DM text + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P044 — Breakup DM With a Clean Exit
+```text
+Write a closing DM to [NAME] at [COMPANY] after [N] unanswered touches: state you are stopping, recap in one line why you wrote ([TRIGGER_EVENT], [PAIN], [PROOF]), and leave the door open without a question.
+Hard constraint: 50 words maximum, no guilt, no adjectives, no exclamation marks, no "if you're still interested".
+Output: DM text + "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P045 — Inbound DM Conversation Script
+```text
+A prospect commented on your post about [TOPIC]. Write a 6-turn DM conversation that moves from their comment to a call, using [COMPANY], [TRIGGER_EVENT], [PAIN] and [PROOF].
+Output format:
+TURN 1 (them) — what they likely said, max 15 words
+TURN 2 (you) — max 25 words, asks one question
+TURN 3 (them) — likely reply
+TURN 4 (you) — max 25 words, adds [PROOF]
+TURN 5 (them) — likely reply
+TURN 6 (you) — the ask, max 25 words, two concrete times
+Hard constraint: your three turns total 75 words or fewer, no turn contains an adjective or an exclamation mark, and no turn may pitch before turn 4.
+```
+
+## Section 4 — Cold Call Scripts & Objection Handling
+
+### P046 — 15-Second Cold Call Opener
+```text
+You write permission-based cold call openers. Give a word-for-word opener for a call to [NAME], [ROLE] at [COMPANY], referencing the [TRIGGER_EVENT] and the [PAIN] you solve.
+Format:
+LINE 1 — identity + reason for calling (max 18 words)
+LINE 2 — permission question (max 10 words)
+LINE 3 — if they say yes: the one-line relevance statement including [PROOF] (max 20 words)
+LINE 4 — if they say no: graceful exit (max 12 words)
+Hard constraint: no greeting before line 1, no "how are you today", no adjectives, total lines under 60 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P047 — Five-Part Cold Call Ladder
+```text
+Build a full cold call script for [NAME] at [COMPANY] using this five-part ladder, with the [TRIGGER_EVENT] as the reason for calling.
+Output format:
+PART 1 OPENER — word-for-word, max 25 words
+PART 2 REASON — why this call today, max 25 words, includes [PAIN]
+PART 3 DISCOVERY — 3 questions, one line each, each max 12 words
+PART 4 SUMMARY — mirror back what they said, max 30 words, add [PROOF]
+PART 5 CLOSE — book a specific day and time, max 20 words
+Hard constraint: total script 150 words or fewer, no adjectives, no exclamation marks, no question may be answerable with yes/no except the permission ask.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P048 — Objection: We Already Have a Vendor
+```text
+Handle this objection on a live call: "We already use [COMPETITOR]." The prospect is [ROLE] at [COMPANY]; context is [TRIGGER_EVENT] and the [PAIN] you solve; your [PROOF] is ready.
+Format:
+ACKNOWLEDGE — one line, max 12 words, no but/however
+ONE QUESTION — max 15 words, about the vendor relationship
+BRIDGE — max 25 words, introduces [PROOF]
+LAND — max 20 words, asks for a small next step
+Hard constraint: script under 75 words, no adjectives, no exclamation marks, never disparage [COMPETITOR] — one negative word about them is a fail.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P049 — Objection: Not Interested
+```text
+Handle "not interested" on a cold call to [NAME] at [COMPANY]. Do not pitch harder — diagnose.
+Format:
+RESPONSE 1 — max 18 words, accepts and asks which of two causes it is
+IF "NO TIME" — max 20 words, includes a time-specific counter
+IF "NOT A PRIORITY" — max 20 words, links to [TRIGGER_EVENT]
+IF STILL NO — max 15 words, exit with dignity and ask to close the file
+Hard constraint: every line 20 words or fewer, no adjectives, no exclamation marks, no rebuttal that repeats your pitch.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P050 — Objection: Send Me an Email
+```text
+Respond to "just email me" from [NAME] at [COMPANY] on a live call.
+Format:
+LINE 1 — comply + one qualifying question about [PAIN] (max 18 words)
+LINE 2 — the reason the email will be specific (reference [TRIGGER_EVENT]), max 18 words
+LINE 3 — permission to name a time in the subject, max 14 words
+FOLLOW-UP EMAIL — subject (max 6 words) + body under 60 words containing [PROOF]
+Hard constraint: no argument on the call, no adjectives anywhere, no exclamation marks, total output under 160 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P051 — Objection: No Budget
+```text
+Handle "there's no budget" from [NAME] at [COMPANY] after the [TRIGGER_EVENT].
+Format:
+REFRAME — one line distinguishing no budget from no value, max 18 words
+QUESTION — max 14 words, about what happens if [PAIN] stays for 6 months
+VALUE LINE — a cost-of-problem statement using [PROOF], max 22 words
+OPTION — small first step with a real price, max 18 words
+Hard constraint: never drop your price in this response, no adjectives, no exclamation marks, total under 80 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P052 — Objection: Wrong Person
+```text
+[NAME] at [COMPANY] says "I'm not the right person." Get a referral without pressure.
+Format:
+ACCEPT — one line, max 10 words
+ASK — who owns [PAIN], max 14 words
+VERIFY — one line to make the handoff easy (name, role, best channel), max 16 words
+CLOSE TO THEM — thank-you line that makes referring you effortless, max 14 words
+FOLLOW-UP DM TO REFERRAL — under 60 words referencing the [TRIGGER_EVENT]
+Hard constraint: no adjectives, no exclamation marks, total output under 150 words, the referral message must not reveal [NAME] said no.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P053 — Objection: Call Me Back in Six Months
+```text
+Handle "call me back in 6 months" from [NAME] at [COMPANY], where [TRIGGER_EVENT] suggests the timeline will not wait.
+Format:
+AGREE — one line accepting the timeline, max 12 words
+TEST — one question exposing what changes between now and then, max 16 words
+FACT — what the [TRIGGER_EVENT] does to that timeline, max 20 words
+PIVOT — propose a 10-minute check-in now instead of a sale, max 18 words
+Hard constraint: no pushiness, no adjectives, one question mark, total under 70 words, and if the timeline is genuinely safe write "LET THEM GO — say so explicitly".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P054 — Objection: How Much Is It?
+```text
+The prospect asks price first: "How much is it?" You are calling [NAME] at [COMPANY] about [PAIN].
+Format:
+LINE 1 — answer honestly in a range plus one condition, max 18 words
+LINE 2 — one qualifying question so the number has context, max 14 words
+LINE 3 — if they press: give the number and immediately attach [PROOF], max 20 words
+LINE 4 — return to fit: max 16 words
+Hard constraint: never refuse to answer, no adjectives around the price, no exclamation marks, total under 70 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P055 — Gatekeeper Navigation
+```text
+You are a gatekeeper scriptwriter. Write the exchange for reaching [ROLE] at [COMPANY] when a gatekeeper answers, using the [TRIGGER_EVENT] as the reason for the call.
+Format:
+YOU — line 1 (identity, max 12 words)
+GATEKEEPER — likely line
+YOU — line 2 (reason without pitching, max 14 words)
+GATEKEEPER — likely line
+YOU — line 3 (routing ask, max 12 words)
+FALLBACK — if refused: max 14 words, asks for the best time and channel
+Hard constraint: no deception, no fake familiarity, no adjectives, total under 70 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF] (use [PAIN] and [PROOF] only in the follow-up email below the script).
+```
+
+### P056 — Discovery Questions Mapped to Pain
+```text
+Design a discovery sequence for calls with [ROLE] at [COMPANY]: 7 questions that uncover the real shape of [PAIN].
+Output format (table):
+# | QUESTION (max 14 words) | WHY I ASK (max 10 words) | LISTEN FOR (the answer that means you should continue) | IF YES -> [PROOF] TO USE
+Constraints: exactly 7 questions, no yes/no questions, no question may contain two questions, no adjectives, total output under 450 words, question 7 must be about the cost of doing nothing.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P057 — 30-Word Voicemail
+```text
+Write a cold voicemail for [NAME] at [COMPANY] about [PAIN], triggered by [TRIGGER_EVENT], with [PROOF] as credibility.
+Format:
+VOICEMAIL — word-for-word, must be speakable in under 12 seconds
+CALLBACK LINE — number repetition instruction (say it twice or not at all)
+Hard constraint: 30 words maximum, no greeting, no "I'm just calling to", no adjectives, no exclamation marks, exactly one callback instruction.
+Output: the script plus "WORDS: n".
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P058 — Specific-Time Close
+```text
+Write the closing section of a cold call to [NAME] at [COMPANY] that books a specific time rather than "sometime next week".
+Format:
+SUMMARY — mirror of their stated [PAIN], max 20 words
+AGENDA — what the 20 minutes will cover, 3 bullets max 6 words each
+OFFER TWO — "Tuesday 10:00 or Thursday 15:00" style, both concrete, with [PROOF] mentioned as what you will bring
+HOLD — what to say if both are refused, max 14 words
+Hard constraint: no adjectives, no exclamation marks, total under 70 words, never propose a day without a time.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```
+
+### P059 — Eight Objections, One Line Each
+```text
+Give one-line responses to these 8 objections on a call to [NAME] at [COMPANY]: (1) "we already use [COMPETITOR]" (2) "no budget" (3) "send an email" (4) "not interested" (5) "call me next quarter" (6) "how much?" (7) "I'm not the decision maker" (8) "we tried something like this".
+Each response: accept first, then one question or one fact using [PAIN], [TRIGGER_EVENT] or [PROOF].
+Hard constraint: each response 25 words maximum, no adjectives, no exclamation marks, no two responses may share their first word, total output under 300 words.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF] must each appear in at least two responses.
+```
+
+### P060 — Call Autopsy and Rewritten 30 Seconds
+```text
+Act as a call coach. Here is a transcript: [SOURCE] of a call I made to [NAME] at [COMPANY] about [PAIN].
+Output format:
+SCORE /10 on: opener, discovery, proof use, close
+5 FINDINGS — each: WHAT HAPPENED (max 10 words) | WHAT TO SAY INSTEAD (max 18 words)
+REWRITE — the worst 30 seconds of the call, word for word, using [TRIGGER_EVENT] and [PROOF]
+Hard constraint: findings must quote the transcript, no adjectives in the rewrite, rewrite 90 words or fewer, no exclamation marks.
+Personalization slots required: [COMPANY], [TRIGGER_EVENT], [PAIN], [PROOF].
+```

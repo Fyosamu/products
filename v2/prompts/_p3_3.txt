@@ -1,0 +1,288 @@
+## Section 5 — Recruiter Outreach DMs
+
+### P061 — DM About a Specific Role
+```text
+Write a LinkedIn DM to an in-house recruiter at [COMPANY] about [TARGET_ROLE].
+Format:
+LINE 1 — why this role specifically (from [JD], max 16 words)
+LINE 2 — my one-line proof ([METRIC] from [SOURCE], max 16 words)
+LINE 3 — the ask: is it open + best way to apply (max 14 words)
+Hard constraint: 70 words maximum, one question mark, no exclamation marks, no adjectives, no "I believe I am the perfect fit", no full resume pasted.
+Output: DM text + "WORDS: n".
+```
+
+### P062 — DM to an Agency Recruiter
+```text
+Write a first DM to an agency recruiter who covers [TARGET_ROLE] in [LOCATION/SECTOR].
+Format:
+LINE 1 — who I am in one line ([CURRENT_TITLE], [YEARS], [SOURCE])
+LINE 2 — what I am looking for (specific: level, sector, location) — max 16 words
+LINE 3 — what makes me easy to place: one [METRIC] + availability (max 16 words)
+LINE 4 — the ask, one line
+Hard constraint: 70 words maximum, no exclamation marks, no adjectives, no résumé attachment mentioned, no salary in the first DM.
+```
+
+### P063 — Three-Touch Recruiter Follow-Up
+```text
+I sent a DM to [RECRUITER] at [COMPANY] about [TARGET_ROLE] and got nothing. Write three follow-ups.
+Format:
+TOUCH 2 (day 3) — 45 words max, adds one new fact from [SOURCE]
+TOUCH 3 (day 8) — 45 words max, asks a different question (fit, timing)
+TOUCH 4 (day 15) — 35 words max, closes the loop without guilt
+Hard constraint: no touch may contain "just bumping this", no adjectives, one question mark per touch maximum, no exclamation marks, total under 130 words, and no touch may repeat an ask already made.
+```
+
+### P064 — "Tell Me About Yourself" in DM Form
+```text
+Answer "tell me about yourself" inside a LinkedIn DM for [TARGET_ROLE] at [COMPANY], using [SOURCE].
+Format:
+4 lines: NOW (what I do, max 16 words) / PROOF ([METRIC], max 16 words) / RELEVANCE to [JD] (max 16 words) / WHAT I WANT NEXT (max 14 words)
+Hard constraint: 90 words maximum, no life story, no mention of graduation unless [SOURCE] requires it, no adjectives, no exclamation marks, present tense first, past tense second.
+```
+
+### P065 — Salary Expectation in DM
+```text
+A recruiter asked "what are your salary expectations?" in DM for [TARGET_ROLE]. Write three answers.
+VARIANT A — give a researched range: [RANGE] + one clause on scope
+VARIANT B — deflect once, with a question about the band (max 18 words)
+VARIANT C — state a number confidently with a reason (max 18 words)
+Hard constraint: each answer 45 words maximum, one question mark maximum, no "it depends", no adjectives, no exclamation marks, and a one-line note on when to use each.
+```
+
+### P066 — Logistics Answers (Work Authorization, Relocation)
+```text
+Write short, honest DM answers to three recruiter screening questions, based only on [SOURCE]: (1) work authorization, (2) relocation to [LOCATION], (3) notice period.
+Format:
+Q1 / A1 (max 25 words) / Q2 / A2 (max 25 words) / Q3 / A3 (max 25 words)
+Hard constraint: 25 words per answer maximum, direct answer in the first 3 words of each, no adjectives, no exclamation marks, nothing invented — if [SOURCE] lacks the detail, write "[NEEDS MY DETAIL]" and stop.
+```
+
+### P067 — Employee Referral Ask
+```text
+Write a DM asking [CONTACT] for a referral to [TARGET_ROLE] at [COMPANY].
+Format:
+LINE 1 — the role + why them (they are on that team), max 16 words
+LINE 2 — one-line case for me: [METRIC] + [SKILL_1] (max 18 words)
+LINE 3 — what I will send them (a 60-word blurb they can forward), max 12 words
+LINE 4 — the ask with a date, max 12 words
+FORWARDABLE BLUB — 60 words max, included below the DM
+Hard constraint: DM 70 words maximum, no guilt, no adjectives, one question mark, no exclamation marks.
+```
+
+### P068 — Cold DM to the Hiring Manager
+```text
+Write a DM directly to the [HIRING_MANAGER] posting for [TARGET_ROLE] at [COMPANY] (not the recruiter).
+Format:
+LINE 1 — the problem their team likely has, from [JD] (max 16 words)
+LINE 2 — the one result of mine that maps: [METRIC] (max 16 words)
+LINE 3 — a specific question or offer of a 2-page idea (max 16 words)
+Hard constraint: 65 words maximum, no mention of applying through the portal, no adjectives, one question mark maximum, no exclamation marks, no résumé request.
+```
+
+### P069 — "Is This Role Still Open?"
+```text
+Write three versions of "is this role still open?" for [TARGET_ROLE] at [COMPANY] — one neutral, one with proof, one after the closing date.
+Format:
+VERSION A — neutral, 35 words max
+VERSION B — with [METRIC] from [SOURCE], 45 words max
+VERSION C — post-deadline, asking if it was filled or will reopen, 40 words max
+Hard constraint: no version may contain an adjective or an exclamation mark, one question mark each, and each must give them a reason to answer (state it in a final line under 10 words).
+```
+
+### P070 — Post-Interview Nudge to Recruiter
+```text
+I interviewed for [TARGET_ROLE] at [COMPANY] on [DATE] and heard nothing. Write a nudge DM.
+Format:
+LINE 1 — thank you + one specific thing from the conversation ([SOURCE]), max 18 words
+LINE 2 — the status question, max 14 words
+LINE 3 — flexibility or a new fact ([METRIC]), max 14 words
+Hard constraint: 60 words maximum, one question mark, no adjectives, no exclamation marks, no impatience, and a fallback line (max 12 words) if they do not reply in 5 days.
+```
+
+### P071 — Responding to a Rejection With Another Role
+```text
+I was rejected for [TARGET_ROLE] at [COMPANY]. Write a DM that accepts it and asks about a better-fit role.
+Format:
+LINE 1 — accept without argument (max 12 words)
+LINE 2 — the specific other role or team, from [SOURCE] or their careers page (max 14 words)
+LINE 3 — the one-line proof that maps to it ([METRIC]), max 16 words
+LINE 4 — the ask, max 12 words
+Hard constraint: 60 words maximum, no adjectives, no exclamation marks, one question mark, no "may I ask why".
+```
+
+### P072 — Thank-You DM After a Screen
+```text
+Write a thank-you DM to [RECRUITER] after a 30-minute screen for [TARGET_ROLE] at [COMPANY], referencing one real exchange from [SOURCE].
+Format:
+LINE 1 — one specific thing I took from the call, max 18 words
+LINE 2 — the detail I forgot to mention (only if [SOURCE] has one), max 18 words
+LINE 3 — next step restated + my availability (one line)
+Hard constraint: 70 words maximum, no adjectives, no exclamation marks, no "it was great speaking with you" as the opener, no more than one ask.
+```
+
+### P073 — Passive Nurture (Not Looking Now)
+```text
+A recruiter reached out but I am not looking. Write a DM that keeps the door open for [TARGET_ROLE] at [COMPANY].
+Format:
+LINE 1 — decline plainly, max 12 words
+LINE 2 — what would change my mind (one specific condition), max 16 words
+LINE 3 — offer to stay in touch or refer someone, max 14 words
+Hard constraint: 50 words maximum, no apology, no adjectives, no exclamation marks, no false openness, and must be honourable if they message in 6 months.
+```
+
+### P074 — One-Liner Availability Pitches
+```text
+Write 5 one-line DM pitches about my availability for [TARGET_ROLE], each usable in a different context, from [SOURCE].
+Format:
+CONTEXT (DM to recruiter / comment on their post / after a job alert / warm intro / event follow-up)
+LINE — max 25 words, contains [CURRENT_TITLE] + [METRIC] + availability
+Hard constraint: 5 lines total, no line may exceed 25 words, no adjectives, no two lines may share their first 3 words, no exclamation marks, and each must work without an attachment.
+```
+
+### P075 — Scenario DM Pack Under 60 Words
+```text
+Write 6 LinkedIn DMs for recruiter scenarios, each under 60 words, all based on [SOURCE]: (1) first contact after applying, (2) asked to complete a task and I have a question, (3) offer received and I need clarification, (4) start date negotiation, (5) withdrawing my application, (6) checking a duplicate application.
+Output format: SCENARIO / DM TEXT / "WORDS: n"
+Hard constraint: 60 words maximum each, no adjectives, one question mark maximum per DM, no exclamation marks, and every DM must end with a line that makes replying easy.
+```
+
+## Section 6 — Interview Answers (STAR): The 20 Most-Asked Questions
+
+### P076 — Tell Me About Yourself
+```text
+Build my answer to "Tell me about yourself" for [TARGET_ROLE] at [COMPANY] from [SOURCE].
+Format:
+ANSWER (spoken, 90 seconds / max 220 words) in three moves: NOW (max 40 words) / PROOF (max 90 words, must contain [METRIC]) / WHY HERE (max 60 words, must reference [COMPANY])
+DELIVERY NOTE — the one line to slow down on
+TRIM VERSION — 30 seconds, max 70 words
+Constraints: no chronological autobiography, no childhood, no mention of anything absent from [SOURCE], first person, no adjective stacks, must end by turning to them (a question or an invitation to probe).
+```
+
+### P077 — Why This Company?
+```text
+Answer "Why [COMPANY]?" for [TARGET_ROLE] using this research: [SOURCE] and my history [SOURCE2].
+Format:
+ANSWER (max 150 words): SIGNAL (one specific fact about them, max 30 words) / PATTERN (how it connects to work I have done, max 50 words, include [METRIC]) / CONTRIBUTION (what I would bring first, max 40 words) / PROBE (one question I would ask them, max 15 words)
+Constraints: no compliment-only sentences, every fact from [SOURCE], no "your innovative culture", must be answerable without sounding like their marketing page.
+```
+
+### P078 — Why Are You Leaving?
+```text
+Answer "Why are you leaving [CURRENT_COMPANY]?" honestly and safely, from [SOURCE].
+Format:
+ANSWER (max 110 words): SITUATION (one line, neutral) / PULL (what the new role offers, max 45 words) / PROOF I AM NOT FLEEING (a commitment I made, max 40 words, include [METRIC])
+FORBIDDEN — 3 things I must not say (list them, max 8 words each)
+TRIM VERSION — 40 words
+Constraints: no negativity about any employer or person, no boss criticism, no salary as the reason, no claim absent from [SOURCE].
+```
+
+### P079 — Greatest Weakness
+```text
+Answer "What is your greatest weakness?" for [TARGET_ROLE] at [COMPANY] from [SOURCE].
+Format:
+ANSWER (max 130 words): THE WEAKNESS (real, job-relevant, not a strength in disguise — max 20 words) / SPECIFIC EXAMPLE ([STORY], max 60 words) / WHAT I DO NOW (system or habit, max 35 words) / PROGRESS (one measurable sign, max 15 words)
+WHY THIS ANSWER IS SAFE — one line
+Constraints: never "perfectionism", never a weakness that is a core requirement of [JD], no fabricated example, no claim of having fixed it completely.
+```
+
+### P080 — Greatest Strength
+```text
+Answer "What is your greatest strength?" for [TARGET_ROLE] with evidence, from [SOURCE].
+Format:
+ANSWER (max 120 words): STRENGTH (one word, max 3 words) / PROOF ([STORY] compressed, max 60 words with [METRIC]) / WHY IT MATTERS FOR THIS ROLE (max 35 words, tied to [JD]) / LIMIT (one honest bound, max 15 words)
+Constraints: no adjective-led answer ("I'm a hard worker"), the strength must be required by [JD], every claim from [SOURCE], no superlatives about myself.
+```
+
+### P081 — Failure and Coworker Conflict
+```text
+Build answers to two questions from [SOURCE]: (A) "Tell me about a time you failed" and (B) "Tell me about a conflict with a coworker."
+Format for each:
+ANSWER (STAR, max 160 words): S (max 25) / T (max 30) / A (max 70, my actions only, past tense) / R (max 35, result + [METRIC] or "[NO METRIC]")
+RED LINE — one thing not to say in each answer (max 10 words)
+Constraints: no answer may blame another person, no failure may be a fake strength in disguise, every detail from [STORY]/[SOURCE], no answer may end before the result is stated.
+```
+
+### P082 — Leading Without Authority and Going Beyond
+```text
+Build answers to two questions from [SOURCE]: (A) "Tell me about a time you led without authority" and (B) "Tell me about a time you went above and beyond."
+Format for each:
+ANSWER (STAR, max 150 words): S (20) / T (25) / A (70 — verbs: I proposed, I built, I followed up) / R (35, with [METRIC] or "[NO METRIC]")
+EVIDENCE CHECK — the line in [SOURCE] that proves the action happened
+Constraints: "above and beyond" must not be unpaid overtime bragging (frame it as initiative with a result), no self-praise adjectives, no claim absent from [SOURCE].
+```
+
+### P083 — Deadlines and Caught Mistake
+```text
+Build answers to two questions from [SOURCE]: (A) "Tell me about a time you missed or met a tight deadline" and (B) "Tell me about a time you caught a mistake — yours or someone else's."
+Format for each:
+ANSWER (STAR, max 150 words) with S/T/A/R labelled, A max 70 words, R max 35 words containing a number or "[NO METRIC]"
+WHAT THE INTERVIEWER IS TESTING — one line
+Constraints: for (A) the answer must state whether the deadline was met and what I traded off; for (B) I must say whose mistake it was honestly; no blame language; no claim absent from [SOURCE].
+```
+
+### P084 — Manager Disagreement and Difficult Stakeholder
+```text
+Build answers to two questions from [SOURCE]: (A) "Tell me about a time you disagreed with your manager" and (B) "Tell me about a difficult stakeholder."
+Format for each:
+ANSWER (STAR, max 150 words), with A (max 70 words) showing how I disagreed — in private, with data, having accepted the decision if overruled
+RESPECT CHECK — one line confirming no disrespect in the story
+Constraints: never portray the manager/stakeholder as stupid, no victory speech, every detail from [STORY], result must be stated even if it was a partial win, no adjectives about the other person.
+```
+
+### P085 — Proudest Achievement and Differentiator
+```text
+Build answers to two questions from [SOURCE]: (A) "What achievement are you proudest of?" and (B) "What sets you apart from other candidates?"
+Format for each:
+ANSWER (STAR or direct, max 140 words), A for (A) must contain [METRIC] and one sentence on why it mattered to someone else (not just me)
+FOR (B) — DIFFERENTIATOR (max 12 words) / PROOF (max 50 words) / FIT (max 40 words to [JD])
+Constraints: no "I'm a perfectionist", no claim absent from [SOURCE], no comparing myself to named people, no adjective-led openings.
+```
+
+### P086 — Where Do You See Yourself in Five Years?
+```text
+Answer "Where do you see yourself in 5 years?" for [TARGET_ROLE] at [COMPANY], honestly, from [SOURCE].
+Format:
+ANSWER (max 110 words): NEAR (12 months, max 35 words, tied to [JD]) / MID (2-3 years, capability I will own, max 40 words) / FAR (5 years, max 25 words) / BRIDGE (how this role is the right next step, max 15 words)
+Constraints: no answer may promise a title the company cannot grant, no management claim unless [SOURCE] shows it, no answer may signal I will leave for my own business — keep it role-shaped.
+```
+
+### P087 — Feedback and Resisting Change
+```text
+Build answers to two questions from [SOURCE]: (A) "Tell me about a time you received critical feedback" and (B) "Tell me about a time you resisted a change and how you handled it."
+Format for each:
+ANSWER (STAR, max 150 words), A (max 70 words) must show what I did differently afterwards with a measurable sign
+FOR (B) — the moment I committed publicly (one line)
+Constraints: no answer may end with me being right all along, feedback must be real and somewhat critical (not "they said I care too much"), every detail from [SOURCE].
+```
+
+### P088 — Do You Have Any Questions for Us?
+```text
+Build my closing question set for a [TARGET_ROLE] interview at [COMPANY], informed by [SOURCE] (the JD, the careers page, recent news).
+Output format:
+12 QUESTIONS in 3 tiers: FOR THE HIRING MANAGER (4) / FOR THE TEAM (4) / FOR THE BUSINESS (4) — each ≤ 16 words, each with a one-line "good answer sounds like" note (≤ 12 words)
+TOP 3 — the ones I must ask in a 45-minute interview
+Constraints: no question about salary or benefits in this set (that is a later stage), no question answerable by the JD, no "what does a typical day look like", no two questions on the same topic.
+```
+
+### P089 — Why Should We Hire You?
+```text
+Answer "Why should we hire you?" for [TARGET_ROLE] at [COMPANY], using [JD] and [SOURCE].
+Format:
+ANSWER (max 100 words): THEIR #1 REQUIREMENT (name it, max 12 words) / MY PROOF ([METRIC] + context, max 45 words) / SECOND REQUIREMENT + PROOF (max 30 words) / RISK I REMOVE (max 13 words)
+Constraints: no superlatives ("best candidate"), no claim absent from [SOURCE], must be specific enough that a rival could not say the same sentence, no adjectives about personality.
+```
+
+### P090 — Universal STAR Builder
+```text
+You structure interview answers. I will give you a question and my raw material; return an answer in STAR form.
+Format:
+INPUTS: QUESTION: [QUESTION] / RAW STORY: [STORY] / TARGET ROLE: [TARGET_ROLE] / KEY REQUIREMENT: [SKILL_1]
+OUTPUT:
+SITUATION — max 30 words, past tense, one scene
+TASK — max 25 words, my responsibility only
+ACTION — 3 beats, max 25 words each, each starting with a verb, each "I" not "we"
+RESULT — max 35 words, with [METRIC] or "[NO METRIC: state what changed instead]"
+25-SECOND VERSION — max 70 words
+LIKELY FOLLOW-UPS — 3 questions, each max 12 words, with a one-line answer note
+Constraints: total under 380 words, nothing invented beyond [STORY], no "we" in the ACTION beats, no adjectives used as evidence.
+```

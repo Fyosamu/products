@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The AI Prompt Vault for Freelancers</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: 'Georgia', 'Times New Roman', serif; color: #2B2D42; font-size: 10.2pt; line-height: 1.5; }
+  .page { width: 210mm; min-height: 297mm; padding: 16mm 18mm; page-break-after: always; position: relative; }
+  .page:last-child { page-break-after: auto; }
+
+  /* ---------- COVER ---------- */
+  .cover { background: #1F2A44; color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+  .cover .kicker { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10pt; letter-spacing: 4px; text-transform: uppercase; color: #0FA3B1; }
+  .cover h1 { font-size: 44pt; line-height: 1.08; font-weight: normal; margin-top: 18mm; letter-spacing: -1px; }
+  .cover h1 span { color: #0FA3B1; }
+  .cover .sub { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 13pt; color: #B8C4D9; margin-top: 10mm; max-width: 130mm; line-height: 1.5; }
+  .cover .bar { height: 6px; width: 60mm; background: #F4B942; margin: 8mm 0; }
+  .cover .foot { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9pt; color: #8D99AE; display: flex; justify-content: space-between; border-top: 1px solid #3A4560; padding-top: 6mm; }
+
+  /* ---------- TYPOGRAPHY ---------- */
+  h2.chapter { font-size: 21pt; color: #1F2A44; font-weight: normal; margin-bottom: 3mm; letter-spacing: -0.5px; }
+  .ch-num { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9pt; letter-spacing: 3px; text-transform: uppercase; color: #0FA3B1; margin-bottom: 12mm; display: block; }
+  h3 { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12pt; color: #1F2A44; margin: 6mm 0 2mm; }
+  p { margin-bottom: 3mm; text-align: justify; }
+  .lead { font-size: 11.5pt; color: #555B7A; font-style: italic; margin-bottom: 5mm; line-height: 1.5; }
+
+  .prompt-box { background: #EAF4F4; border-left: 4px solid #0FA3B1; padding: 3.5mm 5mm; margin: 3.5mm 0; page-break-inside: avoid; }
+  .prompt-box .p-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 8pt; letter-spacing: 2px; text-transform: uppercase; color: #0FA3B1; font-weight: bold; margin-bottom: 1.5mm; }
+  .prompt-box .p-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 9.2pt; line-height: 1.45; color: #1F2A44; text-align: left; }
+
+  .tip { background: #FFF7E5; border-left: 4px solid #F4B942; padding: 3mm 5mm; margin: 3.5mm 0; font-size: 9.6pt; page-break-inside: avoid; }
+  .tip b { color: #B8860B; }
+
+  ul, ol { margin: 0 0 3.5mm 6mm; }
+  li { margin-bottom: 2mm; text-align: justify; }
+
+  /* ---------- TOC ---------- */
+  .toc-row { display: flex; align-items: baseline; padding: 4mm 0; border-bottom: 1px dotted #C9D2E0; }
+  .toc-row .t { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12pt; color: #1F2A44; font-weight: bold; }
+  .toc-row .d { font-size: 10pt; color: #8D99AE; margin-left: 4mm; }
+  .toc-row .n { margin-left: auto; font-family: 'Helvetica Neue', Arial, sans-serif; color: #0FA3B1; font-weight: bold; }
+
+  .footer { position: absolute; bottom: 12mm; left: 20mm; right: 20mm; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 8.5pt; color: #8D99AE; display: flex; justify-content: space-between; border-top: 1px solid #E3E8F0; padding-top: 3mm; }
+
+  .stat-row { display: flex; gap: 5mm; margin: 5mm 0; }
+  .stat { flex: 1; background: #1F2A44; color: #fff; padding: 4mm; text-align: center; border-radius: 3px; }
+  .stat .big { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 19pt; color: #F4B942; font-weight: bold; }
+  .stat .lbl { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 8pt; color: #B8C4D9; text-transform: uppercase; letter-spacing: 1px; margin-top: 2mm; }
+  .toc-row { padding: 3mm 0; }
+  .lib { font-size: 8.6pt; line-height: 1.38; }
+  .lib .p-text { font-size: 8.4pt; line-height: 1.36; }
+  .lib .prompt-box { padding: 2.6mm 4mm; margin: 2.4mm 0; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<div class="page cover">
+  <div>
+    <div class="kicker">Digital Playbook · 2026 Edition</div>
+    <h1>The AI Prompt Vault<br>for <span>Freelancers</span></h1>
+    <div class="bar"></div>
+    <div class="sub">70 copy-paste prompts that write your proposals, emails, marketing and client updates — so you spend your hours on paid work, not on writing about it.</div>
+  </div>
+  <div class="foot">
+    <span>VOLUME 01</span>
+    <span>WRITING · CLIENTS · GROWTH</span>
+    <span>© 2026</span>
+  </div>
+</div>
+
+<!-- ============ TOC ============ -->
+<div class="page">
+  <span class="ch-num">Contents</span>
+  <h2 class="chapter">What's inside</h2>
+  <p class="lead">Eight chapters. Each one solves a specific hour of your week that currently disappears into blank text boxes.</p>
+
+  <div class="toc-row"><span class="t">01</span><span class="d">— Why prompts beat talent at proposal time</span><span class="n">3</span></div>
+  <div class="toc-row"><span class="t">02</span><span class="d">— Winning proposals & pitches</span><span class="n">4</span></div>
+  <div class="toc-row"><span class="t">03</span><span class="d">— Client emails without the anxiety</span><span class="n">5</span></div>
+  <div class="toc-row"><span class="t">04</span><span class="d">— Price quotes & scope negotiation</span><span class="n">6</span></div>
+  <div class="toc-row"><span class="t">05</span><span class="d">— Portfolio & case studies that convert</span><span class="n">7</span></div>
+  <div class="toc-row"><span class="t">06</span><span class="d">— Social content & personal brand</span><span class="n">8</span></div>
+  <div class="toc-row"><span class="t">07</span><span class="d">— Service design & productized offers</span><span class="n">9</span></div>
+  <div class="toc-row"><span class="t">08</span><span class="d">— The 30-minute weekly operating system</span><span class="n">10</span></div>
+  <div class="toc-row"><span class="t">B</span><span class="d">— Bonus: the fill-in-the-blanks formula sheet</span><span class="n">11</span></div>
+  <div class="toc-row"><span class="t">A</span><span class="d">— Appendix: quick prompt library (42 one-liners)</span><span class="n">12</span></div>
+  <div class="toc-row"><span class="t"></span><span class="d">&nbsp;&nbsp;&nbsp;&nbsp;marketing & decisions — continued</span><span class="n">13</span></div>
+
+  <div class="tip" style="margin-top:12mm"><b>How to use this book:</b> don't read it cover to cover once and forget it. Open the chapter that matches the task in front of you today, copy the prompt, fill the <b>[BRACKETS]</b>, and paste it into your AI tool of choice.</div>
+
+  <div class="footer"><span>The AI Prompt Vault for Freelancers</span><span>2</span></div>
+</div>
+
+<!-- ============ CH 1 ============ -->
+<div class="page">
+  <span class="ch-num">Chapter 01</span>
+  <h2 class="chapter">Why prompts beat talent<br>at proposal time</h2>
+
+  <div class="stat-row">
+    <div class="stat"><div class="big">67%</div><div class="lbl">of clients never read past the first two paragraphs</div></div>
+    <div class="stat"><div class="big">4 min</div><div class="lbl">average time a freelancer spends on a "quick" proposal</div></div>
+    <div class="stat"><div class="big">3×</div><div class="lbl">more replies when the proposal mirrors the job post language</div></div>
+  </div>
+
+  <p class="lead">You are not being out-priced. You are being out-written — by people who spent the same four minutes you did, but structured better.</p>
+
+  <p>Here is the uncomfortable truth about freelance marketplaces: the client reads twenty proposals in a row. Nineteen of them open with "Dear Sir, I am writing to express my interest…" Your proposal has about two seconds to look different before the scroll continues.</p>
+
+  <p>Talent decides whether you do the job well. The proposal decides whether you get the chance. This book hands you the second half — the part nobody taught you.</p>
+
+  <h3>The three rules behind every prompt in this book</h3>
+  <ol>
+    <li><b>Context before request.</b> Every effective prompt starts by telling the model who is talking, to whom, and why. The [BRACKETS] in each prompt are where your context lives.</li>
+    <li><b>Constraint creates quality.</b> "Write a proposal" produces mush. "Write a 140-word proposal with a hook, one proof point, one question, zero adjectives" produces a document you can send.</li>
+    <li><b>Never send the first draft.</b> Prompt #0 in every chapter produces a draft. Your job is the edit — that's where your actual expertise enters the text.</li>
+  </ol>
+
+  <div class="tip"><b>The 90-second rule:</b> if a generated draft would take you longer than 90 seconds to fix, the prompt is missing context. Add one sentence about the client's industry and regenerate — don't start rewriting manually.</div>
+
+  <div class="footer"><span>Chapter 01 · Why prompts beat talent</span><span>3</span></div>
+</div>
+
+<!-- ============ CH 2 ============ -->
+<div class="page">
+  <span class="ch-num">Chapter 02</span>
+  <h2 class="chapter">Winning proposals<br>& pitches</h2>
+
+  <p class="lead">The goal of a proposal is not to describe you. It is to make the client feel you already understand the problem.</p>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 02.1 · The mirror proposal</div>    <div class="p-text">You are a senior [SERVICE] freelancer writing a proposal for a client in [INDUSTRY]. Here is their job post: [PASTE]. Write a proposal of maximum 150 words that: (1) opens by naming their exact problem in their own words, (2) states one concrete way I would solve it, (3) includes one relevant proof point I provide below, (4) ends with a single question that moves the conversation forward. No greetings, no "I am passionate", no biography.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 02.2 · The cold outreach opener</div>
+    <div class="p-text">Draft a cold email to [ROLE] at [COMPANY]. I noticed [SPECIFIC OBSERVATION — a recent post, launch, or change on their site]. I do [SERVICE] and helped [SIMILAR COMPANY] achieve [RESULT]. Write under 90 words, one paragraph, ending with a low-friction ask ("Worth a look?" style, never "Are you available for a call?"). Tone: peer-to-peer, zero flattery.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 02.3 · The follow-up that isn't annoying</div>
+    <div class="p-text">Write a follow-up to a client who read my proposal on [PROJECT] and went silent for [NUMBER] days. Reference something specific from their job post, add one new piece of value (an idea, a quick observation about their site/product — I'll provide: [DETAIL]), keep it under 70 words, and give them an easy out ("If the timing's wrong, no problem at all"). Never mention that I'm following up.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 02.4 · The proposal autopsy</div>
+    <div class="p-text">Here is a proposal I sent that got no reply: [PASTE]. And here is the job post: [PASTE]. As a ruthless client who received 30 proposals, tell me: (1) the three weakest sentences and why, (2) what the client wanted to see that is missing, (3) rewrite the first paragraph only. Be blunt.</div>
+  </div>
+
+  <div class="tip"><b>Test it:</b> run Prompt 02.4 on your last two losing proposals before writing a new one. The pattern you find is worth more than the next ten proposals you'll write.</div>
+
+  <div class="footer"><span>Chapter 02 · Winning proposals</span><span>4</span></div>
+</div>
+
+<!-- ============ CH 3 ============ -->
+<div class="page">
+  <span class="ch-num">Chapter 03</span>
+  <h2 class="chapter">Client emails without<br>the anxiety</h2>
+
+  <p class="lead">Every freelancer has a folder of drafts they never sent — the delay message, the price defense, the awkward "you haven't paid yet."</p>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 03.1 · The delay you don't dread</div>
+    <div class="p-text">I need to tell [CLIENT] that [DELIVERABLE] will be [NUMBER] days late because [REASON]. Write an email that: states the new date in the first sentence, gives the reason in one clause without over-apologizing, includes what I'm doing so it doesn't recur, and ends with the next milestone. Max 110 words. No "I sincerely apologize for any inconvenience".</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 03.2 · Scope creep stopper</div>
+    <div class="p-text">Client approved [ORIGINAL SCOPE] for [PRICE], now requesting [NEW REQUEST] saying it's "just a small change". Write a reply that: confirms what the original agreement covered, acknowledges the new request as reasonable on its own, quotes the additional cost or time honestly, and offers two options (add it now for [X] / put it in the next phase). Professional, zero resentment, under 120 words.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 03.3 · The payment reminder</div>
+    <div class="p-text">Invoice [NUMBER] for [AMOUNT] is [NUMBER] days overdue. Write a three-line reminder email that assumes good faith (they probably just forgot), restates the invoice number and due date clearly, and asks a direct yes/no question ("Could you let me know when it's scheduled?"). Do not mention late fees yet. Do not say "just checking in".</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 03.4 · Ending a client relationship cleanly</div>
+    <div class="p-text">I'm ending work with [CLIENT] because [REASON — budget / direction / fit]. Write a short message that: thanks them specifically (not generically), states the end date and what remains delivered, offers a handover of files, and leaves the door open. Warm but final. Under 130 words. Do not hint at the real reason if it's negative.</div>
+  </div>
+
+  <div class="tip"><b>The 24-hour rule:</b> generate the emotional email instantly, then wait a day before sending. The prompt handles the words; you still decide the timing.</div>
+
+  <div class="footer"><span>Chapter 03 · Client emails</span><span>5</span></div>
+</div>
+
+<!-- ============ CH 4 ============ -->
+<div class="page">
+  <span class="ch-num">Chapter 04</span>
+  <h2 class="chapter">Price quotes &<br>scope negotiation</h2>
+
+  <p class="lead">The price conversation goes wrong when you defend a number. It goes right when you explain a decision.</p>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 04.1 · The quote with a story</div>
+    <div class="p-text">Write a price quote for [SERVICE] at [AMOUNT] for a client with [BUDGET SIGNAL — tight / generous / unclear]. Structure: one line on what they get, a three-item scope list, one line on what's excluded (so boundaries exist from day one), the total, and the payment schedule (50% upfront). Frame the price as an investment tied to [OUTCOME THEY CARE ABOUT], never as my time.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 04.2 · "Can you do it cheaper?"</div>
+    <div class="p-text">Client asked for a discount after I quoted [AMOUNT]. Write a reply that does NOT lower the price directly. Instead: offer a reduced-scope option at [LOWER AMOUNT] with fewer deliverables, keep the full package unchanged, and explain in one sentence what gets lost in the reduced version. Confident, no apology, under 100 words.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 04.3 · Turning a fixed quote into a retainer</div>
+    <div class="p-text">The client needs [TASK] repeatedly, not once. Write a proposal converting a one-off [AMOUNT] project into a monthly retainer of [AMOUNT] for [HOURS/DELIVERABLES]. Include: what stays the same for them, what improves (priority scheduling / unused hours roll over), and a 3-month trial framing so saying yes is easy.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 04.4 · Justify my rate</div>
+    <div class="p-text">Help me explain to a skeptical client why I charge [AMOUNT] when another freelancer quoted [LOWER AMOUNT]. Give me three sentences I can say or write that focus on risk reduction (what it costs them if the job is done badly) and outcome, never on my years of experience. Keep each sentence usable on its own.</div>
+  </div>
+
+  <div class="tip"><b>Anchor high, then subtract.</b> Generate quotes with Prompt 04.1 including everything, then remove items in front of the client. A price that drops during the conversation feels like a win; a price that starts low has nowhere to go.</div>
+
+  <div class="footer"><span>Chapter 04 · Price quotes</span><span>6</span></div>
+</div>
+
+<!-- ============ CH 5 ============ -->
+<div class="page">
+  <span class="ch-num">Chapter 05</span>
+  <h2 class="chapter">Portfolio & case studies<br>that convert</h2>
+
+  <p class="lead">A portfolio item says "I made this." A case study says "Here's what changed because I made this." Only one of them gets hired.</p>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 05.1 · Case study from a finished project</div>
+    <div class="p-text">Turn these raw project notes into a case study: [PASTE NOTES/MESSAGES]. Format: (1) The situation — client's problem in two sentences, (2) The approach — three decisions I made and why, (3) The outcome — numbers if I provide them: [NUMBERS], otherwise qualitative results, (4) The client's own words: [QUOTE]. Total under 350 words. Confident, specific, zero buzzwords.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 05.2 · The homepage rewrite</div>
+    <div class="p-text">Rewrite my portfolio homepage intro. Current text: [PASTE]. Target client: [WHO YOU WANT]. The new version must: state what I do and for whom in one line, name the outcome I'm known for, include one proof element, and avoid "passionate", "creative", "results-driven", "welcome to my portfolio". Max 50 words for the headline area.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 05.3 · Before/after captions</div>
+    <div class="p-text">Write a caption for a before/after screenshot of [PROJECT TYPE]. Structure: what it was like before (pain, one line), what I changed (two specific moves), what happened after (result). Add three hashtag suggestions. No emojis unless the platform is Instagram, then max two.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 05.4 · Choose your best work</div>
+    <div class="p-text">Here are 8 projects in my portfolio: [LIST WITH ONE LINE EACH]. I want to keep only 4 for a proposal-ready portfolio targeting [CLIENT TYPE]. Rank them by relevance, tell me which two to cut and why, and for each of the four survivors write a 12-word project title that sells the outcome instead of naming the deliverable.</div>
+  </div>
+
+  <div class="tip"><b>Repetition beats completeness.</b> The same four excellent projects, re-ordered per client, will outperform a fifteen-item archive every time.</div>
+
+  <div class="footer"><span>Chapter 05 · Portfolio & case studies</span><span>7</span></div>
+</div>
+
+<!-- ============ CH 6 ============ -->
+<div class="page">
+  <span class="ch-num">Chapter 06</span>
+  <h2 class="chapter">Social content &<br>personal brand</h2>
+
+  <p class="lead">You don't need to post daily. You need three posts a month that make a potential client think: "this person solves my problem."</p>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 06.1 · A month of posts in one sitting</div>
+    <div class="p-text">Generate 12 LinkedIn/X posts for me over four weeks. My expertise: [NICHE]. My audience: [WHO]. Themes rotate: (a) a mistake I see clients make, (b) a before/after from my work [EXAMPLE], (c) a strong opinion on [TOPIC IN NICHE]. Each post: a hook line, 120-180 words of body, one takeaway. No hashtags in the body. Vary sentence length so posts don't sound identical.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 06.2 · The credibility thread</div>
+    <div class="p-text">Write a thread/story breaking down how I [SOLVE SPECIFIC PROBLEM], based on this experience: [PASTE STORY OR NOTES]. Open with a pattern-interrupt line (a number, a contradiction, or a cost). Then 5-7 short steps. End with a single soft CTA pointing to my [OFFER/LINK]. Each line must survive being read on a phone.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 06.3 · Repurpose one piece into five</div>
+    <div class="p-text">Here is one long piece of content I already wrote: [PASTE]. Repurpose it into: (1) a short X/Twitter post, (2) a LinkedIn post with a different angle, (3) a 3-slide carousel outline, (4) a 45-second talking-head script, (5) a newsletter paragraph. Keep the core idea but change the opening hook of each — they must not all start the same way.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 06.4 · Turn comments into clients</div>
+    <div class="p-text">These are comments/questions people left on my recent post: [PASTE]. Write one detailed public reply to the best question (the one a potential client would also have), answering it fully enough to prove expertise but ending with a nuance that makes people want to ask me directly. 150 words max.</div>
+  </div>
+
+  <div class="tip"><b>Schedule, don't improvise.</b> Run Prompt 06.1 once a month, spend 30 minutes editing the twelve drafts, and schedule them. Consistency is a batch process, not a daily mood.</div>
+
+  <div class="footer"><span>Chapter 06 · Social content</span><span>8</span></div>
+</div>
+
+<!-- ============ CH 7 ============ -->
+<div class="page">
+  <span class="ch-num">Chapter 07</span>
+  <h2 class="chapter">Service design &<br>productized offers</h2>
+
+  <p class="lead">Charging by the hour caps you. Packaging an outcome lets the price reflect the value, not the clock.</p>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 07.1 · Find my productized offer</div>
+    <div class="p-text">Based on these services I already sell: [LIST], and the clients I enjoy most: [DESCRIBE], design ONE productized offer — a fixed scope, fixed price, fixed timeline service. Give me: a name, the one-line promise, what's included (max 5 items), what's excluded, the price bracket with reasoning, and delivery time. Reject anything that can't be delivered in under 2 weeks.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 07.2 · Tiered pricing page</div>
+    <div class="p-text">Create a three-tier pricing structure for [SERVICE]: Essential / Standard / Premium. Middle tier is the one I want to sell. Give me a headline for each tier, three bullet points per tier, and a "best for" line. Make the difference between tiers about outcomes and speed, not just feature counts.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 07.3 · Onboarding sequence</div>
+    <div class="p-text">Write a 4-email onboarding sequence for a new client starting [SERVICE] with me. Email 1 (immediately): what happens this week + what I need from them. Email 2 (midpoint): progress + one decision they need to make. Email 3 (before delivery): manage expectations on the walkthrough. Email 4 (after delivery): feedback request + referral ask. Each under 130 words, friendly and organized.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 07.4 · Kill a losing service</div>
+    <div class="p-text">Here are my services with approximate time spent and revenue: [DATA]. Identify which one I should raise the price on, which I should kill, and which I should bundle. For each, give me one sentence of reasoning and the exact next action this month.</div>
+  </div>
+
+  <div class="tip"><b>The test:</b> if you can't describe your offer in one sentence without using the word "or", it isn't productized yet. Run Prompt 07.1 until the sentence stands alone.</div>
+
+  <div class="footer"><span>Chapter 07 · Service design</span><span>9</span></div>
+</div>
+
+<!-- ============ CH 8 ============ -->
+<div class="page">
+  <span class="ch-num">Chapter 08</span>
+  <h2 class="chapter">The 30-minute weekly<br>operating system</h2>
+
+  <p class="lead">Freelancers don't fail at skill. They fail at admin — the invoices never sent, the follow-ups never made, the pipeline that's empty because last month was busy.</p>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 08.1 · Monday planning (10 min)</div>
+    <div class="p-text">Here is my task list and calendar for this week: [PASTE]. I have approximately [HOURS] available after client work. Identify: (1) the ONE revenue-generating task that can't slip, (2) the tasks to delegate or delete, (3) a realistic order for the week. Format as a checklist with time estimates. Be conservative — I always overestimate what fits in a day.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 08.2 · Friday pipeline review (10 min)</div>
+    <div class="p-text">Here's what happened this week: [PASTE MESSAGES/NOTES/INVOICES]. Tell me: who's waiting on me right now, which proposals need a follow-up, which invoice is due or late, and who I should reach out to before the week ends. Output as four lists I can act on in 10 minutes.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 08.3 · The quarterly reset (30 min)</div>
+    <div class="p-text">Review my last [NUMBER] weeks: [PASTE SUMMARY]. Answer: (1) which client/project was worth repeating, (2) which drained me relative to what it paid, (3) what I should charge 15-20% more for next quarter, (4) one skill to invest in and one to stop learning. Be direct; I want decisions, not encouragement.</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Prompt 08.4 · When everything lands at once</div>
+    <div class="p-text">I have [NUMBER] deadlines within [TIMEFRAME] and I'm overwhelmed. Here's the list: [PASTE]. Give me a triage plan: what gets delivered at full quality, what gets delivered at "good enough", what gets renegotiated (with a draft message for each renegotiation), and what I say no to. Top of the plan: the first physical action I should take in the next 15 minutes.</div>
+  </div>
+
+  <div class="tip"><b>Protect the two 10-minute slots.</b> Monday and Friday reviews are the whole system. Everything else in this chapter is optional; these two are what keep clients paid and pipelines full.</div>
+
+  <div class="footer"><span>Chapter 08 · Weekly operating system</span><span>10</span></div>
+</div>
+
+<!-- ============ BONUS ============ -->
+<div class="page">
+  <span class="ch-num">Bonus</span>
+  <h2 class="chapter">The fill-in-the-blanks<br>formula sheet</h2>
+
+  <p class="lead">Every prompt in this book follows the same skeleton. Once you see it, you can build your own in thirty seconds.</p>
+
+  <div class="prompt-box">
+    <div class="p-label">The universal formula</div>
+    <div class="p-text">You are [ROLE] writing [ARTIFACT] for [AUDIENCE].<br>Context: [WHAT'S HAPPENED SO FAR].<br>Task: [WHAT YOU WANT].<br>Constraints: [LENGTH / TONE / THINGS TO AVOID].<br>Format: [BULLETS / PARAGRAPHS / CHECKLIST].</div>
+  </div>
+
+  <h3>Five lines that instantly improve any prompt</h3>
+  <ul>
+    <li><b>“Mirror their language.”</b> — paste the client's own words and instruct the model to use them.</li>
+    <li><b>“Name what to avoid.”</b> — banning three phrases kills 90% of generic AI tone.</li>
+    <li><b>“Give one example of the voice you want.”</b> — a single sample outperforms three paragraphs of description.</li>
+    <li><b>“Ask clarifying questions before writing.”</b> — when context is thin, this prevents a confident wrong answer.</li>
+    <li><b>“Give me three versions: safe, bold, and short.”</b> — choice beats revision.</li>
+  </ul>
+
+  <h3>Your editing checklist (the human part)</h3>
+  <ol>
+    <li>Does the first line mention <b>their</b> problem, not my credentials?</li>
+    <li>Is there exactly <b>one</b> call to action?</li>
+    <li>Did I replace every generic adjective with a <b>specific number or name</b>?</li>
+    <li>Would I say this sentence <b>out loud</b> to the client?</li>
+    <li>Is it <b>shorter</b> than I first wrote it?</li>
+  </ol>
+
+  <div class="tip" style="margin-top:8mm"><b>That's the whole system.</b> Prompt for speed, edit for judgment, send with confidence. The freelancers who win aren't the ones who work more hours — they're the ones who never let the writing take the hours in the first place.</div>
+
+  <div class="footer"><span>Bonus · Formula sheet</span><span>11</span></div>
+</div>
+
+<!-- ============ QUICK LIBRARY ============ -->
+<div class="page lib">
+  <span class="ch-num" style="margin-bottom:7mm">Appendix</span>
+  <h2 class="chapter" style="margin-bottom:2mm">Quick prompt library — 42 one-liners</h2>
+
+  <p class="lead" style="margin-bottom:3.5mm">The 28 full prompts above are systems. These 42 are for the small tasks that eat your day. Fill the [brackets], paste, done.</p>
+
+  <div class="prompt-box">
+    <div class="p-label">Proposals & outreach (8)</div>
+    <div class="p-text">1. Summarize this job post in 3 bullets, then tell me what the client actually fears: [PASTE]<br>
+    2. Rewrite my proposal so the first sentence contains their exact words: [PASTE BOTH]<br>
+    3. Give me 5 subject lines for a cold email to [ROLE] about [SERVICE] — no curiosity tricks.<br>
+    4. What questions should I ask before quoting [PROJECT]? List the 6 that expose hidden scope.<br>
+    5. Turn this case study into a 4-sentence proposal intro: [PASTE]<br>
+    6. Draft a polite decline for a project I don't want: [DETAILS], keep the relationship warm.<br>
+    7. Compare my proposal vs. the likely competition and show my unfair advantage: [PASTE MINE]<br>
+    8. Write 3 "proof first" openers using this result: [RESULT + CLIENT TYPE]</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Client communication (8)</div>
+    <div class="p-text">9. Convert this rambling update into a clean 5-line status report: [PASTE NOTES]<br>
+    10. Draft a message asking for feedback I can actually use: [PROJECT]<br>
+    11. Write a message rescheduling today's call without sounding unreliable: [REASON]<br>
+    12. Turn these client messages into a to-do list with priorities: [PASTE]<br>
+    13. Say "no" to an unreasonable request while offering an alternative: [REQUEST]<br>
+    14. Write a handover email when a project ends: [PROJECT + WHAT'S DELIVERED]<br>
+    15. Ask for a testimonial in a way people actually reply to: [PROJECT]<br>
+    16. Draft a referral request to a happy client: [CLIENT + WHAT I WANT MORE OF]</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Money & pricing (8)</div>
+    <div class="p-text">17. Build a 3-tier quote for [SERVICE] where the middle tier is the obvious choice.<br>
+    18. Explain this invoice line item to a confused client in one friendly sentence: [LINE]<br>
+    19. Write a price-increase announcement for existing clients: [OLD RATE → NEW RATE]<br>
+    20. List everything excluded from [SCOPE] so scope creep can't start.<br>
+    21. Convert this hourly project into a fixed price with 20% risk buffer: [SCOPE + HOURS]<br>
+    22. Draft a payment-plan option for a client who says budget is tight: [AMOUNT]<br>
+    23. What should I charge for [SERVICE] given: [EXPERIENCE, MARKET, CLIENT TYPE]? Give a range + reasoning.<br>
+    24. Write the "50% upfront" line so it feels standard, not defensive.</div>
+  </div>
+
+  <div class="footer"><span>Appendix · Quick library 1/2</span><span>12</span></div>
+</div>
+
+<div class="page">
+  <span class="ch-num">Appendix · continued</span>
+  <h2 class="chapter">Quick prompt library<br>— marketing & decisions</h2>
+
+  <div class="prompt-box">
+    <div class="p-label">Marketing & content (10)</div>
+    <div class="p-text">25. Turn this project into a 3-slide carousel: [PROJECT + RESULTS]<br>
+    26. Write 5 hooks for a post about [TOPIC] — first line only, no filler.<br>
+    27. Give me 10 content ideas that a [NICHE] client would save, not just like.<br>
+    28. Rewrite this caption for LinkedIn with a different opening: [PASTE]<br>
+    29. Draft a newsletter intro announcing [NEWS] in 80 words.<br>
+    30. List 15 keywords my [SERVICE] buyer searches for at 11pm when they're stuck.<br>
+    31. Turn this client compliment into a public post without naming them: [QUOTE]<br>
+    32. Write a pinned-post bio for my profile that states who I help and how: [DETAILS]<br>
+    33. Give me 8 poll questions for [PLATFORM] related to [NICHE].<br>
+    34. Draft a DM reply to this inquiry that moves it to a call: [PASTE INQUIRY]</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="p-label">Productivity & decisions (8)</div>
+    <div class="p-text">35. Split this scope into week-by-week milestones: [SCOPE]<br>
+    36. What am I undercharging for? Review: [SERVICES + RATES + TIME SPENT]<br>
+    37. List the 5 tasks I should stop doing entirely this month: [LIST]<br>
+    38. Turn this messy idea into a one-page offer: [IDEA]<br>
+    39. Build a 30-minute discovery-call script for [CLIENT TYPE] with 7 questions.<br>
+    40. Red-flag checklist for spotting bad clients before signing: [MY WORST PAST CLIENT]<br>
+    41. Plan my week around these fixed commitments: [LIST + HOURS AVAILABLE].<br>
+    42. What's the single next action if my goal is [GOAL] within [DEADLINE]?</div>
+  </div>
+
+  <div class="footer"><span>Appendix · Quick library 2/2</span><span>13</span></div>
+</div>
+
+</body>
+</html>

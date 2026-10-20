@@ -1,0 +1,361 @@
+## Section 3 — YouTube Long-Form Scripts & Outlines
+
+### P031 — 10-Minute Educational Full Script
+```text
+You are a YouTube scriptwriter who writes for the spoken word. Write a complete 10-minute script on [TOPIC] for [AUDIENCE].
+Output format:
+COLD OPEN (0:00-0:20) — spoken, max 60 words, no intro music description
+PROMISE (0:20) — what the viewer has by 10:00, max 25 words
+SECTION 1 (0:40) — HOOK LINE / BODY (max 180 words) / PROOF: [PROOF] / TRANSITION
+SECTION 2 — same four fields
+SECTION 3 — same four fields
+SECTION 4 — same four fields
+RECAP (9:20) — max 50 words / CTA: [CTA]
+Hard cap: 900 spoken words. Mark every b-roll need as [B-ROLL: ...].
+```
+
+### P032 — Thesis-Driven Video Essay Outline
+```text
+You structure video essays. Build an outline for a [LENGTH] essay on [TOPIC] that argues one thesis: [THESIS].
+Output format:
+THESIS — one sentence, arguable, no hedges
+COUNTER-ARGUMENT — one sentence, stated fairly
+BEAT 1: OPENING SCENE — the concrete scene that raises the question (max 40 words of description)
+BEAT 2..5 — each: CLAIM (max 15 words) / EVIDENCE (source or [PROOF]) / VISUAL (max 10 words) / SO WHAT (max 15 words)
+TURN — where the essay admits complexity
+CLOSE — returns to beat 1, max 30 words
+Constraints: 7 beats max, no beat may rely on a claim not supported by evidence, outline only (no full prose).
+```
+
+### P033 — Top-7 Listicle Script
+```text
+Write a top-7 listicle script about [TOPIC] for [AUDIENCE], ranking from 7 down to 1.
+Output format for each item:
+NUMBER — one-line tease (max 12 words) / WHY IT RANKS HERE (max 45 words) / PROOF LINE / VISUAL CUE / 3-SECOND RE-ENTRY LINE (re-hooks viewers who just arrived)
+Plus: HOOK (max 16 words), MID-ROLL RE-HOOK after item 4 (max 20 words), CLOSE (max 30 words).
+Constraints: items must be distinct (no near-duplicates), total spoken 700-850 words, item 1 must be the one most relevant to [PROOF].
+```
+
+### P034 — How-To Tutorial With Chapters
+```text
+You write tutorials that viewers can follow in real time. Draft a script for a how-to on [GOAL] using [TOOL] for [AUDIENCE], in [LENGTH].
+Output format:
+HOOK — max 16 words, names the end state
+WHAT YOU NEED — 4-6 bullets, max 5 words each
+CHAPTER 1 — TITLE (max 6 words) / DO THIS (max 60 words) / SHOW THIS (screen cue) / CHECKPOINT (how the viewer confirms it worked)
+CHAPTER 2..4 — same fields
+FAILURE NOTE — the most common mistake and its fix (max 40 words)
+CLOSE — [CTA] in max 25 words
+Constraints: total spoken 700-850 words, every chapter starts with a verb, no step may reference an unlisted tool.
+```
+
+### P035 — A vs B Comparison Video
+```text
+Write a comparison script pitting [OPTION_A] against [OPTION_B] for [AUDIENCE] choosing between them on [CRITERIA].
+Output format:
+OPENING — frame the decision in one sentence (max 20 words)
+ROUND 1: [CRITERION 1] — A CASE (max 45 words) / B CASE (max 45 words) / VERDICT (one line: A, B or TIE + reason max 8 words)
+ROUND 2 — same three fields
+ROUND 3 — same three fields
+WHO SHOULD PICK A — max 30 words
+WHO SHOULD PICK B — max 30 words
+FINAL CALL — max 25 words including [PROOF]
+Constraints: no round may be a tie unless you explain the tiebreaker; total spoken 600-750 words; banned: "it depends".
+```
+
+### P036 — Documentary-Style Narrative Script
+```text
+You write mini-documentary scripts. For a [LENGTH] piece on [TOPIC], using this material: [SOURCE], write a narrative script in scenes.
+Output format:
+NARRATION 1 (V.O.) — max 50 words / SCENE: what we see / ARCHIVAL: what asset is needed
+NARRATION 2 ... through NARRATION 8 — same three fields
+SOUND CUE — where music enters and leaves
+CLOSING LINE — max 25 words, lands on the question, not the answer
+Constraints: past tense, show-don't-tell (every narration line must have a matching image), no invented details beyond [SOURCE], total spoken 500-650 words.
+```
+
+### P037 — Interview Structure and Question Ladder
+```text
+Act as an interview producer. Build a [LENGTH] interview with [GUEST] on [TOPIC] for [AUDIENCE].
+Output format:
+PRE-INTERVIEW NOTE — one line on what to research
+LADDER 1: WARM — 3 questions, each max 12 words
+LADDER 2: SPECIFIC — 4 questions, each max 14 words, each with a follow-up "WHAT MADE THAT POSSIBLE?"
+LADDER 3: TENSION — 3 questions that press on [PAIN], each max 14 words
+LADDER 4: CLOSING — 2 questions, last one max 12 words and quotable
+EDIT NOTE — the 60 seconds to cut to the cold open (identify which question)
+Constraints: no yes/no questions, no question may contain two questions, total output under 500 words.
+```
+
+### P038 — Case Study Breakdown Script
+```text
+Write a case-study video script about [CUSTOMER] achieving [PROOF] with [PRODUCT], for [AUDIENCE] evaluating [OFFER].
+Output format:
+HOOK — the result first, max 16 words
+BEFORE — their starting state, max 60 words, with one number
+DIAGNOSIS — the actual root cause, max 60 words
+INTERVENTION — what changed, three bullets max 12 words each
+RESULT — [PROOF] with timeframe and source attribution
+TRANSFERABLE LESSON — what the viewer can copy, max 40 words
+CTA — [CTA], max 20 words
+Constraints: no permission-free claims about the customer, total spoken 400-500 words, no superlatives.
+```
+
+### P039 — Reaction and Commentary Structure
+```text
+You write commentary scripts. Structure a [LENGTH] reaction to [SOURCE] for [AUDIENCE] on [TOPIC].
+Output format:
+0:00 POSITION — max 14 words, take stated before any clip plays
+0:15 CLIP 1 — REACT (max 40 words) / WHAT TO SHOW (timestamp range)
+1:10 CLIP 2 — REACT (max 40 words) / SHOW:
+2:05 CLIP 3 — REACT (max 40 words) / SHOW:
+2:55 YOUR CASE — max 70 words, cite [PROOF]
+3:30 FAIR SIDE — the strongest counter-view, max 40 words
+3:55 CLOSE — max 25 words
+Constraints: react, do not just describe; every reaction must add an opinion or a fact; no ad hominem; total spoken 350-450 words.
+```
+
+### P040 — Challenge or Experiment Script
+```text
+Draft a challenge video script: [CHALLENGE] over [DURATION], for [AUDIENCE] on [TOPIC].
+Output format:
+PROMISE + RULES — the challenge, the rules, the win condition (3 bullets, max 12 words each)
+DAY/MILESTONE 1 — SETBACK (max 35 words) / ON CAMERA: / MILESTONE: status number
+DAY/MILESTONE 2 — same fields
+DAY/MILESTONE 3 — same fields
+LOW POINT — the moment it might fail, max 50 words
+RESULT — pass or fail, one number, cite [PROOF]
+LESSON — max 30 words, no motivational poster language
+Constraints: total spoken 450-550 words, failure is a valid outcome (do not promise success), no exclamation marks in the lesson.
+```
+
+### P041 — Fair Product Review Script
+```text
+You write reviews people trust. Draft a review of [PRODUCT] for [AUDIENCE] who currently use [COMPETITOR], covering [PAIN].
+Output format:
+VERDICT UP FRONT — BUY OR SKIP + who it is not for (max 30 words)
+WHAT IT IS — max 40 words
+WHAT WORKS — 3 bullets, each with a concrete observation (max 12 words each)
+WHAT DOES NOT — 3 bullets, same rule
+TEST SETUP — how you tested (max 25 words)
+ALTERNATIVE — [COMPETITOR] comparison in 40 words
+CLOSE — [CTA], max 20 words
+Constraints: no sponsor mention hidden, no invented testing, if [SOURCE] lacks a test detail write "[NOT TESTED]", total spoken 450-550 words.
+```
+
+### P042 — Story-Driven Vlog Script
+```text
+Write a story-driven vlog script around one day of [TOPIC] for [AUDIENCE], based on these events: [SOURCE].
+Output format:
+A-BEAT (set-up) — SCENE / SPOKEN (max 50 words) / SHOT:
+B-BEAT (complication) — SCENE / SPOKEN (max 50 words) / SHOT:
+C-BEAT (turn) — SCENE / SPOKEN (max 50 words) / SHOT:
+D-BEAT (landing) — SCENE / SPOKEN (max 50 words) / SHOT:
+THREAD — one recurring object or line that runs through all four beats (name it)
+Constraints: no "and then this happened" sequencing — every beat must change something; total spoken 350-450 words; no gratitude list at the end.
+```
+
+### P043 — Explainer With SAY/SHOW Columns
+```text
+Write a [LENGTH] explainer on [TOPIC] for [AUDIENCE] as a two-column script, so a voiceover and an editor can work separately.
+Output format (use a table):
+# | SAY (max 30 words per row) | SHOW (what is on screen, max 12 words) | TEXT ON SCREEN (max 5 words) | DURATION
+Rows: 12-16 rows total.
+Constraints: every SHOW cell must be filmable or drawable (no "relevant image"), every row must advance the explanation, one idea per row, total SAY column 380-450 words.
+```
+
+### P044 — Timestamped Beat Sheet (Outline Only)
+```text
+Act as a story producer. Build a timestamped beat sheet for a [LENGTH] video on [TOPIC] for [AUDIENCE]. Outline only — no full prose.
+Output format: table with columns TIME | BEAT NAME | WHAT HAPPENS (max 14 words) | RETENTION DEVICE (loop, pattern break, stakes, reveal) | WORD BUDGET.
+Constraints: 12-16 beats, no gap between beats longer than 45 seconds without a named retention device, first beat is the cold open, last beat is [CTA], total output under 450 words.
+```
+
+### P045 — Deep Dive With a Pattern Break Every 45 Seconds
+```text
+You rewrite scripts to survive a 20-minute runtime. Take this draft: [SOURCE] and restructure it into a [LENGTH] deep dive on [TOPIC].
+Output format:
+COLD OPEN — max 50 words, moved from the strongest moment anywhere in the draft
+Then, per 45-second block:
+BLOCK n | TIME | CONTENT (max 25 words) | PATTERN BREAK (re-entry device, max 10 words) | CUMULATIVE PAYOFF (what the viewer knows now that they did not 45 seconds ago)
+Constraints: at least 10 blocks, no block may be pure exposition, keep every number from [SOURCE] unchanged, total output under 600 words.
+```
+
+## Section 4 — Faceless-Channel Narration
+
+### P046 — Reddit-Style Story Narration
+```text
+You narrate faceless story channels. Write a 60-second narration about this source post: [SOURCE], retold for [AUDIENCE] on [PLATFORM].
+Output format:
+LINE 1 (0-3s) — the hook, max 12 words
+LINE 2..8 — one sentence each, max 20 words, numbered, with a [VISUAL:] cue in brackets after each
+LINE 9 — payoff, max 20 words
+Rules: do not copy the original text, retell it, credit the source in the description line, mark any gap as "[DETAIL NEEDED]", no invented dialogue. Total spoken 220-280 words.
+```
+
+### P047 — Top-5 Facts Compilation
+```text
+Write a 90-second faceless narration for a top-5 facts video on [TOPIC].
+Output format:
+HOOK — max 14 words, promises the number 1 fact without revealing it
+FACT 5 — STATEMENT (max 20 words) / PROOF SOURCE (max 5 words) / ON-SCREEN TEXT (max 6 words)
+FACT 4..2 — same three fields
+BRIDGE LINE before fact 1 — max 14 words
+FACT 1 — same three fields
+CLOSE — max 16 words, loops to the hook
+Constraints: total spoken 280-340 words, every fact must cite a source or be marked "[UNVERIFIED]", no fact may repeat the same subject.
+```
+
+### P048 — Mystery and Unsolved Case Narration
+```text
+You narrate mystery channels. Write a 2-minute faceless narration about [CASE/TOPIC] using only this material: [SOURCE].
+Output format:
+COLD OPEN — the strangest verifiable detail, max 18 words
+TIMELINE 1 — WHAT IS KNOWN (max 40 words) / [VISUAL:] / MUSIC CUE:
+TIMELINE 2 — same fields
+THE GAP — the unanswered question, max 30 words
+THEORIES — 2 bullets, each max 18 words, each labelled "SPECULATIVE"
+OPEN ENDING — max 25 words, no false resolution
+Constraints: facts strictly from [SOURCE], speculation explicitly labelled, total spoken 400-480 words, no gore detail, no exclamation marks.
+```
+
+### P049 — Finance Explainer Narration With Data Cues
+```text
+Write a 90-second faceless narration explaining [TOPIC] for [AUDIENCE] about their [PAIN], with on-screen data.
+Output format:
+HOOK — max 14 words containing a number
+SCENARIO — a concrete example: person, amount, timeframe (max 50 words)
+MATH ON SCREEN — the calculation written out: "N x M = Z" with a [CHART:] cue
+WHY IT MATTERS — max 40 words
+WHAT TO DO — 3 bullets, max 10 words each
+DISCLAIMER LINE — max 16 words, spoken
+Constraints: total spoken 260-320 words, every number from [SOURCE] or labelled "[ASSUMPTION]", no investment promises, no exclamation marks.
+```
+
+### P050 — History Mini-Documentary Narration
+```text
+You narrate history channels. Write a 2-minute faceless narration on [TOPIC] in [YEAR/ERA] from this research: [SOURCE].
+Output format:
+HOOK — the human-scale detail (a person, an object), max 16 words
+BEAT 1: CONTEXT — max 45 words / [ARCHIVAL CUE:]
+BEAT 2: EVENT — max 60 words / [ARCHIVAL CUE:]
+BEAT 3: CONSEQUENCE — max 45 words / [ARCHIVAL CUE:]
+CLOSING LINE — links to today, max 25 words
+Constraints: dates and names verbatim from [SOURCE], no dialogue unless quoted with attribution, total spoken 320-400 words, no presentism or moralising.
+```
+
+### P051 — Sports Highlight Narration
+```text
+Write a 60-second faceless narration over highlights of [MATCH/EVENT] for [AUDIENCE], using these facts: [SOURCE].
+Output format:
+0:00 HOOK — max 12 words, the stake of the moment
+0:05 SETUP — score, context, max 25 words
+0:15 THE PLAY — line by line as it unfolds, 5 short lines max 14 words each, marked with timecodes
+0:45 WHY IT MATTERS — max 30 words
+0:55 CTA — max 12 words
+Constraints: no invented player quotes, all numbers from [SOURCE], total spoken 150-190 words, present tense throughout.
+```
+
+### P052 — Gaming Highlights Narration
+```text
+You narrate faceless gaming channels. Write a 75-second voiceover for a [GAME] highlight reel: [SOURCE] describes the clip.
+Output format:
+0:00 HOOK — max 10 words, no "what is up everyone"
+0:04 CONTEXT — what is happening and why it is hard (max 30 words)
+0:15 PLAY-BY-PLAY — 4 lines, max 16 words each, each with a [CLIP:] range
+0:45 THE TURN — the moment it swings, max 25 words
+1:00 PAYOFF + CTA — max 25 words
+Constraints: total spoken 190-240 words, no toxicity or slurs, describe only what appears on screen, no invented stats.
+```
+
+### P053 — Satisfying Process Narration
+```text
+Write a 45-second minimal voiceover over satisfying process footage ([PROCESS]) for [AUDIENCE] on [TOPIC].
+Output format:
+LINE 1 (0-2s) — max 10 words, the reason to keep watching
+LINE 2 (2-15s) — what the hands are doing, max 25 words, [SHOT:]
+LINE 3 (15-30s) — the detail most people miss, max 25 words, [SHOT:]
+LINE 4 (30-45s) — the finished result, max 20 words
+Constraints: total spoken 90-110 words, no adjectives like "satisfying" or "beautiful" (show it instead), no music description beyond one cue line.
+```
+
+### P054 — Wildlife and Nature Narration
+```text
+You narrate nature documentaries. Write a 90-second faceless narration on [SPECIES/PLACE] using only this footage list and research: [SOURCE].
+Output format:
+HOOK — one behavioural detail, max 14 words
+BEAT 1: SURVIVAL PRESSURE — max 45 words / FOOTAGE:
+BEAT 2: THE MOVE — max 50 words / FOOTAGE:
+BEAT 3: THE COST OR TRADE-OFF — max 45 words / FOOTAGE:
+CLOSING — max 20 words
+Constraints: no anthropomorphising verbs ("decided", "wanted"), every claim in [SOURCE], total spoken 280-340 words, no musical direction other than one cue.
+```
+
+### P055 — 90-Second Tech News Briefing
+```text
+Write a 90-second faceless tech-news briefing on [NEWS] for [AUDIENCE], from this material: [SOURCE].
+Output format:
+LEDE — what happened, 2 sentences, max 30 words
+WHY NOW — the [TRIGGER_EVENT] behind the timing, max 30 words
+WHAT CHANGES — 3 bullets, max 10 words each, each with a [CHART or SCREENSHOT:]
+WHO IT HITS — max 25 words, named audience
+UNCERTAINTY LINE — what is not known yet, max 18 words
+CLOSE — max 15 words
+Constraints: total spoken 250-300 words, no speculation presented as fact, every claim cited to [SOURCE] or marked "[UNVERIFIED]", no exclamation marks.
+```
+
+### P056 — Five-Minute Book Summary Narration
+```text
+You summarise books for faceless channels. Write a 5-minute narration of [BOOK] for [AUDIENCE] facing [PAIN].
+Output format:
+HOOK — the book's most useful idea in one line, max 16 words
+CONTEXT — who wrote it and why it matters, max 40 words
+IDEA 1 — CLAIM (max 20 words) / EVIDENCE OR STORY (max 60 words) / APPLY IT (max 25 words)
+IDEA 2..4 — same three fields
+OBJECTION — the strongest critique of the book, max 40 words
+CLOSE — one action, max 25 words, plus [CTA]
+Constraints: total spoken 850-950 words, no plot spoilers without warning, direct quotes in quotation marks only, no invented anecdotes.
+```
+
+### P057 — Motivational Compilation Without Clichés
+```text
+Write a 60-second motivational voiceover for [AUDIENCE] about [TOPIC], strictly avoiding cliché language.
+Banned: believe in yourself, never give up, grind, unlock your potential, the only limit is you, dream big.
+Output format:
+LINE 1 — a specific scene, max 14 words
+LINE 2..7 — one sentence each, max 18 words, alternating between concrete action and honest cost, each with [B-ROLL:]
+LINE 8 — the reframe, max 16 words
+Constraints: total spoken 150-190 words, no exclamation marks, every line must be filmable or traceable to a real event in [SOURCE].
+```
+
+### P058 — Explainer Channel Mystery Rotation
+```text
+Structure a faceless explainer on [TOPIC] that answers: what happened, what is known, what is not. Use only [SOURCE].
+Output format:
+PART 1: WHAT HAPPENED — 4 narration lines, max 35 words each, each with [VISUAL:]
+PART 2: WHAT IS KNOWN — 3 lines, each ending with a source tag in brackets
+PART 3: WHAT IS NOT KNOWN — 2 lines, each labelled "[UNANSWERED]"
+FINAL LINE — max 22 words, invites one specific comment question
+Constraints: total spoken 400-480 words, no theory stated as fact, no "chilling" or "haunting" adjectives, one question mark total.
+```
+
+### P059 — "Didn't Exist X Years Ago" Compilation
+```text
+Write a 75-second faceless narration: things that did not exist [N] years ago, focused on [NICHE] for [AUDIENCE].
+Output format:
+HOOK — max 14 words, names the year
+ITEM 1 — WHAT IT IS (max 12 words) / WHAT REPLACED IT (max 10 words) / [B-ROLL:]
+ITEM 2..5 — same three fields
+BRIDGE — max 14 words before the final item
+ITEM 6 — same three fields
+CLOSE — max 16 words, one observation about the pace of change
+Constraints: total spoken 220-280 words, every item must be verifiable with a year, no invented products, no nostalgia adjectives.
+```
+
+### P060 — Slideshow Narration With Per-Slide Cues
+```text
+You write slideshow-style faceless scripts. For [TOPIC] and [AUDIENCE], write a narration of [LENGTH] where each line maps to exactly one slide, using this list: [SOURCE].
+Output format (table):
+SLIDE | TIME | NARRATION (max 22 words) | SLIDE CONTENT (headline max 6 words + one data point) | TRANSITION
+Constraints: 10-14 slides, no narration line may exceed what the slide supports, the first slide must contain the hook (max 12 words), the last slide carries [CTA], total narration 300-380 words.
+```
